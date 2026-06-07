@@ -7,8 +7,16 @@ import { createPostgresDataStore } from "./postgres-store.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const defaultDataDir = join(__dirname, "..", "data");
 
-/** Pick Supabase/Postgres in cloud, JSON files locally. */
+let storePromise;
+
+/** Pick Supabase/Postgres in cloud, JSON files locally. Cached for serverless reuse. */
 export async function initDataStore() {
+  if (storePromise) return storePromise;
+  storePromise = initDataStoreOnce();
+  return storePromise;
+}
+
+async function initDataStoreOnce() {
   const databaseUrl = process.env.DATABASE_URL?.trim();
   if (databaseUrl) {
     console.log("[data] using PostgreSQL (Supabase)");
@@ -16,6 +24,7 @@ export async function initDataStore() {
       return await createPostgresDataStore(databaseUrl);
     } catch (err) {
       console.error("[data] PostgreSQL connection failed:", err.message);
+      storePromise = null;
       throw new Error(`Database connection failed: ${err.message}`);
     }
   }

@@ -201,7 +201,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <provider android:authorities="com.azemon.santanderclone.com.salesforce.marketingcloud.initprovider" android:enabled="false" android:exported="false" android:name="com.salesforce.marketingcloud.MCInitContentProvider"/>
+        <provider android:authorities="com.azemon.santanderclone.com.salesforce.marketingcloud.initprovider" android:exported="false" android:enabled="false" android:name="com.salesforce.marketingcloud.MCInitContentProvider"/>
         <service android:foregroundServiceType="location" android:name="org.altbeacon.beacon.service.BeaconService"/>
         <activity android:name="com.qualtrics.digital.QualtricsEmbeddedFeedbackActivity" android:theme="@style/Qualtrics.Theme.Transparent"/>
         <receiver android:enabled="true" android:exported="false" android:name="com.qualtrics.digital.QualtricsNotificationManager">
@@ -255,7 +255,7 @@
             <meta-data android:name="com.tealium.core.internal.TealiumInitProvider.TIMEOUT_SECONDS" android:value="10"/>
         </provider>
         <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
-        <provider android:authorities="com.azemon.santanderclone.com.salesforce.marketingcloud.sfmcsdk.initprovider" android:enabled="false" android:exported="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider"/>
+        <provider android:authorities="com.azemon.santanderclone.com.salesforce.marketingcloud.sfmcsdk.initprovider" android:exported="false" android:enabled="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider"/>
         <receiver android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>

@@ -4,11 +4,24 @@ import { fileURLToPath } from "url";
 import { emptySuccess } from "./responses.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ASSETS_ROOT =
-  process.env.ASSETS_ROOT ||
-  (process.env.VERCEL
-    ? join(process.cwd(), "patched-app", "assets", "default")
-    : join(__dirname, "..", "..", "patched-app", "assets", "default"));
+
+function resolveAssetsRoot() {
+  if (process.env.ASSETS_ROOT) return process.env.ASSETS_ROOT;
+  const candidates = [
+    join(process.cwd(), "patched-app", "assets", "default"),
+    join(__dirname, "..", "..", "patched-app", "assets", "default"),
+    join(__dirname, "..", "assets", "default"),
+  ];
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) {
+      console.log("[microsite] assets root:", candidate);
+      return candidate;
+    }
+  }
+  return candidates[0];
+}
+
+const ASSETS_ROOT = resolveAssetsRoot();
 
 const MIME = {
   json: "application/json; charset=utf-8",

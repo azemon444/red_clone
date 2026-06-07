@@ -7,6 +7,8 @@ import { DATASETS } from "./data-store.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SEED_DIR = join(__dirname, "..", "data");
 
+let cachedStore = null;
+
 function normalizeConnectionString(url) {
   let s = url.trim();
   if (!s.includes("localhost") && !s.includes("127.0.0.1")) {
@@ -25,6 +27,8 @@ function poolSsl(connectionString) {
 }
 
 export async function createPostgresDataStore(connectionString) {
+  if (cachedStore) return cachedStore;
+
   const pool = new pg.Pool({
     connectionString: normalizeConnectionString(connectionString),
     ssl: poolSsl(connectionString),
@@ -112,7 +116,7 @@ export async function createPostgresDataStore(connectionString) {
     return cache[key];
   }
 
-  return {
+  cachedStore = {
     get,
     set,
     reload,
@@ -120,6 +124,8 @@ export async function createPostgresDataStore(connectionString) {
     backend: "postgres",
     async close() {
       await pool.end();
+      cachedStore = null;
     },
   };
+  return cachedStore;
 }

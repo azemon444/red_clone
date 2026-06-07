@@ -1,5 +1,9 @@
 import { createApp } from "../mock-server/src/app.js";
 
+export const config = {
+  maxDuration: 60,
+};
+
 let app;
 
 export default async function handler(req, res) {

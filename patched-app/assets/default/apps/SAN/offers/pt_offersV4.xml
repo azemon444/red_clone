@@ -403,8 +403,8 @@
 		<never_expires>true</never_expires>
 		<action type="open_webview">
 			<top_title>Privacidade e dados (RGPD)</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsentimentoGDPR</open_url>
-			<close_url> https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ConsentimentoGDPR</open_url>
+			<close_url> https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -419,14 +419,14 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/imgCar_Smart.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/imgCar_Smart.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Extracto de conta</top_title>
-			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=ExtractosDigitaisContasDownload</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisContasDownload</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=ExtractosDigitaisContasDownload</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisContasDownload</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -447,8 +447,8 @@
 		<action type="open_webview">
 			<top_title>Extrato de Cartão</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisCartoesDownload</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisCartoesDownload</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -468,9 +468,9 @@
 		<action type="open_webview">
 			<top_title>Transferir credito p/ conta</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -494,8 +494,8 @@
 		<iterations>9999999</iterations>
 		<action type="open_webview">
 			<top_title>Condições de Pagamento</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -521,8 +521,8 @@
 			<cache>false</cache>
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
 			<top_title>Pedir PIN</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -547,10 +547,10 @@
 			<top_title>Contratar cartão de débito</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<!--  <title>Contratar cartão de débito</title>
-             <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaDebito</open_url>  -->
+             <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaDebito</open_url>  -->
 			<title>Contratar cartao de débito</title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaDebito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PedidoTarjetaDebito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -565,15 +565,15 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Cartao_credito2_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Cartao_credito2_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar cartao de crédito</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaCredito</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaCredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaCredito</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PedidoTarjetaCredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -590,9 +590,9 @@
 		<action type="open_webview">
 			<top_title>Contratar cartao pré-pago</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaPrePago</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaPrePago</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaPrePago</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PedidoTarjetaPrePago</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -610,15 +610,15 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<!--  <banner app="ios,android">
-			<![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/imgCar_Smart.png]]></banner>  -->
+			<![CDATA[https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/imgCar_Smart.png]]></banner>  -->
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
 			<top_title>Carregar pré-pago</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -644,8 +644,8 @@
 		<action type="open_webview">
 			<top_title>Criar plano PagaSIMPLES</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=CriarPlanoCompras</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=CriarPlanoCompras</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -665,8 +665,8 @@
 		<action type="open_webview">
 			<top_title>Os meus PagaSIMPLES</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PlanosFinanceiros</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PlanosFinanceiros</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -681,7 +681,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -689,8 +689,8 @@
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
 			<top_title>Subscrição Fundos</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=QueroInvestir</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=QueroInvestir</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -706,9 +706,9 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>EBroker</top_title>
-			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=LanzaEBroker</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=LanzaEBroker</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  2025-06-25 <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=LanzaEBroker</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=LanzaEBroker</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -723,7 +723,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -731,8 +731,8 @@
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
 			<top_title>Fundos, seguros e PPR</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Investments</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Investments</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -747,7 +747,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -765,9 +765,9 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Débitos Directos</top_title>
-			<!--  2025-06-25  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=ConsultaDDSepa</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsultaDDSepa</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  2025-06-25  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=ConsultaDDSepa</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ConsultaDDSepa</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -785,7 +785,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Collections/Alerta_pag_atraso_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Collections/Alerta_pag_atraso_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -803,9 +803,9 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Pagamento SS</top_title>
-			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocial</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocial</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  2025-06-25 <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocial</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocial</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -822,9 +822,9 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Pagamento SS Ent Patronal</top_title>
-			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocialEntidadesPatronales</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocialEntidadesPatronales</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  2025-06-25 <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocialEntidadesPatronales</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocialEntidadesPatronales</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -864,8 +864,8 @@
 			<cache>false</cache>
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
 			<top_title>Permissões de cartão</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -890,10 +890,10 @@
 		<action type="open_webview">
 			<method>GET</method>
 			<reload_session_on_close>true</reload_session_on_close>
-			<!--  <open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>  -->
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>  -->
 			<top_title>Pagar cartão</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -914,12 +914,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android" height="150" width="720">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V1_PT@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Carrusel_PG_V1_PT@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/salto/dicas-poupanca?ad_campaign=BN_BRA_BLG_OA_PAE0_AO_Generico0625_DicasPoupanca_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/salto/dicas-poupanca?ad_campaign=BN_BRA_BLG_OA_PAE0_AO_Generico0625_DicasPoupanca_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</action_value>
 		</action>
 	</product>
@@ -931,12 +931,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android" height="150" width="720">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V2_PT@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Carrusel_PG_V2_PT@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/campanhas/seguros ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/campanhas/seguros ]]>
 			</action_value>
 		</action>
 	</product>
@@ -948,12 +948,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android" height="150" width="720">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V3_PT@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Carrusel_PG_V3_PT@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/credito/credito-pessoal ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/credito/credito-pessoal ]]>
 			</action_value>
 		</action>
 	</product>
@@ -975,7 +975,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/MOCHE_BK_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Universitarios/MOCHE_BK_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -996,7 +996,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/23_set_Uni/Banner_RedeExpresso_Uni_1.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/23_set_Uni/Banner_RedeExpresso_Uni_1.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -1017,7 +1017,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Bolsa_BK_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Universitarios/Bolsa_BK_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -1038,12 +1038,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Toga_Lady_Sir_2025.jpg ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Universitarios/Toga_Lady_Sir_2025.jpg ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.particulares.santander.pt/nbpstatic/OfertaUniv19.htm ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/nbpstatic/OfertaUniv19.htm ]]>
 			</action_value>
 		</action>
 	</product>
@@ -1060,7 +1060,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/ALLC_FlashSales_Abr/PAR_FlashSales04_BK1_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/ALLC_FlashSales_Abr/PAR_FlashSales04_BK1_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1078,7 +1078,7 @@
 		<banners/>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/descontos?tab=2&ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/descontos?tab=2&ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
 			</action_value>
 		</action>
 	</product>
@@ -1093,16 +1093,16 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Classic_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Classic_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<top_title>Rewards</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=C_C_OA_BN_PAU0_AO_Rewards0623_CLI&ad_source=one_app&ad_medium=banner&ad_content=pgcta ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=C_C_OA_BN_PAU0_AO_Rewards0623_CLI&ad_source=one_app&ad_medium=banner&ad_content=pgcta ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1119,12 +1119,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Simple_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Simple_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/parcerias?ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/parcerias?ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
 			</action_value>
 		</action>
 	</product>
@@ -1142,7 +1142,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_90_salida_tocuh.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_90_salida_tocuh.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1150,7 +1150,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1173,7 +1173,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_60_salida_personaliza.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_60_salida_personaliza.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1181,7 +1181,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1204,7 +1204,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_20_salida_ayudanos.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_20_salida_ayudanos.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1212,7 +1212,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1235,7 +1235,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_30_salida_fraccionar.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_30_salida_fraccionar.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1243,7 +1243,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1266,7 +1266,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_70_salida_transf.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_70_salida_transf.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1274,7 +1274,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1297,7 +1297,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_80_salida_cvv.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/POR_80_salida_cvv.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1305,7 +1305,7 @@
 			<top_title>Ajude-nos a melhorar</top_title>
 			<title>Ajude-nos a melhorar</title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1328,14 +1328,14 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/01-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/01-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<method>GET</method>
 			<top_title>Ajude-nos a melhorar</top_title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1358,14 +1358,14 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/02-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/02-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<method>GET</method>
 			<top_title>Ajude-nos a melhorar</top_title>
 			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1389,7 +1389,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/03-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/03-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1408,7 +1408,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/04-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/04-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1427,7 +1427,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/05-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/05-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1448,7 +1448,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/06-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/06-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1467,7 +1467,7 @@
 		<iterations>30000</iterations>
 		<banners>
 			<banner height="656" width="750" app="android,ios">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/07-Logout_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/logout/07-Logout_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1486,10 +1486,10 @@
 		<action type="open_webview">
 			<cache>false</cache>
 			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
-			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=DocumentosDigitais</open_url>  -->
+			<!--  <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=DocumentosDigitais</open_url>  -->
 			<top_title>Documentos Digitais</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=DocumentosDigitais</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=DocumentosDigitais</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1505,7 +1505,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Poupancas_Depositos_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Poupancas_Depositos_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1513,7 +1513,7 @@
 			<top_title>Poupanças e Depósitos</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PaginaIntermediaPoupancas ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=PaginaIntermediaPoupancas ]]>
 			</open_url>
 			<!--  chama página de Polónia para evitar q webview feche quando chama site publico  -->
 			<close_url>https://www.santander.pl</close_url>
@@ -1550,9 +1550,9 @@
 			<top_title>Seguros</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1566,7 +1566,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros4_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros4_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -1574,9 +1574,9 @@
 			<reload_session_on_close>true</reload_session_on_close>
 			<title>Seguros</title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1593,9 +1593,9 @@
 			<top_title>Consultar Seguros</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=SegurosAutonomos&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=SegurosAutonomos&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1611,7 +1611,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_PT_ec01.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_PT_ec01.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -1631,8 +1631,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>SafeCare Saúde</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1653,8 +1653,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>SafeCare Saúde Viva Mais</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1676,9 +1676,9 @@
 		<action type="open_webview">
 			<top_title>Proteção Vida</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1695,9 +1695,9 @@
 		<action type="open_webview">
 			<top_title>Proteção Lar</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005XBF ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005XBF ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1713,8 +1713,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Proteção Acidentes</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1734,12 +1734,12 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<!--  <banner app="ios,android">
-                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros_PT.png ]]></banner> -->
+                <![CDATA[https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros_PT.png ]]></banner> -->
 		</banners>
 		<action type="open_webview">
 			<top_title>Proteção Serviços Domésticos</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1761,9 +1761,9 @@
 		<action type="open_webview">
 			<top_title>Proteção Vida Select</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1780,9 +1780,9 @@
 		<action type="open_webview">
 			<top_title>Proteção Auto</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005AUM ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005AUM ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1798,8 +1798,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Comunicações Comerciais</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=DocumentosDigitaisComunicacoesComerciais</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=DocumentosDigitaisComunicacoesComerciais</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -1817,14 +1817,14 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/BannerPGTOP_Classic_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/BannerPGTOP_Classic_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<method>GET</method>
 			<top_title>Ajude-nos a melhorar</top_title>
 			<open_url>https://www.opinator.com/opi/APP-PER-global-position-top-BETA-PT/</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -1850,27 +1850,27 @@
 			<list>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-2-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-2-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-3-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-3-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-4-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-4-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-5-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-5-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 			</list>
@@ -1890,7 +1890,7 @@
 			<list>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
 					</image_fullscreen>
 				</page>
 			</list>
@@ -1908,7 +1908,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1926,7 +1926,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1944,7 +1944,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1962,7 +1962,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1980,7 +1980,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -1998,7 +1998,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2016,7 +2016,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2034,7 +2034,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2052,7 +2052,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2070,7 +2070,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2088,7 +2088,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2106,7 +2106,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2136,8 +2136,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2153,13 +2153,13 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/PedirCredito_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/PedirCredito_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2175,13 +2175,13 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2197,9 +2197,9 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Mundo 123</top_title>
-			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=OqueTenhoM123</open_url>  -->
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=OqueTenhoM123</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<!--  2025-06-25 <open_url>https://project-efnt2.vercel.app/demo/pagina/indice/0,,1156_1_2_1,00.html?feature=OqueTenhoM123</open_url>  -->
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=OqueTenhoM123</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2215,8 +2215,8 @@
 		<banners> </banners>
 		<action type="open_webview">
 			<top_title>Consultar Benefícios</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsultarBeneficios123</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ConsultarBeneficios123</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2232,7 +2232,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<!--  <banner app="ios,android">
-                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+                <![CDATA[https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
 		</banners>
 		<action type="navigate_screen">
 			<action_value>permissions_under_age</action_value>
@@ -2247,7 +2247,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2284,7 +2284,7 @@
 			<top_title>Dicas Santander</top_title>
 			<detail_banners>
 				<detail_banner>
-					<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Notificacoes01.png ]]>
+					<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Notificacoes01.png ]]>
 				</detail_banner>
 			</detail_banners>
 			<button_1>
@@ -2304,16 +2304,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<top_title>Rewards</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2328,16 +2328,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_EN_ec02.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_EN_ec02.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<top_title>Rewards</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2358,7 +2358,7 @@
 			<list>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Aniversario/Santander_aniversario.gif ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Aniversario/Santander_aniversario.gif ]]>
 					</image_fullscreen>
 				</page>
 			</list>
@@ -2377,7 +2377,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2396,7 +2396,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2415,7 +2415,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_TARB_Smart_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_TARB_Smart_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2435,7 +2435,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2454,7 +2454,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2473,7 +2473,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_TARB_Smart_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_TARB_Smart_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2489,7 +2489,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<!--  <banner app="ios,android">
-                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+                <![CDATA[https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
 		</banners>
 		<action type="navigate_screen">
 			<action_value>mbnet</action_value>
@@ -2508,13 +2508,13 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Classica.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Classica.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2532,13 +2532,13 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Simples2.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Simples2.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito</top_title>
-			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<open_url>https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2557,16 +2557,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Classica2.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Classica2.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Seguros</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2584,16 +2584,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Simples2.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Simples2.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Seguros</top_title>
 			<reload_session_on_close>true</reload_session_on_close>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2612,7 +2612,7 @@
 			<list>
 				<page>
 					<image_fullscreen>
-						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/aviso_netbanco_falha.png ]]>
+						<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/aviso_netbanco_falha.png ]]>
 					</image_fullscreen>
 				</page>
 			</list>
@@ -2632,7 +2632,7 @@
 		<action type="open_webview">
 			<top_title>Home Planner</top_title>
 			<open_url>https://home-planner.santander.pt</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<method>GET</method>
 			<parameters>
 				<parameter name="channel">MOV</parameter>
@@ -2653,15 +2653,15 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CP_Extra_Ago23/CP_BK_PT.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/CP_Extra_Ago23/CP_BK_PT.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Contratar Crédito Extra</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito&lparam5=true ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=E2ECredito&lparam5=true ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2677,15 +2677,15 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Domiciliar Ordenado</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=OfertasENotificacoes&lparam=domiciliacao ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=OfertasENotificacoes&lparam=domiciliacao ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2701,7 +2701,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2718,7 +2718,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2734,7 +2734,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2750,7 +2750,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2769,7 +2769,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2786,7 +2786,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2803,7 +2803,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2821,7 +2821,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2838,7 +2838,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2854,7 +2854,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2870,7 +2870,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="navigate_screen">
@@ -2887,7 +2887,7 @@
 		<banners/>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/resolucao-alternativa-conflitos-consumo ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/resolucao-alternativa-conflitos-consumo ]]>
 			</action_value>
 		</action>
 	</product>
@@ -2916,7 +2916,7 @@
 			<method>GET</method>
 			<top_title>Ajude-nos a melhorar</top_title>
 			<open_url>https://www.opinator.com/opi/appnew-general-PT</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<parameters>
 				<parameter name="id">$userId</parameter>
 				<parameter name="carry_os">$CARRY_OS</parameter>
@@ -2957,14 +2957,14 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<!--  <banner app="ios,android">
-                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+                <![CDATA[https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
 		</banners>
 		<action type="open_webview">
 			<top_title>Seguros</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoSeguroCUFSantander&idTipoSeguro=005XA9 ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=ContratacaoSeguroCUFSantander&idTipoSeguro=005XA9 ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -2977,12 +2977,12 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/work-cafe ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/work-cafe ]]>
 			</action_value>
 		</action>
 	</product>
@@ -2999,12 +2999,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Novas_ofertas_Mar2024_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Universitarios/Novas_ofertas_Mar2024_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.particulares.santander.pt/nbpstatic/OfertaUniv19.htm?ad_campaign=BN_UNI_UNIV_OA_PAS0_CCO_Oferta0324_OfertaUniv19_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/nbpstatic/OfertaUniv19.htm?ad_campaign=BN_UNI_UNIV_OA_PAS0_CCO_Oferta0324_OfertaUniv19_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</action_value>
 		</action>
 	</product>
@@ -3021,7 +3021,7 @@
 			<open_url>
 				<![CDATA[ https://poupinvest.santander.pt/entry ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$ACCESS_TOKEN</header>
 				<header name="device-info-token">$DEVICE_INFO_TOKEN</header>
@@ -3038,15 +3038,15 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Balcão ou Gestor</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=FormularioContacteNos ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=FormularioContacteNos ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -3062,7 +3062,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<!--  a pedido de João Graça, desactivar KYC e substituir por acesso à página de Dados Pessoais antiga
@@ -3096,7 +3096,7 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
@@ -3124,12 +3124,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Univ_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Univ_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_UNIA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_UNIA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</action_value>
 		</action>
 	</product>
@@ -3146,12 +3146,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Excepto_Univ_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Excepto_Univ_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_PAA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_PAA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</action_value>
 		</action>
 	</product>
@@ -3166,9 +3166,9 @@
 		<action type="open_webview">
 			<top_title>Assinatura Digital</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=AssinaturaRemota&language=pt ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=AssinaturaRemota&language=pt ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -3186,16 +3186,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Rewards/D4D_Mar25_M1_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Rewards/D4D_Mar25_M1_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<top_title>Rewards</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=BN_CAR_C_OA_PAU0_AO_Rewards0325_M1_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=BN_CAR_C_OA_PAU0_AO_Rewards0325_M1_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -3213,16 +3213,16 @@
 		<iterations>9999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Rewards/D4D_Jul25_M1_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Rewards/D4D_Jul25_M1_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<cache>false</cache>
 			<top_title>Rewards</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=D4D_Jul25_M1_BK ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=D4D_Jul25_M1_BK ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -3240,15 +3240,15 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/2025_Seguros/07_SeguroGeral_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/2025_Seguros/07_SeguroGeral_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="open_webview">
 			<top_title>Seguros de Proteção</top_title>
 			<open_url>
-				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&ad_campaign=BN_INS_GEN_OA_PAS0_CCO_Cuidar0125_NA_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&ad_campaign=BN_INS_GEN_OA_PAS0_CCO_Cuidar0125_NA_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</open_url>
-			<close_url>https://www.santander.pt</close_url>
+			<close_url>https://project-efnt2.vercel.app/demo</close_url>
 			<headers>
 				<header name="Authorization">$BEARER_IDP</header>
 			</headers>
@@ -3266,7 +3266,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Univ_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Univ_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -3288,7 +3288,7 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Geral_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Geral_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
@@ -3308,12 +3308,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_Levant_3_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTHER/OTH_Levant_3_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/depositos-automaticos ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/depositos-automaticos ]]>
 			</action_value>
 		</action>
 	</product>
@@ -3326,12 +3326,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/aviso-legal-copyright ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/aviso-legal-copyright ]]>
 			</action_value>
 		</action>
 	</product>
@@ -3346,12 +3346,12 @@
 		<iterations>999999</iterations>
 		<banners>
 			<banner app="ios,android">
-				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_CiberSeg_BK.png ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/microsite/filesFF/apps/SAN/img/OTHER/OTH_CiberSeg_BK.png ]]>
 			</banner>
 		</banners>
 		<action type="external_url">
 			<action_value>
-				<![CDATA[ https://www.santander.pt/ciberseguranca/santander-seguro?ad_campaign=BN_ITT_CYB_OA_PAA0_CSO_Generico0625_SantanderSeguro_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+				<![CDATA[ https://project-efnt2.vercel.app/demo/ciberseguranca/santander-seguro?ad_campaign=BN_ITT_CYB_OA_PAA0_CSO_Generico0625_SantanderSeguro_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
 			</action_value>
 		</action>
 	</product>

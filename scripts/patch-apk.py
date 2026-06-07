@@ -424,80 +424,58 @@ def patch_gms_preconditions():
     pre = PATCHED_DIR / "smali_classes7" / "com" / "google" / "android" / "gms" / "common" / "internal" / "Preconditions.smali"
     if not pre.exists():
         return
-    text = pre.read_text(encoding="utf-8")
-    text = text.replace(
-        ".method public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;\n"
-        "    .locals 1\n"
-        "    .annotation system Ldalvik/annotation/Signature;\n"
-        "        value = {\n"
-        '            "<T:",\n'
-        '            "Ljava/lang/Object;",\n'
-        '            ">(TT;)TT;"\n'
-        "        }\n"
-        "    .end annotation\n\n"
-        "    if-eqz p0, :cond_0\n\n"
-        "    return-object p0\n\n"
-        "    .line 1\n"
-        "    :cond_0\n"
-        "    new-instance p0, Ljava/lang/NullPointerException;\n\n"
-        '    const-string v0, "null reference"\n\n'
-        "    invoke-direct {p0, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V\n\n"
-        "    throw p0\n"
-        ".end method",
-        ".method public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;\n"
-        "    .locals 0\n"
-        "    .annotation system Ldalvik/annotation/Signature;\n"
-        "        value = {\n"
-        '            "<T:",\n'
-        '            "Ljava/lang/Object;",\n'
-        '            ">(TT;)TT;"\n'
-        "        }\n"
-        "    .end annotation\n\n"
-        "    return-object p0\n"
-        ".end method",
-    )
-    text = text.replace(
-        ".method public static checkNotEmpty(Ljava/lang/String;)Ljava/lang/String;\n"
-        "    .locals 1\n\n"
-        "    .line 1\n"
-        "    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z\n\n"
-        "    move-result v0\n\n"
-        "    if-nez v0, :cond_0\n\n"
-        "    return-object p0\n\n"
-        "    :cond_0\n"
-        "    new-instance p0, Ljava/lang/IllegalArgumentException;\n\n"
-        '    const-string v0, "Given String is empty or null"\n\n'
-        "    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V\n\n"
-        "    throw p0\n"
-        ".end method",
-        ".method public static checkNotEmpty(Ljava/lang/String;)Ljava/lang/String;\n"
-        "    .locals 0\n\n"
-        "    return-object p0\n"
-        ".end method",
-    )
-    text = text.replace(
-        ".method public static checkNotEmpty(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;\n"
-        "    .locals 1\n\n"
-        "    .line 3\n"
-        "    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z\n\n"
-        "    move-result v0\n\n"
-        "    if-nez v0, :cond_0\n\n"
-        "    return-object p0\n\n"
-        "    :cond_0\n"
-        "    new-instance p0, Ljava/lang/IllegalArgumentException;\n\n"
-        "    .line 4\n"
-        "    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;\n\n"
-        "    move-result-object p1\n\n"
-        "    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V\n\n"
-        "    throw p0\n"
-        ".end method",
-        ".method public static checkNotEmpty(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;\n"
-        "    .locals 0\n\n"
-        "    return-object p0\n"
-        ".end method",
-    )
-    pre.write_text(text, encoding="utf-8")
-    print("  GMS Preconditions bypassed (checkNotNull, checkNotEmpty)")
+    bypasses = [
+        (
+            "public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;",
+            """.method public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;)TT;"
+        }
+    .end annotation
+
+    return-object p0
+.end method""",
+        ),
+        (
+            "public static checkNotEmpty(Ljava/lang/String;)Ljava/lang/String;",
+            """.method public static checkNotEmpty(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    return-object p0
+.end method""",
+        ),
+        (
+            "public static checkNotEmpty(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;",
+            """.method public static checkNotEmpty(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    .locals 0
+
+    return-object p0
+.end method""",
+        ),
+        (
+            "public static checkArgument(Z)V",
+            """.method public static checkArgument(Z)V
+    .locals 0
+
+    return-void
+.end method""",
+        ),
+        (
+            "public static checkArgument(ZLjava/lang/Object;)V",
+            """.method public static checkArgument(ZLjava/lang/Object;)V
+    .locals 0
+
+    return-void
+.end method""",
+        ),
+    ]
+    for signature, body in bypasses:
+        patch_smali_method(pre, signature, body)
+    print("  GMS Preconditions bypassed (checkNotNull, checkNotEmpty, checkArgument)")
 
 
 def patch_gms_connection_tracker():
@@ -658,14 +636,17 @@ def patch_disable_marketing_cloud():
         )
     manifest = PATCHED_DIR / "AndroidManifest.xml"
     text = manifest.read_text(encoding="utf-8")
-    text = text.replace(
-        'android:name="com.salesforce.marketingcloud.MCInitContentProvider"',
-        'android:enabled="false" android:name="com.salesforce.marketingcloud.MCInitContentProvider"',
-    )
-    text = text.replace(
-        'android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider"',
-        'android:enabled="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider"',
-    )
+    for provider in (
+        "com.salesforce.marketingcloud.MCInitContentProvider",
+        "com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider",
+    ):
+        pattern = rf'(<provider\b)([^>]*android:name="{re.escape(provider)}"[^>]*)(/?>)'
+
+        def _disable_provider(match, _pattern=pattern):
+            attrs = re.sub(r'\s*android:enabled="[^"]*"', "", match.group(2))
+            return f'{match.group(1)}{attrs} android:enabled="false"{match.group(3)}'
+
+        text = re.sub(pattern, _disable_provider, text)
     manifest.write_text(text, encoding="utf-8")
     print("  Marketing Cloud SDK disabled")
 
