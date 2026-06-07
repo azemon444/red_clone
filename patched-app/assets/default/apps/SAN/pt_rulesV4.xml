@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<!-- __________________________________________________  BOTES _________________________________________________  -->
+	<!--   1 BOTE 1   -->
+	<rule>
+		<id>1</id>
+		<expression>
+			<![CDATA[ BOTES contains "1" ]]>
+		</expression>
+	</rule>
+	<!--   2 BOTE 2   -->
+	<rule>
+		<id>2</id>
+		<expression>
+			<![CDATA[ BOTES contains "2" ]]>
+		</expression>
+	</rule>
+	<!--   6 BOTE PARTICULARES   -->
+	<rule>
+		<id>6</id>
+		<expression>
+			<![CDATA[ BOTES contains "6" ]]>
+		</expression>
+	</rule>
+	<!--   7 BOTE SELECT   -->
+	<rule>
+		<id>7</id>
+		<expression>
+			<![CDATA[ BOTES contains "7" ]]>
+		</expression>
+	</rule>
+	<!--   8 BOTE Autónomos    -->
+	<rule>
+		<id>8</id>
+		<expression>
+			<![CDATA[ BOTES contains "8" ]]>
+		</expression>
+	</rule>
+	<!--  9_Dinero_Directo_Saldo en cuenta menor a 200€_24-30  -->
+	<rule>
+		<id>9</id>
+		<expression>
+			<![CDATA[ BOTES contains "9" ]]>
+		</expression>
+	</rule>
+	<!--   10_Dinero_Directo_No tiene cuenta 123_24-30   -->
+	<rule>
+		<id>10</id>
+		<expression>
+			<![CDATA[ BOTES contains "10" ]]>
+		</expression>
+	</rule>
+	<!--   11 BOTE PAGO LUEGO   -->
+	<rule>
+		<id>11</id>
+		<expression>
+			<![CDATA[ BOTES contains "11" ]]>
+		</expression>
+	</rule>
+	<!--   12 BOTE DNI    -->
+	<rule>
+		<id>12</id>
+		<expression>
+			<![CDATA[ BOTES contains "12" ]]>
+		</expression>
+	</rule>
+	<!--   13 Bote de Pruebas    -->
+	<rule>
+		<id>13</id>
+		<expression>
+			<![CDATA[ BOTES contains "13" ]]>
+		</expression>
+	</rule>
+	<!--   14 BOTE PRECONCEDIDOS EMPLEADOS   -->
+	<rule>
+		<id>14</id>
+		<expression>
+			<![CDATA[ BOTES contains "14" ]]>
+		</expression>
+	</rule>
+	<!--   15 No tiene cuenta 1|2|3 Pymes   -->
+	<rule>
+		<id>15</id>
+		<expression>
+			<![CDATA[ BOTES contains "15" ]]>
+		</expression>
+	</rule>
+	<!--   16 BOTE BANSACAR PRECON  -->
+	<rule>
+		<id>16</id>
+		<expression>
+			<![CDATA[ BOTES contains "16" ]]>
+		</expression>
+	</rule>
+	<!--   17 BOTE BANSACAR NOPRECON  -->
+	<rule>
+		<id>17</id>
+		<expression>
+			<![CDATA[ BOTES contains "17" ]]>
+		</expression>
+	</rule>
+	<!--   18 BOTE MIXTOS SPB  -->
+	<rule>
+		<id>18</id>
+		<expression>
+			<![CDATA[ BOTES contains "18" ]]>
+		</expression>
+	</rule>
+	<!--   19 JGA   -->
+	<rule>
+		<id>19</id>
+		<expression>
+			<![CDATA[ BOTES contains "19" ]]>
+		</expression>
+	</rule>
+	<!--   20 Preconcedidos Particulares   -->
+	<rule>
+		<id>20</id>
+		<expression>
+			<![CDATA[ BOTES contains "20" ]]>
+		</expression>
+	</rule>
+	<!--   21 Preconcedidos Select   -->
+	<rule>
+		<id>21</id>
+		<expression>
+			<![CDATA[ BOTES contains "21" ]]>
+		</expression>
+	</rule>
+	<!--   22 Preconcedidos SPB    -->
+	<rule>
+		<id>22</id>
+		<expression>
+			<![CDATA[ BOTES contains "22" ]]>
+		</expression>
+	</rule>
+	<!--   23   -->
+	<rule>
+		<id>23</id>
+		<expression>
+			<![CDATA[ BOTES contains "23" ]]>
+		</expression>
+	</rule>
+	<!--   24 Preconcedidos Empleados   -->
+	<rule>
+		<id>24</id>
+		<expression>
+			<![CDATA[ BOTES contains "24" ]]>
+		</expression>
+	</rule>
+	<!--   25_Pago_Facil_Particulares   -->
+	<rule>
+		<id>25</id>
+		<expression>
+			<![CDATA[ BOTES contains "25" ]]>
+		</expression>
+	</rule>
+	<!--   26_Pago_Luego_21/27   -->
+	<rule>
+		<id>26</id>
+		<expression>
+			<![CDATA[ BOTES contains "26" ]]>
+		</expression>
+	</rule>
+	<!--   27_Dinero_Directo_Tiene Cuenta 123   -->
+	<rule>
+		<id>27</id>
+		<expression>
+			<![CDATA[ BOTES contains "27" ]]>
+		</expression>
+	</rule>
+	<!--   28_Hipotecas_Particulares   -->
+	<rule>
+		<id>28</id>
+		<expression>
+			<![CDATA[ BOTES contains "28" ]]>
+		</expression>
+	</rule>
+	<!--   29   -->
+	<rule>
+		<id>29</id>
+		<expression>
+			<![CDATA[ BOTES contains "29" ]]>
+		</expression>
+	</rule>
+	<!--   30   -->
+	<rule>
+		<id>30</id>
+		<expression>
+			<![CDATA[ BOTES contains "30" ]]>
+		</expression>
+	</rule>
+	<!--   31   -->
+	<rule>
+		<id>31</id>
+		<expression>
+			<![CDATA[ BOTES contains "31" ]]>
+		</expression>
+	</rule>
+	<!--   32   -->
+	<rule>
+		<id>32</id>
+		<expression>
+			<![CDATA[ BOTES contains "32" ]]>
+		</expression>
+	</rule>
+	<!--   33   -->
+	<rule>
+		<id>33</id>
+		<expression>
+			<![CDATA[ BOTES contains "33" ]]>
+		</expression>
+	</rule>
+	<!--   34   -->
+	<rule>
+		<id>34</id>
+		<expression>
+			<![CDATA[ BOTES contains "34" ]]>
+		</expression>
+	</rule>
+	<!--   35   -->
+	<rule>
+		<id>35</id>
+		<expression>
+			<![CDATA[ BOTES contains "35" ]]>
+		</expression>
+	</rule>
+	<!--   36 Tarjetas Débito Oro - Particulares   -->
+	<rule>
+		<id>36</id>
+		<expression>
+			<![CDATA[ BOTES contains "36" ]]>
+		</expression>
+	</rule>
+	<!--   37 Tarjetas Débito Select   -->
+	<rule>
+		<id>37</id>
+		<expression>
+			<![CDATA[ BOTES contains "37" ]]>
+		</expression>
+	</rule>
+	<!--   39   -->
+	<rule>
+		<id>39</id>
+		<expression>
+			<![CDATA[ BOTES contains "39" ]]>
+		</expression>
+	</rule>
+	<!--   42 Tarjetas Crédito Mi Otra 123   -->
+	<rule>
+		<id>42</id>
+		<expression>
+			<![CDATA[ BOTES contains "42" ]]>
+		</expression>
+	</rule>
+	<!--   43 Tarjeta crédito Mi mundo 123   -->
+	<rule>
+		<id>43</id>
+		<expression>
+			<![CDATA[ BOTES contains "43" ]]>
+		</expression>
+	</rule>
+	<!--   47 Santander Bizum Particulares   -->
+	<rule>
+		<id>47</id>
+		<expression>
+			<![CDATA[ BOTES contains "47" ]]>
+		</expression>
+	</rule>
+	<!--   48 Bizum PB   -->
+	<rule>
+		<id>48</id>
+		<expression>
+			<![CDATA[ BOTES contains "48" ]]>
+		</expression>
+	</rule>
+	<!--   49 Fondos Particulares  -->
+	<rule>
+		<id>49</id>
+		<expression>
+			<![CDATA[ BOTES contains "49" ]]>
+		</expression>
+	</rule>
+	<!--   50 Fondos_Select   -->
+	<rule>
+		<id>50</id>
+		<expression>
+			<![CDATA[ BOTES contains "50" ]]>
+		</expression>
+	</rule>
+	<!--   53   -->
+	<rule>
+		<id>53</id>
+		<expression>
+			<![CDATA[ BOTES contains "53" ]]>
+		</expression>
+	</rule>
+	<!--   54   -->
+	<rule>
+		<id>54</id>
+		<expression>
+			<![CDATA[ BOTES contains "54" ]]>
+		</expression>
+	</rule>
+	<!--   55   -->
+	<rule>
+		<id>55</id>
+		<expression>
+			<![CDATA[ BOTES contains "55" ]]>
+		</expression>
+	</rule>
+	<!--   59   -->
+	<rule>
+		<id>59</id>
+		<expression>
+			<![CDATA[ BOTES contains "59" ]]>
+		</expression>
+	</rule>
+	<!--   61 Aportación Planes PB   -->
+	<rule>
+		<id>61</id>
+		<expression>
+			<![CDATA[ BOTES contains "61" ]]>
+		</expression>
+	</rule>
+	<!--   62 ApplePay_Particulares  -->
+	<rule>
+		<id>62</id>
+		<expression>
+			<![CDATA[ BOTES contains "62" ]]>
+		</expression>
+	</rule>
+	<!--   63 ApplePay_Select   -->
+	<rule>
+		<id>63</id>
+		<expression>
+			<![CDATA[ BOTES contains "63" ]]>
+		</expression>
+	</rule>
+	<!--   64 ApplePay SPB  -->
+	<rule>
+		<id>64</id>
+		<expression>
+			<![CDATA[ BOTES contains "64" ]]>
+		</expression>
+	</rule>
+	<!--   65 Tarjeta Crédito Día a Día   -->
+	<rule>
+		<id>65</id>
+		<expression>
+			<![CDATA[ BOTES contains "65" ]]>
+		</expression>
+	</rule>
+	<!--   66 Tarjeta crédito Mi Otra Día a Día   -->
+	<rule>
+		<id>66</id>
+		<expression>
+			<![CDATA[ BOTES contains "66" ]]>
+		</expression>
+	</rule>
+	<!--   68 Mi Comercio Particulares   -->
+	<rule>
+		<id>68</id>
+		<expression>
+			<![CDATA[ BOTES contains "68" ]]>
+		</expression>
+	</rule>
+	<!--   81 Broker Particulares   -->
+	<rule>
+		<id>81</id>
+		<expression>
+			<![CDATA[ BOTES contains "81" ]]>
+		</expression>
+	</rule>
+	<!--   85 Traspaso Planes PB   -->
+	<rule>
+		<id>85</id>
+		<expression>
+			<![CDATA[ BOTES contains "85" ]]>
+		</expression>
+	</rule>
+	<!--   89 Tarjetas Débito SPB   -->
+	<rule>
+		<id>89</id>
+		<expression>
+			<![CDATA[ BOTES contains "89" ]]>
+		</expression>
+	</rule>
+	<!--   90 Asesora PB   -->
+	<rule>
+		<id>90</id>
+		<expression>
+			<![CDATA[ BOTES contains "90" ]]>
+		</expression>
+	</rule>
+	<!--   92 Fondos Perfilados   -->
+	<rule>
+		<id>92</id>
+		<expression>
+			<![CDATA[ BOTES contains "92" ]]>
+		</expression>
+	</rule>
+	<!--   93 Seguros Hogar   -->
+	<rule>
+		<id>93</id>
+		<expression>
+			<![CDATA[ BOTES contains "93" ]]>
+		</expression>
+	</rule>
+	<!--   95 Preconcedidos    -->
+	<rule>
+		<id>95</id>
+		<expression>
+			<![CDATA[ BOTES contains "95" ]]>
+		</expression>
+	</rule>
+	<!--   96 Preconcedidos    -->
+	<rule>
+		<id>96</id>
+		<expression>
+			<![CDATA[ BOTES contains "96" ]]>
+		</expression>
+	</rule>
+	<!--   97 JGA Particulares    -->
+	<rule>
+		<id>97</id>
+		<expression>
+			<![CDATA[ BOTES contains "97" ]]>
+		</expression>
+	</rule>
+	<!--   98 JGA SPB    -->
+	<rule>
+		<id>98</id>
+		<expression>
+			<![CDATA[ BOTES contains "98" ]]>
+		</expression>
+	</rule>
+	<!--   100 iPhones/Mac Bonificados Península    -->
+	<rule>
+		<id>100</id>
+		<expression>
+			<![CDATA[ BOTES contains "100" ]]>
+		</expression>
+	</rule>
+	<!--   101 iPhones/Mac Bonificados Canarias    -->
+	<rule>
+		<id>101</id>
+		<expression>
+			<![CDATA[ BOTES contains "101" ]]>
+		</expression>
+	</rule>
+	<!--   102 iPhones/Mac No Bonificados Península    -->
+	<rule>
+		<id>102</id>
+		<expression>
+			<![CDATA[ BOTES contains "102" ]]>
+		</expression>
+	</rule>
+	<!--   103 iPhones/Mac No Bonificados Canarias    -->
+	<rule>
+		<id>103</id>
+		<expression>
+			<![CDATA[ BOTES contains "103" ]]>
+		</expression>
+	</rule>
+	<!--   104 Renting Audi A1 SMART    -->
+	<rule>
+		<id>104</id>
+		<expression>
+			<![CDATA[ BOTES contains "104" ]]>
+		</expression>
+	</rule>
+	<!--   105    -->
+	<rule>
+		<id>105</id>
+		<expression>
+			<![CDATA[ BOTES contains "105" ]]>
+		</expression>
+	</rule>
+	<!--   106 Alta Smart Premium    -->
+	<rule>
+		<id>106</id>
+		<expression>
+			<![CDATA[ BOTES contains "106" ]]>
+		</expression>
+	</rule>
+	<!--   107 Migración Smart Premium    -->
+	<rule>
+		<id>107</id>
+		<expression>
+			<![CDATA[ BOTES contains "107" ]]>
+		</expression>
+	</rule>
+	<!--   108 Tarjeta Crédito_Free_SMART    -->
+	<rule>
+		<id>108</id>
+		<expression>
+			<![CDATA[ BOTES contains "108" ]]>
+		</expression>
+	</rule>
+	<!--   109 Tarjeta Crédito_Premium_SMART    -->
+	<rule>
+		<id>109</id>
+		<expression>
+			<![CDATA[ BOTES contains "109" ]]>
+		</expression>
+	</rule>
+	<!--   110 Preconcedido Bajo Importe Smart Free    -->
+	<rule>
+		<id>110</id>
+		<expression>
+			<![CDATA[ BOTES contains "110" ]]>
+		</expression>
+	</rule>
+	<!--   111 Preconcedido Bajo Importe Smart Premium    -->
+	<rule>
+		<id>111</id>
+		<expression>
+			<![CDATA[ BOTES contains "111" ]]>
+		</expression>
+	</rule>
+	<!--   112 HAZTE SMART PREMIUM(Alta + Migración Premium)    -->
+	<rule>
+		<id>112</id>
+		<expression>
+			<![CDATA[ BOTES contains "112" ]]>
+		</expression>
+	</rule>
+	<!--   113     -->
+	<rule>
+		<id>113</id>
+		<expression>
+			<![CDATA[ BOTES contains "113" ]]>
+		</expression>
+	</rule>
+	<!--   114     -->
+	<rule>
+		<id>114</id>
+		<expression>
+			<![CDATA[ BOTES contains "114" ]]>
+		</expression>
+	</rule>
+	<!--   115 10% TARJETAS     -->
+	<rule>
+		<id>115</id>
+		<expression>
+			<![CDATA[ BOTES contains "115" ]]>
+		</expression>
+	</rule>
+	<!--   116 Renting Subaru_SPB   -->
+	<rule>
+		<id>116</id>
+		<expression>
+			<![CDATA[ BOTES contains "116" ]]>
+		</expression>
+	</rule>
+	<!--   117    -->
+	<rule>
+		<id>117</id>
+		<expression>
+			<![CDATA[ BOTES contains "117" ]]>
+		</expression>
+	</rule>
+	<!--   118    -->
+	<rule>
+		<id>118</id>
+		<expression>
+			<![CDATA[ BOTES contains "118" ]]>
+		</expression>
+	</rule>
+	<!--   119    -->
+	<rule>
+		<id>119</id>
+		<expression>
+			<![CDATA[ BOTES contains "119" ]]>
+		</expression>
+	</rule>
+	<!--   120    -->
+	<rule>
+		<id>120</id>
+		<expression>
+			<![CDATA[ BOTES contains "120" ]]>
+		</expression>
+	</rule>
+	<!--   121    -->
+	<rule>
+		<id>121</id>
+		<expression>
+			<![CDATA[ BOTES contains "121" ]]>
+		</expression>
+	</rule>
+	<!--   122    -->
+	<rule>
+		<id>122</id>
+		<expression>
+			<![CDATA[ BOTES contains "122" ]]>
+		</expression>
+	</rule>
+	<!--   123    -->
+	<rule>
+		<id>123</id>
+		<expression>
+			<![CDATA[ BOTES contains "123" ]]>
+		</expression>
+	</rule>
+	<!--   124    -->
+	<rule>
+		<id>124</id>
+		<expression>
+			<![CDATA[ BOTES contains "124" ]]>
+		</expression>
+	</rule>
+	<!--   125    -->
+	<rule>
+		<id>125</id>
+		<expression>
+			<![CDATA[ BOTES contains "125" ]]>
+		</expression>
+	</rule>
+	<!--   126    -->
+	<rule>
+		<id>126</id>
+		<expression>
+			<![CDATA[ BOTES contains "126" ]]>
+		</expression>
+	</rule>
+	<!--   127    -->
+	<rule>
+		<id>127</id>
+		<expression>
+			<![CDATA[ BOTES contains "127" ]]>
+		</expression>
+	</rule>
+	<!--   128    -->
+	<rule>
+		<id>128</id>
+		<expression>
+			<![CDATA[ BOTES contains "128" ]]>
+		</expression>
+	</rule>
+	<!--   129    -->
+	<rule>
+		<id>129</id>
+		<expression>
+			<![CDATA[ BOTES contains "129" ]]>
+		</expression>
+	</rule>
+	<!--   130   -->
+	<rule>
+		<id>130</id>
+		<expression>
+			<![CDATA[ BOTES contains "130" ]]>
+		</expression>
+	</rule>
+	<!--   131    -->
+	<rule>
+		<id>131</id>
+		<expression>
+			<![CDATA[ BOTES contains "131" ]]>
+		</expression>
+	</rule>
+	<!--   132   -->
+	<rule>
+		<id>132</id>
+		<expression>
+			<![CDATA[ BOTES contains "132" ]]>
+		</expression>
+	</rule>
+	<!--   133    -->
+	<rule>
+		<id>133</id>
+		<expression>
+			<![CDATA[ BOTES contains "133" ]]>
+		</expression>
+	</rule>
+	<!--   134    -->
+	<rule>
+		<id>134</id>
+		<expression>
+			<![CDATA[ BOTES contains "134" ]]>
+		</expression>
+	</rule>
+	<!--   135    -->
+	<rule>
+		<id>135</id>
+		<expression>
+			<![CDATA[ BOTES contains "135" ]]>
+		</expression>
+	</rule>
+	<!--   136    -->
+	<rule>
+		<id>136</id>
+		<expression>
+			<![CDATA[ BOTES contains "136" ]]>
+		</expression>
+	</rule>
+	<!--   137    -->
+	<rule>
+		<id>137</id>
+		<expression>
+			<![CDATA[ BOTES contains "137" ]]>
+		</expression>
+	</rule>
+	<!--   138    -->
+	<rule>
+		<id>138</id>
+		<expression>
+			<![CDATA[ BOTES contains "138" ]]>
+		</expression>
+	</rule>
+	<!--   139    -->
+	<rule>
+		<id>139</id>
+		<expression>
+			<![CDATA[ BOTES contains "139" ]]>
+		</expression>
+	</rule>
+	<!--   140    -->
+	<rule>
+		<id>140</id>
+		<expression>
+			<![CDATA[ BOTES contains "140" ]]>
+		</expression>
+	</rule>
+	<!--   141    -->
+	<rule>
+		<id>141</id>
+		<expression>
+			<![CDATA[ BOTES contains "141" ]]>
+		</expression>
+	</rule>
+	<!--   142    -->
+	<rule>
+		<id>142</id>
+		<expression>
+			<![CDATA[ BOTES contains "142" ]]>
+		</expression>
+	</rule>
+	<!--   143    -->
+	<rule>
+		<id>143</id>
+		<expression>
+			<![CDATA[ BOTES contains "143" ]]>
+		</expression>
+	</rule>
+	<!--   144    -->
+	<rule>
+		<id>144</id>
+		<expression>
+			<![CDATA[ BOTES contains "144" ]]>
+		</expression>
+	</rule>
+	<!--   145    -->
+	<rule>
+		<id>145</id>
+		<expression>
+			<![CDATA[ BOTES contains "145" ]]>
+		</expression>
+	</rule>
+	<!--   146    -->
+	<rule>
+		<id>146</id>
+		<expression>
+			<![CDATA[ BOTES contains "146" ]]>
+		</expression>
+	</rule>
+	<!--   147    -->
+	<rule>
+		<id>147</id>
+		<expression>
+			<![CDATA[ BOTES contains "147" ]]>
+		</expression>
+	</rule>
+	<!--   148    -->
+	<rule>
+		<id>148</id>
+		<expression>
+			<![CDATA[ BOTES contains "148" ]]>
+		</expression>
+	</rule>
+	<!--   149    -->
+	<rule>
+		<id>149</id>
+		<expression>
+			<![CDATA[ BOTES contains "149" ]]>
+		</expression>
+	</rule>
+	<!--   150    -->
+	<rule>
+		<id>150</id>
+		<expression>
+			<![CDATA[ BOTES contains "150" ]]>
+		</expression>
+	</rule>
+	<!--   151   -->
+	<rule>
+		<id>151</id>
+		<expression>
+			<![CDATA[ BOTES contains "151" ]]>
+		</expression>
+	</rule>
+	<!--   152   -->
+	<rule>
+		<id>152</id>
+		<expression>
+			<![CDATA[ BOTES contains "152" ]]>
+		</expression>
+	</rule>
+	<!--   153   -->
+	<rule>
+		<id>153</id>
+		<expression>
+			<![CDATA[ BOTES contains "153" ]]>
+		</expression>
+	</rule>
+	<!--   154   -->
+	<rule>
+		<id>154</id>
+		<expression>
+			<![CDATA[ BOTES contains "154" ]]>
+		</expression>
+	</rule>
+	<!--   155   -->
+	<rule>
+		<id>155</id>
+		<expression>
+			<![CDATA[ BOTES contains "155" ]]>
+		</expression>
+	</rule>
+	<!--   156   -->
+	<rule>
+		<id>156</id>
+		<expression>
+			<![CDATA[ BOTES contains "156" ]]>
+		</expression>
+	</rule>
+	<!-- ____________________________________________________  FECHAS _________________________________________________ -->
+	<!--    Fecha 1 (del 1 al 9)   -->
+	<rule>
+		<id>F0001</id>
+		<expression>
+			<![CDATA[ (GDM>=1)&&(GDM<=9) ]]>
+		</expression>
+	</rule>
+	<!--   Fecha 2 (del 15 al 20)   -->
+	<rule>
+		<id>F0002</id>
+		<expression>
+			<![CDATA[ (GDM>=15)&&(GDM<=20) ]]>
+		</expression>
+	</rule>
+	<!--   Fecha 3 (del 21 al 27)   -->
+	<rule>
+		<id>F0003</id>
+		<expression>
+			<![CDATA[ (GDM>=21)&&(GDM<=27) ]]>
+		</expression>
+	</rule>
+	<!--   Fecha 4 (del 24 al 28)   -->
+	<rule>
+		<id>F0004</id>
+		<expression>
+			<![CDATA[ (GDM>=24)&&(GDM<=28) ]]>
+		</expression>
+	</rule>
+	<!--   Fecha 5 (del 24 al 30)   -->
+	<rule>
+		<id>F0005</id>
+		<expression>
+			<![CDATA[ (GDM>=24)&&(GDM<=30) ]]>
+		</expression>
+	</rule>
+	<!--   Fecha 6 (del 1 al 30)   -->
+	<rule>
+		<id>F0006</id>
+		<expression>
+			<![CDATA[ (GDM>=1)&&(GDM<=30) ]]>
+		</expression>
+	</rule>
+	<!--    Fecha 7 (del 1 al 7)   -->
+	<rule>
+		<id>F0007</id>
+		<expression>
+			<![CDATA[ (GDM>=1)&&(GDM<=7) ]]>
+		</expression>
+	</rule>
+	<!--    Fecha 8 (del 8 al 14)   -->
+	<rule>
+		<id>F0008</id>
+		<expression>
+			<![CDATA[ (GDM>=8)&&(GDM<=14) ]]>
+		</expression>
+	</rule>
+	<!--    Fecha 9 (del 15 al 22)   -->
+	<rule>
+		<id>F0009</id>
+		<expression>
+			<![CDATA[ (GDM>=15)&&(GDM<=22) ]]>
+		</expression>
+	</rule>
+	<!--    Fecha 10 (del 23 al 31)   -->
+	<rule>
+		<id>F0010</id>
+		<expression>
+			<![CDATA[ (GDM>=23)&&(GDM<=31) ]]>
+		</expression>
+	</rule>
+	<!--    Dinero Directo    -->
+	<rule>
+		<id>P0002</id>
+		<expression>
+			<![CDATA[ PCS<200 ]]>
+		</expression>
+	</rule>
+	<rule>
+		<id>6000</id>
+		<expression>
+			<![CDATA[ MVD contains "BANNER" ]]>
+		</expression>
+	</rule>
+	<!--   123 autónomos    -->
+	<rule>
+		<id>A0002</id>
+		<expression>
+			<![CDATA[ PSSOCA==false ]]>
+		</expression>
+	</rule>
+	<!--   Tiene Cuenta 123 APP   -->
+	<rule>
+		<id>B0001</id>
+		<expression>
+			<![CDATA[ PSSOC==true ]]>
+		</expression>
+	</rule>
+	<!--    No tiene Cuenta 123 APP   -->
+	<rule>
+		<id>A0001</id>
+		<expression>
+			<![CDATA[ PSSOC==false ]]>
+		</expression>
+	</rule>
+	<!--    No aplica a Web Tablet    -->
+	<rule>
+		<id>no_nwpt</id>
+		<expression>
+			<![CDATA[ SYS no_contains "nwpt" ]]>
+		</expression>
+	</rule>
+	<!--    No aplica a Android    -->
+	<rule>
+		<id>no_android</id>
+		<expression>
+			<![CDATA[ SYS no_contains "android" ]]>
+		</expression>
+	</rule>
+	<!--    No aplica a iOS    -->
+	<rule>
+		<id>no_ios</id>
+		<expression>
+			<![CDATA[ SYS no_contains "ios" ]]>
+		</expression>
+	</rule>
+	<!--    Número de tarjetas inactivas    -->
+	<rule>
+		<id>ActTar</id>
+		<expression>
+			<![CDATA[ PTINAC>0 ]]>
+		</expression>
+	</rule>
+	<!--    Ofertas exclusivas de PB    -->
+	<rule>
+		<id>usuario_pb</id>
+		<expression>
+			<![CDATA[ (PSE == "PB")&&(PSC == "PB") ]]>
+		</expression>
+	</rule>
+	<!--    Ofertas exclusivas de Retail    -->
+	<rule>
+		<id>usuario_retail</id>
+		<expression>
+			<![CDATA[ (PSE != "PB")||(PSC != "PB") ]]>
+		</expression>
+	</rule>
+	<!--    Ofertas exclusivas de Smart    -->
+	<rule>
+		<id>usuario_smart</id>
+		<expression>
+			<![CDATA[ (COL_SMART_PREMIUM==true)||(COL_SMART_FREE==true) ]]>
+		</expression>
+	</rule>
+	<!--    Ofertas exclusivas de Smart Free    -->
+	<rule>
+		<id>usuario_free</id>
+		<expression>
+			<![CDATA[ COL_SMART_FREE==true ]]>
+		</expression>
+	</rule>
+	<!--    Ofertas exclusivas de Smart Premium    -->
+	<rule>
+		<id>usuario_premium</id>
+		<expression>
+			<![CDATA[ COL_SMART_PREMIUM==true ]]>
+		</expression>
+	</rule>
+	<!--    Vista Smart    -->
+	<rule>
+		<id>ui_smart</id>
+		<expression>
+			<![CDATA[ UI_STYLE==smart ]]>
+		</expression>
+	</rule>
+	<!--  Oferta para clientes que tengan en sus posiciones la cuenta mini   -->
+	<rule>
+		<id>reglamini</id>
+		<expression>
+			<![CDATA[ PCD contains "MINI" ]]>
+		</expression>
+	</rule>
+	<!--   regla no tiene cuentas   -->
+	<rule>
+		<id>NoCuentas</id>
+		<expression>
+			<![CDATA[ PCN<1 ]]>
+		</expression>
+	</rule>
+	<!--   regla no tiene tarjetas   -->
+	<rule>
+		<id>NoTarjetas</id>
+		<expression>
+			<![CDATA[ PTTN<1 ]]>
+		</expression>
+	</rule>
+	<!--   regla no tiene depositos   -->
+	<rule>
+		<id>NoDepositos</id>
+		<expression>
+			<![CDATA[ PDN<1 ]]>
+		</expression>
+	</rule>
+	<!--   tiene cuentas   -->
+	<rule>
+		<id>Cuentas</id>
+		<expression>
+			<![CDATA[ PCN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene tarjetas   -->
+	<rule>
+		<id>Tarjetas</id>
+		<expression>
+			<![CDATA[ PTTN>0 ]]>
+		</expression>
+	</rule>
+	<!--   tiene depositos   -->
+	<rule>
+		<id>Depositos</id>
+		<expression>
+			<![CDATA[ PDN>0 ]]>
+		</expression>
+	</rule>
+	<!--   Cumpleaños happy_birthday   -->
+
+	<rule>
+
+		<id>Birthday</id>
+
+		<expression>
+			<![CDATA[ (NACDM==GDM)&&(NACMA==GMA) ]]>
+		</expression>
+
+	</rule>
+	<!--   qa versionCode Android    -->
+	<rule>
+		<id>VCODEcheckAndroid</id>
+		<expression>
+			<![CDATA[ VCODE==80040003 ]]>
+		</expression>
+	</rule>
+	<!--   qa versionCode ios   -->
+	<rule>
+		<id>VCODEcheckiOS</id>
+		<expression>
+			<![CDATA[ VCODE==40040000 ]]>
+		</expression>
+	</rule>
+	<!--   tiene oferta en detalle de tarjetas   -->
+	<rule>
+		<id>segurosMovimientoTarjeta</id>
+		<expression>
+			<![CDATA[ TMDD contains "CARGA" ]]>
+		</expression>
+	</rule>
+	<!--   tiene oferta en detalle de cuentas   -->
+	<rule>
+		<id>segurosMovimientoCuenta</id>
+		<expression>
+			<![CDATA[ CMDD contains "TRANSFERENCIA" ]]>
+		</expression>
+	</rule>
+	<!--  PG type for offers  -->
+	<rule>
+		<id>pgClassicOffer</id>
+		<expression>
+			<![CDATA[ (PG_TYPE == "CLASSIC") ]]>
+		</expression>
+	</rule>
+	<rule>
+		<id>pgSimpleOffer</id>
+		<expression>
+			<![CDATA[ (PG_TYPE == "SIMPLE") ]]>
+		</expression>
+	</rule>
+	<rule>
+		<id>pgSmartOffer</id>
+		<expression>
+			<![CDATA[ (PG_TYPE == "SMART") ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene tarjetas credito   -->
+	<rule>
+		<id>CreditCards</id>
+		<expression>
+			<![CDATA[ PTCN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene tarjetas debito   -->
+	<rule>
+		<id>DebitCards</id>
+		<expression>
+			<![CDATA[ PTDN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene tarjetas prepago   -->
+	<rule>
+		<id>PrepaidCards</id>
+		<expression>
+			<![CDATA[ PTEN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene fondos   -->
+	<rule>
+		<id>Funds</id>
+		<expression>
+			<![CDATA[ PFN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene al menos dos fondos   -->
+	<rule>
+		<id>AlLeastTwoFunds</id>
+		<expression>
+			<![CDATA[ PFN>1 ]]>
+		</expression>
+	</rule>
+	<!--   regla no tiene fondos   -->
+	<rule>
+		<id>NotFunds</id>
+		<expression>
+			<![CDATA[ PFN<1 ]]>
+		</expression>
+	</rule>
+	<!--   regla tiene Prestamos   -->
+	<rule>
+		<id>Loans</id>
+		<expression>
+			<![CDATA[ PRN>0 ]]>
+		</expression>
+	</rule>
+	<!--   regla no tiene Prestamos   -->
+	<rule>
+		<id>NotLoans</id>
+		<expression>
+			<![CDATA[ PRN<1 ]]>
+		</expression>
+	</rule>
+	<!--  Bote PT CL1  -->
+	<rule>
+		<id>CL1</id>
+		<expression>
+			<![CDATA[ BOTES contains "CL1" ]]>
+		</expression>
+	</rule>
+	<!--  Bote PT CL71  -->
+	<rule>
+		<id>CL71</id>
+		<expression>
+			<![CDATA[ BOTES contains "CL71" ]]>
+		</expression>
+	</rule>
+	<!--  Bote PT SE19  -->
+	<rule>
+		<id>SE19</id>
+		<expression>
+			<![CDATA[ BOTES contains "SE19" ]]>
+		</expression>
+	</rule>
+	<!--  Bote PT PI48  -->
+	<rule>
+		<id>PI48</id>
+		<expression>
+			<![CDATA[ BOTES contains "PI48" ]]>
+		</expression>
+	</rule>
+</rules>

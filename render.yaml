@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: santander-clone-mock
+    runtime: docker
+    dockerfilePath: ./mock-server/Dockerfile
+    dockerContext: .
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /data
+      - key: ASSETS_ROOT
+        value: /app/assets/default
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: PUBLIC_URL
+        sync: false
+    disk:
+      name: santander-data
+      mountPath: /data
+      sizeGB: 1

@@ -1,0 +1,25 @@
+{
+  "customerPersonalsData": {
+    "firstName": "Shuaib",
+    "lastName": "",
+    "birthDate": "1990-01-01",
+    "documentId": {
+      "documentType": "CC",
+      "documentNumber": "00000000"
+    },
+    "taxId": null
+  },
+  "residentialAddress": {
+    "streetName": "Lisboa",
+    "townName": "Lisboa"
+  },
+  "preferedContactDetails": {
+    "preferedPhoneDetails": {
+      "use": "MOBILE",
+      "phone": "+351900000000"
+    },
+    "preferedEmailDetails": {
+      "address": "shuaib@demo.local"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+mock-server/node_modules/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+*.jks
+*.keystore
+clone-debug.keystore
+
+# APK outputs (rebuild locally with scripts/patch-apk.py)
+*.apk
+*.apk.idsig
+
+# Large decompiled sources — keep on your Mac only, not on GitHub
+apktool/
+apktool-output/
+jadx-out/
+patched-app/smali/
+patched-app/smali_*/
+patched-app/res/
+patched-app/build/
+patched-app/original/
+patched-app/lib/
+patched-app/unknown/
+patched-app/kotlin/
+patched-app/META-INF/
+
+# Local screenshots
+emulator-*.png

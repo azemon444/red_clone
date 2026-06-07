@@ -1,0 +1,55 @@
+{
+  "countriesTravel" : [{
+    "code" : "ES",
+    "currency" : "Euro",
+    "name" : "España",
+    "dataEmbassy" : {
+      "titleEmbassy":"Embajada de España en Bruselas",
+      "addressEmbassy":"Rue de la Science, 19 - 1040 Bruselas",
+      "titleTelephoneEmbassy":"Tel. embajada",
+      "telephoneEmbassy":"00 32 (0) 2 230 03 40",
+      "titleConsularEmergency":"Tel. emergencia consular",
+      "telephoneConsularEmergency":"00 32 (0) 2 509 87 46"
+    }
+  },
+    {
+      "code" : "US",
+      "currency" : "Dolar USA",
+      "name" : "Estados Unidos",
+      "dataEmbassy" : {
+        "titleEmbassy":"Embajada de España en Washington",
+        "addressEmbassy":"Una Calle Washington, 19 - 1040 Washington",
+        "titleTelephoneEmbassy":"Tel. embajada",
+        "telephoneEmbassy":"00 32 (0) 2 230 03 97",
+        "titleConsularEmergency":"Tel. emergencia consular",
+        "telephoneConsularEmergency":"00 32 (0) 2 509 87 12"
+      }
+    },
+    {
+      "code" : "GB",
+      "currency" : "Libra Esterlina",
+      "name" : "Reino Unido",
+      "dataEmbassy" : {
+        "titleEmbassy":"Embajada de España en Londres",
+        "addressEmbassy":"Una Calle Londres, 19 - 1040 Londres",
+        "titleTelephoneEmbassy":"Tel. embajada",
+        "telephoneEmbassy":"00 32 (0) 2 230 03 33",
+        "titleConsularEmergency":"Tel. emergencia consular",
+        "telephoneConsularEmergency":"00 32 (0) 2 509 87 44"
+      }
+    },
+    {
+      "code" : "FR",
+      "currency" : "Euro",
+      "name" : "Inglesia",
+      "dataEmbassy" : {
+        "titleEmbassy":"Embajada de España en QA_EN",
+        "addressEmbassy":"19Str - 1777098 QA",
+        "titleTelephoneEmbassy":"Telefono embajada",
+        "telephoneEmbassy":"00 07 (7) 2 230 03 77",
+        "titleConsularEmergency":"Telefono emergencia consular",
+        "telephoneConsularEmergency":"00 08 (8) 2 509 87 88"
+      }
+    }
+  ]
+}

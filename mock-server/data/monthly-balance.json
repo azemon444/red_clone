@@ -1,0 +1,10 @@
+{
+  "monthlyBalance": [
+    { "month": "2026-01", "income": 0, "expenses": 12.5 },
+    { "month": "2026-02", "income": 0, "expenses": 8.2 },
+    { "month": "2026-03", "income": 0, "expenses": 15.0 },
+    { "month": "2026-04", "income": 0, "expenses": 22.1 },
+    { "month": "2026-05", "income": 0, "expenses": 1.87 },
+    { "month": "2026-06", "income": 0, "expenses": 0 }
+  ]
+}

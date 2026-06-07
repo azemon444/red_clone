@@ -1,0 +1,19 @@
+{
+  "payees": [
+    {
+      "payeeId": "PAYEE-001",
+      "name": "Maria Santos",
+      "accountNumber": "PT50000100000012345678901",
+      "status": "active",
+      "contractType": "IBAN"
+    },
+    {
+      "payeeId": "PAYEE-002",
+      "name": "EDP Energia",
+      "accountNumber": "PT50003300000012345678902",
+      "status": "active",
+      "contractType": "payments"
+    }
+  ],
+  "total": 2
+}

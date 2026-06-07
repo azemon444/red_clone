@@ -1,0 +1,475 @@
+{
+  "defaultConfig": {
+    "active": "true",
+    "enabledBBPoints": "true",
+    "interstitialCloseButtonDelay": "1",
+    "enabledTransfersVoP": "true",
+    "enableMbwayMyActivity": "true",
+    "enableNewRegistry": "true",
+    "enableAlertRibbon": "true",
+    "enableWithdrawMoney": "true",
+    "cashWithdrawalAmounts": "[10, 20, 40, 60, 80]",
+    "enableEditProfileBottomBar": "true",
+    "enableMBwaySendMoney": "true",
+    "disableFirebaseDynamicLink": "true",
+    "enableMBWayNEW": "true",
+    "enableMBNetNEW" : "true",
+    "enableNewPinBiometrics": "true",
+    "enabledNewSAF": "true",
+    "enableDevice_Management_NEW": "true",
+    "enable3DSBottomsheet": "true",
+    "enable3DSNotificationsNEW": "true",
+    "enabledNewCollections": "true",
+    "enabledNewNotificationsMailbox": "true",
+    "enableCreateResolveRequest": "true",
+    "enableResolveList": "true",
+    "defaultTransferType": "Immediate",
+    "showTransferPackages": "false",
+    "enableXfileBlockings": "true",
+    "mbwayLimit": "2000",
+    "enabledSearchBar": "true",
+    "enabledContextualHelp": "true",
+    "mbwayNoBeneficiaryWarning": "true",
+    "showIPSBanner": "false",
+    "enableKidsPermissions": "true",
+    "enabledProxyLookUp": "true",
+    "enableSPIN": "true",
+    "enabledCoP": "true",
+    "enableNewTopUps": "true",
+    "enableNewPayments": "true",
+    "enableLanguageConf": "true",
+    "enableGlobalPosPersConf": "true",
+    "enablePhotoThemeConf": "false",
+    "enableAlertsConf": "false",
+    "enableAppPermConf": "true",
+    "enableGeolocationControl": "false",
+    "enableContactsControl": "false",
+    "enablePhotoControl": "false",
+    "enableCameraControl": "false",
+    "enableNotificationsControl": "false",
+    "enabledFinancialHealthGPSimple": "false",
+    "enableHiddenAccounts": "true",
+    "enableHiddenCards": "true",
+    "enableHiddenLoans": "true",
+    "isOfflineAlertEnabled": "true",
+    "onlineAlertShowTime": "10",
+    "isHelpCtaEnabled": "true",
+    "isOfflineContactSupportEnabled": "true",
+    "artificialDelayFreezeUnfreezeCall": "3000",
+    "enabledBillsAndSubscriptionsOpinator": "true",
+    "enabledGA4Metrics" : "true",
+    "activeZonesGPNewUsers" : "['showMyMoneyGP', 'showMyFinanceGP', 'showExpenseGraphGP']",
+    "enabledNotificationCounter": "true",
+    "logoutTimer": "0",
+    "enabledBottomBarGPClassic": "true",
+    "enabledBottomBarGPSimple": "true",
+    "enabledNewSendMoney": "true",
+    "enabledNotificationsActivationGPB": "true",
+    "enabledNotificationsActivationGPC": "true",
+    "enabledNotificationsActivationGPS": "true",
+    "enabledNotificationsWarningDays": "60",
+    "globalPositionRefreshTime": "10",
+    "enabledFinancialHealthOpinator": "false",
+    "enableNotificationsPermissions": "true",
+    "enabledBillsSubscriptionsZone": "false",
+    "enabledGlobalRTO": "true",
+    "disabledScreenRTO": "[]",
+    "enableSCAPFMTransactions": "false",
+    "enabledSearchBarGPSimple": "false",
+    "enablePgCardCreditBalanceAvailable":"true",
+    "enabledFinancialHealthZone": "false",
+    "enableCarbonFootprint": "false",
+    "carbonFootprintUrl": "https://carbonfootprint.eu.gruposantander.com/",
+    "carbonFootprintCloseUrl": "https://www.santander.pt",
+    "carbonFootprintChannel": "WEB",
+    "carbonFootprintCountry": "PRT",
+    "carbonFootprintEntity": "0018",
+    "enableAskReviewModule": "true",
+    "askReviewDays": "90",
+    "enableBoutique": "true",
+    "enableInsurance": "true",
+    "creditDefaultUrl": "https://www.santander.pt/incumprimento-credito",
+    "enabledBillsAndTaxesInMenu": "true",
+    "enabledExploreProductsInMenu": "true",
+    "enablePrecarioCondicoes": "true",
+    "enableInAppEnrollment": "true",
+    "enableCardsHomeLocationMap": "true",
+    "enableCardTransactionsMap": "true",
+    "enableWithdrawMoneyQR": "true",
+    "enableWithholdingList": "true",
+    "enableNationalTransferPreLiquidations": "true",
+    "enablePersonalAreaBDP": "true",
+    "enableSecurityAreaBDP": "true",
+    "enableSecuritySettingPersonalArea": "true",
+    "enablePersonaldoc": "true",
+    "enableTimeLine": "false",
+    "enablePregrantedWidget": "false",
+    "enabledEnvioDineroPGClasica": "true",
+    "enabledMicroFavoritosPGClasica": "false",
+    "enabledCarruselFavoritosPGClasica": "true",
+    "enabledEnvioDineroPGSmart": "true",
+    "enabledMicroFavoritosPGSmart": "false",
+    "enabledCarruselFavoritosPGSmart": "true",
+    "enabledAnalysisZone": "false",
+    "enableGlobalPositionPendingDocuments": "true",
+    "sidebarProductsTitle": "Também lhe poderá interessar",
+    "simulationfamilyCode": "['T05']",
+    "simulationcampaignsCode": "['E01', 'E04', 'E05', 'E18', 'E21', 'E22']",
+    "inactiveMessage": "Esta versão não está suportada actualmente. Por favor, actualize a aplicacão na Play Store",
+    "enabledCounterValue": "false",
+    "enabledInsuranceDetail": "true",
+    "enabledMoneyPlanPromotion": "true",
+    "moneyPlanNativeMode": "true",
+    "enableSavingInsuranceBalance": "true",
+    "enabledLoanOperations": "true",
+    "enabledPensionOperations": "true",
+    "enablePayLater": "true",
+    "enableDirectMoney": "true",
+    "enableCardSuperSpeed": "true",
+    "managersSantanderPersonal": "[48, 57, 68, 64, 72]",
+    "blockFundOffices": "[6658, 6399, 4801]",
+    "signatureSupportPhone": "600111222",
+    "otpSupportPhone": "699888777",
+    "cesSupportPhone": "900 81 13 81",
+    "mixedUserIdCampaign": "8",
+    "cardTransactionsPFMDays": "8",
+    "accountTransactionsPFMDays": "8",
+    "billsHomeMonthsLimit": "6",
+    "billsHomePensionUrl": "https://www.bancosantander.es",
+    "billsHomeUnemploymentBenefit": "https://www.bancosantander.es",
+    "enableManagerVideoCall": "true",
+    "managerVideoCallSubtitle": "De lunes a jueves de 9:00 a 18:00\nViernes de 9:00 a 16:00h.",
+    "enableChangeLoanLinkedAccount": "true",
+    "enableLoanRepayment": "true",
+    "enableMifid2": "true",
+    "enableMifidAdvices": "true",
+    "enableMifid1": "true",
+    "consultiveUserSupportPhone": "+351217807364",
+    "accountCreditCardLiquidations": "['Liquidacion de la tarjeta', 'Liquidación de la tarjeta']",
+    "mifid2NoTestMessage": "Para efectuar la presente operación, a efectos de la normativa MiFID, se requiere realizar previamente el Test MIFID con el objetivo de que el Banco Santander pueda evaluar la adecuación del producto al Cliente. Para ello podrá realizar dicho test en banca online o si lo prefiere puede ponerse en contacto con su oficina habitual.",
+    "mifid2NoClasificationMessage": "La normativa MiFID exige que, para realizar esta operación, previamente todos los titulares del contrato estén clasificados. Para ello podrá realizar la clasificación a través de banca online  o si lo prefiere puede ponerse en contacto con su oficina habitual.",
+    "mifid2NoTestNoClassificationMessage": "La normativa MiFID exige que, para realizar esta operación, previamente todos los titulares del contrato estén clasificados y tengan Test MIFID con el objetivo de que el Banco Santander pueda evaluar la adecuación del producto al Cliente. \nPara ello podrá realizar la clasificación y dicho test en banca online o si lo prefiere puede ponerse en contacto con su oficina habitual.",
+    "enabledFundOperations": "true",
+    "fundOperationsSubcriptionNativeMode": "true",
+    "fundOperationsTransferNativeMode": "true",
+    "enableChatInbenta": "true",
+    "inbentaChatUrl": "https://santander-avatar.inbenta.com/",
+    "inbentaChatCloseUrl": "https://www.bancosantander.es",
+    "enableVirtualAssistant": "true",
+    "virtualAssistantUrl": "http://santander-app.inbenta.com/app/?p=2",
+    "virtualAssistantCloseUrl": "https://www.bancosantander.es",
+    "enableManagerWall": "true",
+    "managerWallVersion": "2",
+    "managerWallUrl": "https://migestor.bancosantander.es/AutoSamlLogin?method=post",
+    "managerWallCloseUrl": "https://www.bancosantander.es",
+    "enableMarketplace": "false",
+    "marketplaceUrl": "https://boutique.santander.pt/pt/",
+    "marketplaceCloseUrl": "https://www.santander.pt",
+    "enableAccountTransactionsPdf": "true",
+    "emittedTransfersMaxPagination": "10",
+    "emittedTransfersSearchMonths": "6",
+    "loanAmortizationSupportPhone": "915123123",
+    "instantNationalTransfersMaxAmount": "15000",
+    "urgentNationalTransfersEnable5304": "true",
+    "urgentNationalTransfers5304Text": "Los envíos urgentes sólo pueden realizarse antes de las 14:30h (hora peninsular española) y no se permiten a cuentas no pertenecientes al Banco Santander. Si desea continuar el envío se procesará de forma estándar. ",
+    "enableOnlineMessagesInbox": "false",
+    "onlineMessagesInboxUrl": "https://particulares.gruposantander.es/SUCOAC_SAN_ENS/BtoChannelDriver.ssobto?dse_operationName=entradaPor&dse_parentContextName=&dse_processorState=initial&dse_nextEventName=start&datosCliente.entrada_por=C0370",
+    "enableModifyScheduledTransfers": "true",
+    "papisCodes": "['130999', '330999', '230999', '930999']",
+    "ecosystemRetailUrl": "https://microsite.bancosantander.es/filesFF/SAN/ecosistema/apps_instaladas/index_android.html",
+    "ecosystemPbUrl": "https://microsite.bancosantander.es/filesFF/SAN/ecosistema/apps_instaladas_SPB/index_android.html",
+    "otpAndroidServiceNames": "['validarCargaDescargaPrepagoOTP_LA', 'validaAltaTarjetaCesOtpLa', 'validarConsultaDePINOTP_LA', 'validarConsultaDeCVV2OTP_LA', 'validaRecargaMovilOtpLa', 'validarModificarDiferidaLa', 'validaPeriodicasSepaOtpLa', 'validaPeriodicasSepaLa', 'validarNacionalOTPSEPA_LA', 'validarEmisionSacarDineroOTP_LA', 'validaDiferidasSepaOtpLa']",
+    "enableBroker": "false",
+    "stocksNativeMode": "true",
+    "accountEasyPayLowAmountLimit": "80",
+    "accountEasyPayMinAmount": "1",
+    "enableAccountEasyPayForBills": "true",
+    "enableAccountEasyPayForStandardNationalTransfers": "true",
+    "enableOtpPush": "true",
+    "messageOtpPushBeta": "false",
+    "chargePrepaidCardAmounts": "[5, 10, 25, 50, 100, 250, 500, 1000]",
+    "dischargePrepaidCardAmounts": "[5, 10, 25, 50, 100, 250, 500, 2000]",
+    "enableSCALogin": "true",
+    "enableSCAAccountTransactions": "true",
+    "isNegativeCreditBalanceCardSuperSpeed": "true",
+    "highlightMenu": "{\"marketplace\": \"Requiere permiso de localizacion\",\"tips\": \"Texto de consejos\"}",
+    "enableManagerMenu": "true",
+    "enableReceiptReturn": "true",
+    "enableApplyBySanflix": "true",
+    "enableGlobalSearch": "true",
+    "duplicatedMovementsPhoneNumber": "648140936",
+    "enableTripMode": "true",
+    "timerLoadingTips": "4",
+    "disableOnboarding": "false",
+    "onboardingVersion": "1",
+    "enabledAnalysisZoneMovements": "false",
+    "enabledAnalysisZoneFinancialHealth": "false",
+    "managersNotShow": "[30, 53]",
+    "enablePGTopPregrantedBanner": "true",
+    "enableAccountsHomeFutureBills": "false",
+    "enableBillsHomeFutureBills": "true",
+    "recoverKeysUrl": "https://www.particulares.santander.pt/pagina/indice/0,,415_1_2,00.html",
+    "prepaidLoginUrl": "https://www.particulares.santander.pt/pagina/indice/0,,840_1_2,00.html",
+    "obtainKeysUrl": "https://www.santander.pt",
+    "becomeClientUrl": "https://www.santander.pt/abrir-conta-online",
+    "recoverProcessUrl": "https://www.santander.pt",
+    "webMovilUrl": "https://www.particulares.santander.pt/",
+    "enableEasyPayCards": "false",
+    "easyPayCardsModeClassic": "false",
+    "enableFutureBills": "true",
+    "enableCashWithdrawal": "true",
+    "enableOnOffCardsForRetailUsers": "true",
+    "enableOnOffCardsForPBUsers": "true",
+    "enableCesEnrollment": "true",
+    "enableLimitsChangeCards": "true",
+    "receivedTransfersMaxPagination": "10",
+    "receivedTransfersSearchMonths": "6",
+    "enablePublicProducts": "false",
+    "enableComingFeatures": "false",
+    "tagsCardMovementsCrossSelling": "['seguro', 'mercadona', 'carga', 'seguros', 'aseguradora', 'cuota', 'mutua', 'sanitas', 'adeslas', 'asisa', 'mapfre', 'axa', 'caser', 'allianz', 'qualitas', 'línea directa', 'hogar', 'vida', 'auto', 'salud', 'accidentes', 'ahorro']",
+    "amountCardMovementsCrossSelling": "55",
+    "actionCardMovementsCrossSelling": "Simular",
+    "enableCardMovementsCrossSelling": "false",
+    "tagsAccountMovementsCrossSelling": "['seguro', 'mercadona', 'transferencia', 'seguros', 'aseguradora', 'cuota', 'mutua', 'sanitas', 'adeslas', 'asisa', 'mapfre', 'axa', 'caser', 'allianz', 'qualitas', 'línea directa', 'hogar', 'vida', 'auto', 'salud', 'accidentes', 'ahorro']",
+    "amountAccountMovementsCrossSelling": "-55",
+    "actionAccountMovementsCrossSelling": "Simular",
+    "enableAccountMovementsCrossSelling": "false",
+    "enableAppInfo": "true",
+    "nationalTransferInformation": "Neste momento não nos é possível mostrar o custo da operação. No passo seguinte apresentaremos a informação atualizada.",
+    "immediateTransferInformation": "Neste momento não nos é possível mostrar o custo da operação. No passo seguinte apresentaremos a informação atualizada.",
+    "urgentTransferInformation": "Neste momento não nos é possível mostrar o custo da operação. No passo seguinte apresentaremos a informação atualizada.",
+    "enabledWhatsNew": "false",
+    "enableFinancingZone": "true",
+    "enabledCarruselFavoritosDestinatario": "true",
+    "enableVisaSamsungPayEnrollment": "true",
+    "enableWhatsNewPregrantedBanner": "true",
+    "enableTrusteer": "false",
+    "enableBillEmittersPayment": "true",
+    "pgTopPregrantedBannerColor": "negro",
+    "pgTopPregrantedBannerText": "{{BOLD}}{{VALUE}}{{/BOLD}} QA- para lo que {{BOLD}}{{COLOR:#EC0000}}tú quieras y mas{{/COLOR}}{{/BOLD}} ",
+    "favouritesPGShow": "[ '178' , '402', '529', '178', '402', 'showFavouritesCarousel']",
+    "enabledEnvioDineroPGSmartNew": "true",
+    "enabledEnvioDineroPGClasicaNew": "true",
+    "enableNextSettlementCreditCard": "false",
+    "logoutOffersRandom": "['01_LOGOUT', '02_LOGOUT',  '04_LOGOUT', '05_LOGOUT', '06_LOGOUT', '07_LOGOUT']",
+    "enableStockholders": "false",
+    "shareHoldersUrl": "https://www.santander.pt/institucional/investor-relations/santander-totta-sgps",
+    "enableSplitExpenseBizum": "false",
+    "superlineaPhone": "217-807-364"
+  },
+  "versions": {
+    "3.14.22": {
+      "active": "false"
+    },
+    "3.14.20": {
+      "active": "false"
+    },
+    "3.12.35": {
+      "active": "false"
+    },
+    "3.10.39": {
+      "active": "false"
+    },
+    "3.10.38": {
+      "active": "false"
+    },
+    "3.10.35": {
+      "active": "false"
+    },
+    "3.08.30": {
+      "active": "false"
+    },
+    "3.08.25": {
+      "active": "false"
+    },
+    "3.06.31": {
+      "active": "false"
+    },
+    "3.06.30": {
+      "active": "false"
+    },
+    "3.06.28": {
+      "active": "false"
+    },
+    "3.05.10": {
+      "active": "false"
+    },
+    "3.04.32": {
+      "active": "false"
+    },
+    "3.02.66": {
+      "active": "false"
+    },
+    "3.02.63": {
+      "active": "false"
+    },
+    "3.0.35": {
+      "active": "false"
+    },
+    "2.15.47":  {
+      "active": "false"
+    },
+    "2.15.41": {
+      "active": "false"
+    },
+    "2.13.62":  {
+      "active": "false"
+    },
+    "2.11.86":  {
+      "active": "false"
+    },
+    "2.11.81":  {
+      "active": "false"
+    },
+    "2.9.63":  {
+      "active": "false"
+    },
+    "2.9.53":  {
+      "active": "false"
+    },
+    "2.7.61":  {
+      "active": "false"
+    },
+    "2.7.54":  {
+      "active": "false"
+    },
+    "2.4.48":  {
+      "active": "false"
+    },
+    "2.4.47":  {
+      "active": "false"
+    },
+    "2.4.41":  {
+      "active": "false"
+    },
+    "2.2.73":  {
+      "active": "false"
+    },
+    "2.2.67":  {
+      "active": "false"
+    },
+    "2.0.34":  {
+      "active": "false"
+    },
+    "1.10.101": {
+      "active": "false"
+    },
+    "1.10.96": {
+      "active": "false"
+    },
+    "1.10.94": {
+      "active": "false"
+    },
+    "1.10.90": {
+      "active": "false"
+    },
+    "1.10.87": {
+      "active": "false"
+    },
+    "1.8.117": {
+      "active": "false"
+    },
+    "1.8.113": {
+      "active": "false"
+    },
+    "1.7.119": {
+      "active": "false"
+    },
+    "1.7.115": {
+      "active": "false"
+    },
+    "1.7.106": {
+      "active": "false"
+    },
+    "1.7.103": {
+      "active": "false"
+    },
+    "1.7.102": {
+      "active": "false"
+    },
+    "1.6.83": {
+      "active": "false"
+    },
+    "1.6.77": {
+      "active": "false"
+    },
+    "1.6.70": {
+      "active": "false"
+    },
+    "1.5.54": {
+      "active": "false"
+    },
+    "1.5.48": {
+      "active": "false"
+    },
+    "1.4.47": {
+      "active": "false"
+    },
+    "1.4.44": {
+      "active": "false"
+    },
+    "1.4.42": {
+      "active": "false"
+    },
+    "1.3.21": {
+      "active": "false"
+    },
+    "1.3.20": {
+      "active": "false"
+    },
+    "1.3.19": {
+      "active": "false"
+    },
+    "1.3.15": {
+      "active": "false"
+    },
+    "0.5.78": {
+      "active": "false"
+    },
+    "0.5.77": {
+      "active": "false"
+    },
+    "0.4.67": {
+      "active": "false"
+    },
+    "0.4.64": {
+      "active": "false"
+    },
+    "0.3.68": {
+      "active": "false"
+    },
+    "0.3.67": {
+      "active": "false"
+    },
+    "0.3.65": {
+      "active": "false"
+    },
+    "0.3.64": {
+      "active": "false"
+    },
+    "0.3.63": {
+      "active": "false"
+    },
+    "0.3.62": {
+      "active": "false"
+    },
+    "0.3.60": {
+      "active": "false"
+    },
+    "0.3.59": {
+      "active": "false"
+    },
+    "0.3.57": {
+      "active": "false"
+    },
+    "0.2.50": {
+      "active": "false"
+    },
+    "0.2.48": {
+      "active": "false"
+    },
+    "0.2.47": {
+      "active": "false"
+    }
+  }
+}

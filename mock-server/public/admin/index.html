@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santander Clone — Admin</title>
+  <style>
+    :root {
+      --red: #ec0000;
+      --red-dark: #c40000;
+      --bg: #f4f5f7;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --ok: #0d9488;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+    .layout { display: flex; min-height: 100vh; }
+    aside {
+      width: 260px; background: #fff; border-right: 1px solid var(--border);
+      padding: 1.25rem 0; flex-shrink: 0; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+    }
+    .brand { padding: 0 1.25rem 1rem; border-bottom: 1px solid var(--border); margin-bottom: .5rem; }
+    .brand h1 { margin: 0; font-size: 1.1rem; color: var(--red); }
+    .brand p { margin: .25rem 0 0; font-size: .75rem; color: var(--muted); }
+    nav button {
+      display: block; width: 100%; text-align: left; border: none; background: none;
+      padding: .65rem 1.25rem; cursor: pointer; font-size: .9rem; color: var(--text);
+    }
+    nav button:hover { background: #fef2f2; }
+    nav button.active { background: #fef2f2; color: var(--red); font-weight: 600; border-right: 3px solid var(--red); }
+    main { flex: 1; padding: 1.5rem 2rem; max-width: 1100px; }
+    h2 { margin: 0 0 .25rem; font-size: 1.35rem; }
+    .subtitle { color: var(--muted); font-size: .875rem; margin-bottom: 1.25rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; }
+    .card h3 { margin: 0 0 1rem; font-size: 1rem; color: var(--red); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    label { display: block; font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: .35rem; text-transform: uppercase; letter-spacing: .03em; }
+    input, select, textarea {
+      width: 100%; padding: .55rem .65rem; border: 1px solid var(--border); border-radius: 6px;
+      font-size: .9rem; font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus { outline: 2px solid #fecaca; border-color: var(--red); }
+    textarea.json { font-family: ui-monospace, monospace; font-size: .8rem; min-height: 420px; }
+    .actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; align-items: center; }
+    .btn {
+      padding: .55rem 1.1rem; border-radius: 6px; border: none; cursor: pointer; font-size: .875rem; font-weight: 600;
+    }
+    .btn-primary { background: var(--red); color: #fff; }
+    .btn-primary:hover { background: var(--red-dark); }
+    .btn-secondary { background: #fff; border: 1px solid var(--border); color: var(--text); }
+    .btn-danger { background: #fff; border: 1px solid #fca5a5; color: #b91c1c; }
+    .toast {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; background: #111; color: #fff;
+      padding: .75rem 1.25rem; border-radius: 8px; font-size: .875rem; opacity: 0;
+      transition: opacity .25s; pointer-events: none; z-index: 99;
+    }
+    .toast.show { opacity: 1; }
+    .toast.ok { background: var(--ok); }
+    .toast.err { background: #b91c1c; }
+    .hidden { display: none !important; }
+    table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    th, td { border-bottom: 1px solid var(--border); padding: .5rem; text-align: left; vertical-align: top; }
+    th { font-size: .7rem; text-transform: uppercase; color: var(--muted); }
+    td input { min-width: 100px; }
+    .row-actions { white-space: nowrap; }
+    .hint { font-size: .8rem; color: var(--muted); margin-top: .5rem; }
+    .auth-bar { padding: .75rem 1.25rem; border-bottom: 1px solid var(--border); }
+    .auth-bar input { font-size: .8rem; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <div class="brand">
+        <h1>Santander Admin</h1>
+        <p>Edit demo data · updates both apps live</p>
+      </div>
+      <div class="auth-bar hidden" id="authBar">
+        <label>Admin token (optional)</label>
+        <input type="password" id="adminToken" placeholder="ADMIN_PASSWORD" />
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <main>
+      <div id="panels"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const API = "/admin/api";
+    let cache = {};
+    let active = "customer";
+
+    const sections = [
+      { id: "customer", label: "Customer profile", keys: ["customer-info", "retail-customer", "settings"] },
+      { id: "dashboard", label: "Dashboard & balances", keys: ["global-position", "monthly-balance"] },
+      { id: "transactions", label: "Transactions", keys: ["account-transactions"] },
+      { id: "notifications", label: "Notifications", keys: ["mailbox-notifications"] },
+      { id: "payees", label: "Payees", keys: ["payees"] },
+      { id: "mbway", label: "MB WAY", keys: ["mbway-cards"] },
+      { id: "products", label: "Public products", keys: ["public-products-en", "public-products-pt"] },
+      { id: "raw", label: "Raw JSON (all fields)", keys: [] },
+    ];
+
+    function headers() {
+      const t = document.getElementById("adminToken")?.value;
+      const h = { "Content-Type": "application/json" };
+      if (t) h.Authorization = `Bearer ${t}`;
+      return h;
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(API + path, { ...opts, headers: { ...headers(), ...opts.headers } });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.error || res.statusText);
+      return body;
+    }
+
+    async function load(key) {
+      const { data } = await api(`/data/${key}`);
+      cache[key] = data;
+      return data;
+    }
+
+    async function save(key, data) {
+      await api(`/data/${key}`, { method: "PUT", body: JSON.stringify(data) });
+      cache[key] = data;
+      toast(`Saved ${key}`, true);
+    }
+
+    function toast(msg, ok = true) {
+      const el = document.getElementById("toast");
+      el.textContent = msg;
+      el.className = `toast show ${ok ? "ok" : "err"}`;
+      setTimeout(() => el.classList.remove("show"), 2800);
+    }
+
+    function field(label, id, value = "", type = "text") {
+      return `<div><label for="${id}">${label}</label><input type="${type}" id="${id}" value="${esc(String(value ?? ""))}" /></div>`;
+    }
+
+    function esc(s) {
+      return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    }
+
+    function val(id) {
+      const el = document.getElementById(id);
+      if (!el) return "";
+      if (el.type === "number") return parseFloat(el.value) || 0;
+      if (el.type === "checkbox") return el.checked;
+      return el.value;
+    }
+
+    function buildNav() {
+      const nav = document.getElementById("nav");
+      nav.innerHTML = sections.map((s) =>
+        `<button type="button" data-id="${s.id}" class="${s.id === active ? "active" : ""}">${s.label}</button>`
+      ).join("");
+      nav.querySelectorAll("button").forEach((b) =>
+        b.addEventListener("click", () => { active = b.dataset.id; buildNav(); render(); })
+      );
+    }
+
+    async function ensure(keys) {
+      for (const k of keys) if (!cache[k]) await load(k);
+    }
+
+    async function renderCustomer() {
+      await ensure(["customer-info", "retail-customer", "settings"]);
+      const ci = cache["customer-info"];
+      const rc = cache["retail-customer"];
+      const st = cache.settings;
+      const p = rc.customerPersonalsData || {};
+      const addr = rc.residentialAddress || {};
+      const pref = rc.preferedContactDetails || {};
+      return `
+        <h2>Customer profile</h2>
+        <p class="subtitle">Controls "Hello, Name" on login and home. Save updates both apps immediately.</p>
+        <div class="card">
+          <h3>Login credentials</h3>
+          <div class="grid">
+            ${field("Username", "st_user", st.demoUsername)}
+            ${field("Password", "st_pass", st.demoPassword)}
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="saveCustomer()">Save login</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Greeting & contact (customer-info)</h3>
+          <div class="grid">
+            ${field("First name", "ci_fn", ci.firstName)}
+            ${field("Last name", "ci_ln", ci.lastName)}
+            ${field("Customer ID", "ci_id", ci.customerId)}
+            ${field("Email", "ci_email", ci.email)}
+            ${field("Phone", "ci_phone", ci.phone)}
+            ${field("Segment", "ci_seg", ci.segment)}
+            ${field("Language (en/pt)", "ci_lang", ci.language)}
+          </div>
+        </div>
+        <div class="card">
+          <h3>Retail customer detail</h3>
+          <div class="grid">
+            ${field("First name", "rc_fn", p.firstName)}
+            ${field("Last name", "rc_ln", p.lastName)}
+            ${field("Birth date", "rc_bd", p.birthDate)}
+            ${field("Document type", "rc_dt", p.documentId?.documentType)}
+            ${field("Document number", "rc_dn", p.documentId?.documentNumber)}
+            ${field("Street", "rc_st", addr.streetName)}
+            ${field("Town", "rc_town", addr.townName)}
+            ${field("Mobile phone", "rc_phone", pref.preferedPhoneDetails?.phone)}
+            ${field("Email", "rc_email", pref.preferedEmailDetails?.address)}
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="saveCustomer()">Save all customer data</button>
+          </div>
+          <p class="hint">Tip: keep first names in sync (customer-info + retail-customer) for consistent UI.</p>
+        </div>`;
+    }
+
+    async function renderDashboard() {
+      await ensure(["global-position", "monthly-balance"]);
+      const gp = cache["global-position"];
+      const cb = gp.contractsBalances || {};
+      const totals = cb.accounts?.totalBalancesAccounts || {};
+      const acct = cb.accounts?.accountsList?.[0]?.accountDataDetail || {};
+      const card = cb.cards?.cardList?.[0]?.cardDataDetail || {};
+      const bal = (b, f) => b?.[f]?.amount ?? 0;
+      return `
+        <h2>Dashboard & balances</h2>
+        <p class="subtitle">Home screen total balance, account card, and debit card.</p>
+        <div class="card">
+          <h3>Total balances (header)</h3>
+          <div class="grid">
+            ${field("Total main balance €", "t_main", bal(totals, "totalMainBalance"), "number")}
+            ${field("Total available €", "t_avail", bal(totals, "totalAvailableBalance"), "number")}
+            ${field("Total withholding €", "t_with", bal(totals, "totalWithholdingBalance"), "number")}
+            ${field("Customer segment", "t_seg", cb.customerSegment)}
+          </div>
+        </div>
+        <div class="card">
+          <h3>Main account</h3>
+          <div class="grid">
+            ${field("Account ID (shown on card)", "a_id", acct.accountId)}
+            ${field("IBAN (no spaces, e.g. PT50...)", "a_iban", acct.displayNumber)}
+            ${field("Alias", "a_alias", acct.alias)}
+            ${field("Description", "a_desc", acct.description)}
+            ${field("Type", "a_type", acct.type)}
+            ${field("Status", "a_status", acct.status)}
+            ${field("Main balance €", "a_main", bal(acct, "mainBalance"), "number")}
+            ${field("Available balance €", "a_avail", bal(acct, "availableBalance"), "number")}
+            ${field("Authorized balance €", "a_auth", bal(acct, "authorizedBalance"), "number")}
+            ${field("Pending balance €", "a_pend", bal(acct, "pendingBalance"), "number")}
+            ${field("Overdraft limit €", "a_od", bal(acct, "overdraftLimit"), "number")}
+          </div>
+        </div>
+        <div class="card">
+          <h3>Main card</h3>
+          <div class="grid">
+            ${field("Card ID", "c_id", card.cardId)}
+            ${field("Display number", "c_pan", card.displayNumber)}
+            ${field("Alias (e.g. Debit | *6079)", "c_alias", card.alias)}
+            ${field("Type (debit/credit)", "c_type", card.type)}
+            ${field("Status", "c_status", card.status)}
+            ${field("Expiration", "c_exp", card.expirationDate)}
+            ${field("Product description", "c_prod", card.productCardDescription)}
+            ${field("Available balance €", "c_avail", bal(card, "availableBalance"), "number")}
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="saveDashboard()">Save dashboard</button>
+            <button class="btn btn-secondary" onclick="syncTotalsFromAccount()">Sync totals from account balance</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Monthly balance chart</h3>
+          <p class="hint">Edit as JSON array: monthlyBalance[{month, income, expenses}]</p>
+          <textarea class="json" id="monthly_json">${esc(JSON.stringify(cache["monthly-balance"], null, 2))}</textarea>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="saveMonthly()">Save monthly chart</button>
+          </div>
+        </div>`;
+    }
+
+    async function renderTransactions() {
+      await ensure(["account-transactions"]);
+      const txs = cache["account-transactions"]._transactionsDataList || [];
+      const rows = txs.map((t, i) => `
+        <tr data-i="${i}">
+          <td><input data-f="transactionId" value="${esc(t.transactionId)}" /></td>
+          <td><input data-f="accountingDateTime" value="${esc(t.accountingDateTime)}" /></td>
+          <td><input data-f="description" value="${esc(t.description)}" style="min-width:200px" /></td>
+          <td><input data-f="amount" value="${esc(t.amount?.amount)}" /></td>
+          <td><input data-f="balanceResult" value="${esc(t.balanceResult?.amount)}" /></td>
+          <td class="row-actions"><button class="btn btn-danger" onclick="removeTx(${i})">×</button></td>
+        </tr>`).join("");
+      return `
+        <h2>Account transactions</h2>
+        <p class="subtitle">Movements on the Accounts screen. Amounts as strings (e.g. -0.08).</p>
+        <div class="card">
+          <table id="txTable">
+            <thead><tr><th>ID</th><th>Date</th><th>Description</th><th>Amount</th><th>Balance after</th><th></th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+          <div class="actions">
+            <button class="btn btn-secondary" onclick="addTx()">+ Add transaction</button>
+            <button class="btn btn-primary" onclick="saveTransactions()">Save transactions</button>
+          </div>
+        </div>`;
+    }
+
+    async function renderNotifications() {
+      await ensure(["mailbox-notifications"]);
+      const list = cache["mailbox-notifications"].notifications || [];
+      const rows = list.map((n, i) => `
+        <tr data-i="${i}">
+          <td><input data-f="id" value="${esc(n.id)}" /></td>
+          <td><input data-f="sendingTime" value="${esc(n.sendingTime)}" /></td>
+          <td><input data-f="subject" value="${esc(n.subject)}" style="min-width:220px" /></td>
+          <td><select data-f="read"><option value="false" ${!n.read ? "selected" : ""}>Unread</option><option value="true" ${n.read ? "selected" : ""}>Read</option></select></td>
+          <td><button class="btn btn-danger" onclick="removeNotif(${i})">×</button></td>
+        </tr>`).join("");
+      return `
+        <h2>Notifications</h2>
+        <p class="subtitle">Mailbox / inbox notifications in the app.</p>
+        <div class="card">
+          <table id="notifTable"><thead><tr><th>ID</th><th>Date</th><th>Subject</th><th>Status</th><th></th></tr></thead><tbody>${rows}</tbody></table>
+          <div class="actions">
+            <button class="btn btn-secondary" onclick="addNotif()">+ Add notification</button>
+            <button class="btn btn-primary" onclick="saveNotifications()">Save notifications</button>
+          </div>
+        </div>`;
+    }
+
+    async function renderPayees() {
+      await ensure(["payees"]);
+      const list = cache.payees.payees || [];
+      const rows = list.map((p, i) => `
+        <tr data-i="${i}">
+          <td><input data-f="payeeId" value="${esc(p.payeeId)}" /></td>
+          <td><input data-f="name" value="${esc(p.name)}" /></td>
+          <td><input data-f="accountNumber" value="${esc(p.accountNumber)}" style="min-width:200px" /></td>
+          <td><input data-f="contractType" value="${esc(p.contractType)}" /></td>
+          <td><input data-f="status" value="${esc(p.status)}" /></td>
+          <td><button class="btn btn-danger" onclick="removePayee(${i})">×</button></td>
+        </tr>`).join("");
+      return `
+        <h2>Payees</h2>
+        <div class="card">
+          <table id="payeeTable"><thead><tr><th>ID</th><th>Name</th><th>Account/IBAN</th><th>Type</th><th>Status</th><th></th></tr></thead><tbody>${rows}</tbody></table>
+          <div class="actions">
+            <button class="btn btn-secondary" onclick="addPayee()">+ Add payee</button>
+            <button class="btn btn-primary" onclick="savePayees()">Save payees</button>
+          </div>
+        </div>`;
+    }
+
+    async function renderMbway() {
+      await ensure(["mbway-cards"]);
+      const list = cache["mbway-cards"].cards || [];
+      const rows = list.map((c, i) => `
+        <tr data-i="${i}">
+          <td><input data-f="cardId" value="${esc(c.cardId)}" /></td>
+          <td><input data-f="displayNumber" value="${esc(c.displayNumber)}" /></td>
+          <td><input data-f="alias" value="${esc(c.alias)}" /></td>
+          <td><input data-f="status" value="${esc(c.status)}" /></td>
+          <td><select data-f="enrolled"><option value="true" ${c.enrolled ? "selected" : ""}>Yes</option><option value="false" ${!c.enrolled ? "selected" : ""}>No</option></select></td>
+          <td><button class="btn btn-danger" onclick="removeMbway(${i})">×</button></td>
+        </tr>`).join("");
+      return `
+        <h2>MB WAY cards</h2>
+        <div class="card">
+          <table id="mbwayTable"><thead><tr><th>Card ID</th><th>Number</th><th>Alias</th><th>Status</th><th>Enrolled</th><th></th></tr></thead><tbody>${rows}</tbody></table>
+          <div class="actions">
+            <button class="btn btn-secondary" onclick="addMbway()">+ Add card</button>
+            <button class="btn btn-primary" onclick="saveMbway()">Save MB WAY</button>
+          </div>
+        </div>`;
+    }
+
+    async function renderProducts() {
+      await ensure(["public-products-en", "public-products-pt"]);
+      return `
+        <h2>Public products</h2>
+        <p class="subtitle">Pre-login carousel — edit full JSON if needed.</p>
+        <div class="card">
+          <h3>English (public-products-en)</h3>
+          <textarea class="json" id="prod_en">${esc(JSON.stringify(cache["public-products-en"], null, 2))}</textarea>
+        </div>
+        <div class="card">
+          <h3>Portuguese (public-products-pt)</h3>
+          <textarea class="json" id="prod_pt">${esc(JSON.stringify(cache["public-products-pt"], null, 2))}</textarea>
+          <div class="actions"><button class="btn btn-primary" onclick="saveProducts()">Save products</button></div>
+        </div>`;
+    }
+
+    async function renderRaw() {
+      const { datasets } = await api("/datasets");
+      const opts = datasets.map((d) => `<option value="${d.key}">${d.label} (${d.file})</option>`).join("");
+      const first = datasets[0]?.key || "global-position";
+      if (!cache[first]) await load(first);
+      return `
+        <h2>Raw JSON editor</h2>
+        <p class="subtitle">Edit any dataset field directly. For power users / new fields.</p>
+        <div class="card">
+          <label>Dataset</label>
+          <select id="raw_key" onchange="loadRawDataset()">${opts}</select>
+          <textarea class="json" id="raw_json" style="margin-top:1rem">${esc(JSON.stringify(cache[first], null, 2))}</textarea>
+          <div class="actions">
+            <button class="btn btn-primary" onclick="saveRaw()">Save JSON</button>
+            <button class="btn btn-secondary" onclick="loadRawDataset()">Reload from disk</button>
+          </div>
+        </div>`;
+    }
+
+    async function render() {
+      const panels = document.getElementById("panels");
+      panels.innerHTML = "<p>Loading…</p>";
+      try {
+        const map = {
+          customer: renderCustomer,
+          dashboard: renderDashboard,
+          transactions: renderTransactions,
+          notifications: renderNotifications,
+          payees: renderPayees,
+          mbway: renderMbway,
+          products: renderProducts,
+          raw: renderRaw,
+        };
+        panels.innerHTML = await map[active]();
+      } catch (e) {
+        panels.innerHTML = `<p style="color:#b91c1c">Error: ${esc(e.message)}</p>`;
+      }
+    }
+
+    function balObj(amount, code = "EUR") {
+      return { amount: parseFloat(amount) || 0, currencyCode: code };
+    }
+
+    window.saveCustomer = async () => {
+      cache.settings = { demoUsername: val("st_user"), demoPassword: val("st_pass") };
+      cache["customer-info"] = {
+        ...cache["customer-info"],
+        customerId: val("ci_id"), firstName: val("ci_fn"), lastName: val("ci_ln"),
+        email: val("ci_email"), phone: val("ci_phone"), segment: val("ci_seg"), language: val("ci_lang"),
+      };
+      const rc = cache["retail-customer"];
+      rc.customerPersonalsData = {
+        ...rc.customerPersonalsData,
+        firstName: val("rc_fn"), lastName: val("rc_ln"), birthDate: val("rc_bd"),
+        documentId: { documentType: val("rc_dt"), documentNumber: val("rc_dn") },
+      };
+      rc.residentialAddress = { streetName: val("rc_st"), townName: val("rc_town") };
+      rc.preferedContactDetails = {
+        preferedPhoneDetails: { use: "MOBILE", phone: val("rc_phone") },
+        preferedEmailDetails: { address: val("rc_email") },
+      };
+      await save("settings", cache.settings);
+      await save("customer-info", cache["customer-info"]);
+      await save("retail-customer", rc);
+    };
+
+    window.saveDashboard = async () => {
+      const gp = cache["global-position"];
+      const cb = gp.contractsBalances;
+      cb.customerSegment = val("t_seg");
+      const t = cb.accounts.totalBalancesAccounts;
+      t.totalMainBalance = balObj(val("t_main"));
+      t.totalAvailableBalance = balObj(val("t_avail"));
+      t.totalWithholdingBalance = balObj(val("t_with"));
+      const wrap = cb.accounts.accountsList[0];
+      const a = wrap.accountDataDetail;
+      a.accountId = val("a_id");
+      a.displayNumber = val("a_iban");
+      a.alias = val("a_alias");
+      a.description = val("a_desc");
+      a.type = val("a_type");
+      a.status = val("a_status");
+      a.mainBalance = balObj(val("a_main"));
+      a.availableBalance = balObj(val("a_avail"));
+      a.authorizedBalance = balObj(val("a_auth"));
+      a.pendingBalance = balObj(val("a_pending") || val("a_pend"));
+      a.overdraftLimit = balObj(val("a_od"));
+      a._links = {
+        accountDetailsLink: `/accounts/${a.accountId}`,
+        transactionsListLink: `/accounts/${a.accountId}/transactions`,
+      };
+      const cw = cb.cards.cardList[0];
+      const c = cw.cardDataDetail;
+      c.cardId = val("c_id");
+      c.displayNumber = val("c_pan");
+      c.alias = val("c_alias");
+      c.type = val("c_type");
+      c.status = val("c_status");
+      c.expirationDate = val("c_exp");
+      c.productCardDescription = val("c_prod");
+      c.availableBalance = balObj(val("c_avail"));
+      await save("global-position", gp);
+    };
+
+    window.syncTotalsFromAccount = () => {
+      const v = parseFloat(document.getElementById("a_main")?.value) || 0;
+      document.getElementById("t_main").value = v;
+      document.getElementById("t_avail").value = v;
+      toast("Totals synced — click Save dashboard", true);
+    };
+
+    window.saveMonthly = async () => {
+      const data = JSON.parse(document.getElementById("monthly_json").value);
+      await save("monthly-balance", data);
+    };
+
+    function readTable(id) {
+      const rows = [...document.querySelectorAll(`#${id} tbody tr`)];
+      return rows.map((tr) => {
+        const o = {};
+        tr.querySelectorAll("[data-f]").forEach((el) => {
+          let v = el.value;
+          if (el.tagName === "SELECT" && (el.dataset.f === "read" || el.dataset.f === "enrolled"))
+            v = el.value === "true";
+          o[el.dataset.f] = v;
+        });
+        return o;
+      });
+    }
+
+    window.saveTransactions = async () => {
+      const rows = readTable("txTable");
+      const base = cache["account-transactions"];
+      base._transactionsDataList = rows.map((r) => {
+        const prev = base._transactionsDataList.find((t) => t.transactionId === r.transactionId) || {};
+        return {
+          ...prev,
+          transactionId: r.transactionId,
+          hasPdfAssociated: false,
+          description: r.description,
+          typeCode: prev.typeCode || "CHG",
+          typeDescription: prev.typeDescription || "Charge",
+          categoryCode: prev.categoryCode || "TAX",
+          categoryDescription: prev.categoryDescription || "Tax",
+          creationDateTime: r.accountingDateTime,
+          accountingDateTime: r.accountingDateTime,
+          processedDateTime: r.accountingDateTime,
+          amount: { amount: String(r.amount), currency: "EUR" },
+          balanceResult: { amount: String(r.balanceResult), currency: "EUR" },
+          swiftOperation: prev.swiftOperation,
+          sourceIBAN: prev.sourceIBAN || "",
+          destIBAN: "", destName: "",
+          statementDesc: r.description,
+          newCommissions: [],
+          description2: "",
+          link: { href: `/santander/eeic/retail_accounts/000365542813020/transactions/${r.transactionId}` },
+        };
+      });
+      await save("account-transactions", base);
+      await render();
+    };
+
+    window.addTx = () => {
+      const tbody = document.querySelector("#txTable tbody");
+      const i = tbody.children.length;
+      tbody.insertAdjacentHTML("beforeend", `<tr data-i="${i}">
+        <td><input data-f="transactionId" value="TX-NEW-${Date.now()}" /></td>
+        <td><input data-f="accountingDateTime" value="2026-06-01T00:00:00" /></td>
+        <td><input data-f="description" value="New transaction" /></td>
+        <td><input data-f="amount" value="-1.00" /></td>
+        <td><input data-f="balanceResult" value="-65.72" /></td>
+        <td><button class="btn btn-danger" onclick="this.closest('tr').remove()">×</button></td></tr>`);
+    };
+    window.removeTx = (i) => { document.querySelector(`#txTable tr[data-i="${i}"]`)?.remove(); };
+
+    window.saveNotifications = async () => {
+      const rows = readTable("notifTable");
+      const data = {
+        notifications: rows.map((r) => ({
+          id: r.id, bodyBase64: null, sendingTime: r.sendingTime, subject: r.subject,
+          titleBase64: null, messageBase64: null, data: null, read: r.read === true || r.read === "true",
+        })),
+        links: cache["mailbox-notifications"].links || { _first: "", _prev: "", _next: "", _last: "" },
+      };
+      await save("mailbox-notifications", data);
+      await render();
+    };
+    window.addNotif = () => {
+      document.querySelector("#notifTable tbody").insertAdjacentHTML("beforeend", `<tr>
+        <td><input data-f="id" value="NOTIF-${Date.now()}" /></td>
+        <td><input data-f="sendingTime" value="${new Date().toISOString().slice(0,19)}" /></td>
+        <td><input data-f="subject" value="New notification" /></td>
+        <td><select data-f="read"><option value="false" selected>Unread</option><option value="true">Read</option></select></td>
+        <td><button class="btn btn-danger" onclick="this.closest('tr').remove()">×</button></td></tr>`);
+    };
+    window.removeNotif = (i) => document.querySelector(`#notifTable tr[data-i="${i}"]`)?.remove();
+
+    window.savePayees = async () => {
+      const rows = readTable("payeeTable");
+      await save("payees", { payees: rows, total: rows.length });
+      await render();
+    };
+    window.addPayee = () => {
+      document.querySelector("#payeeTable tbody").insertAdjacentHTML("beforeend", `<tr>
+        <td><input data-f="payeeId" value="PAYEE-NEW" /></td><td><input data-f="name" value="" /></td>
+        <td><input data-f="accountNumber" value="" /></td><td><input data-f="contractType" value="IBAN" /></td>
+        <td><input data-f="status" value="active" /></td>
+        <td><button class="btn btn-danger" onclick="this.closest('tr').remove()">×</button></td></tr>`);
+    };
+    window.removePayee = (i) => document.querySelector(`#payeeTable tr[data-i="${i}"]`)?.remove();
+
+    window.saveMbway = async () => {
+      const rows = readTable("mbwayTable");
+      await save("mbway-cards", {
+        cards: rows.map((r) => ({
+          ...r, enrolled: r.enrolled === true || r.enrolled === "true",
+        })),
+      });
+      await render();
+    };
+    window.addMbway = () => {
+      document.querySelector("#mbwayTable tbody").insertAdjacentHTML("beforeend", `<tr>
+        <td><input data-f="cardId" value="CARD-NEW" /></td><td><input data-f="displayNumber" value="**** 0000" /></td>
+        <td><input data-f="alias" value="" /></td><td><input data-f="status" value="ACTIVE" /></td>
+        <td><select data-f="enrolled"><option value="true">Yes</option><option value="false">No</option></select></td>
+        <td><button class="btn btn-danger" onclick="this.closest('tr').remove()">×</button></td></tr>`);
+    };
+    window.removeMbway = (i) => document.querySelector(`#mbwayTable tr[data-i="${i}"]`)?.remove();
+
+    window.saveProducts = async () => {
+      await save("public-products-en", JSON.parse(document.getElementById("prod_en").value));
+      await save("public-products-pt", JSON.parse(document.getElementById("prod_pt").value));
+    };
+
+    window.loadRawDataset = async () => {
+      const key = document.getElementById("raw_key").value;
+      await load(key);
+      document.getElementById("raw_json").value = JSON.stringify(cache[key], null, 2);
+    };
+
+    window.saveRaw = async () => {
+      const key = document.getElementById("raw_key").value;
+      const data = JSON.parse(document.getElementById("raw_json").value);
+      await save(key, data);
+      document.getElementById("raw_json").value = JSON.stringify(data, null, 2);
+    };
+
+    async function initAuth() {
+      try {
+        const cfg = await fetch("/admin/api/config").then((r) => r.json());
+        if (cfg.requiresAuth) {
+          const bar = document.getElementById("authBar");
+          bar.classList.remove("hidden");
+          const input = document.getElementById("adminToken");
+          const saved = localStorage.getItem("santanderAdminToken");
+          if (saved) input.value = saved;
+          input.addEventListener("input", () => {
+            localStorage.setItem("santanderAdminToken", input.value);
+          });
+        }
+      } catch (_) {}
+    }
+
+    buildNav();
+    initAuth().then(render);
+  </script>
+</body>
+</html>

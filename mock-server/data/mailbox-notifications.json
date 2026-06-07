@@ -1,0 +1,30 @@
+{
+  "notifications": [
+    {
+      "id": "NOTIF-20251105-001",
+      "bodyBase64": null,
+      "sendingTime": "2025-11-05T10:30:00",
+      "subject": "Transferencia",
+      "titleBase64": null,
+      "messageBase64": null,
+      "data": null,
+      "read": true
+    },
+    {
+      "id": "NOTIF-20250901-001",
+      "bodyBase64": null,
+      "sendingTime": "2025-09-01T14:15:00",
+      "subject": "Compra online por autorizar",
+      "titleBase64": null,
+      "messageBase64": null,
+      "data": null,
+      "read": false
+    }
+  ],
+  "links": {
+    "_first": "",
+    "_prev": "",
+    "_next": "",
+    "_last": ""
+  }
+}

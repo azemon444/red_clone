@@ -1,0 +1,29 @@
+{
+  "publicProducts": [
+    {
+      "id": "accounts",
+      "text": "Contas {{BOLD}}bancárias{{/BOLD}}",
+      "icon": "/apps/SAN/img/public_products/ic_cuentas.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/accounts"
+    },
+    {
+      "id": "cards",
+      "text": "Cartões {{BOLD}}personalizados{{/BOLD}}",
+      "icon": "/apps/SAN/img/public_products/ic_tarjeta.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/cards"
+    },
+    {
+      "id": "loans",
+      "text": "{{BOLD}}Crédito{{/BOLD}} pessoal",
+      "icon": "/apps/SAN/img/public_products/ic_prestamos.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/loans"
+    },
+    {
+      "id": "funds",
+      "text": "Fundos de {{BOLD}}investimento{{/BOLD}}",
+      "icon": "/apps/SAN/img/public_products/ic_fondosInversion.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/funds"
+    }
+  ],
+  "stockHolders": []
+}

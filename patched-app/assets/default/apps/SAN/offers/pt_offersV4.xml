@@ -1,0 +1,3358 @@
+<offers>
+	<!--  OFERTAS PARA CARROSSEL CENTRO DE AJUDA e CARROSSEL SEGURANÇA - "SAIBA COMO" VIDEOS youtube  -->
+	<!--                                                   -->
+	<!--  ****** VIDEO #3 PAGAR SERVIÇOS ******  -->
+	<product>
+		<id>video_Pagamento_serviços_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hJP5w9RmNBA</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Pagamento_serviços_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hJP5w9RmNBA</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Pagamento_serviços</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hJP5w9RmNBA</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #4 PERSONALIZAR NOTIFICAÇÕES  -->
+	<product>
+		<id>video_Definir_alertas_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>ChmBZiDB1gA</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Definir_alertas_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>ChmBZiDB1gA</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Definir_alertas</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>ChmBZiDB1gA</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #5 USAR QR CODE PARA PAGAR  -->
+	<product>
+		<id>video_Pagamento_QRCODE_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>2cf89WDGpKw</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Pagamento_QRCODE_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>2cf89WDGpKw</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Pagamento_QRCODE</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>2cf89WDGpKw</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #6 ATIVAR O 3D SECURE  -->
+	<product>
+		<id>video_3DS_Autorizar_compras_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>fN1Clb7Z_js</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_3DS_Autorizar_compras_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>fN1Clb7Z_js</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_3DS_Autorizar_compras</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>fN1Clb7Z_js</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #7 DEFINIR SENHA  -->
+	<product>
+		<id>video_PIN_Biometria_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4zs1LUwvrnE</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_PIN_Biometria_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4zs1LUwvrnE</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_PIN_Biometria</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4zs1LUwvrnE</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #8 TRANSFERIR POR MB WAY  -->
+	<product>
+		<id>video_MBWAY_enviar_dinheiro_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hvzx_AKBBwk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_MBWAY_enviar_dinheiro_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hvzx_AKBBwk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_MBWAY_enviar_dinheiro</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>hvzx_AKBBwk</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #9 CONFIGURAR MB WAY  -->
+	<product>
+		<id>video_MBWAY_ver_historico_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4NV2BM7kUqo</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_MBWAY_ver_historico_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4NV2BM7kUqo</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_MBWAY_ver_historico</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>4NV2BM7kUqo</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #10 CONSULTAR DETALHES CARTÃO  -->
+	<product>
+		<id>video_Consultar_detalhes_crt_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>9oDUhg3uD4k</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Consultar_detalhes_crt_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>9oDUhg3uD4k</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Consultar_detalhes_crt</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>9oDUhg3uD4k</action_value>
+		</action>
+	</product>
+	<!--  VIDEO #11 REUTILIZAR TRANSFERENCIAS  -->
+	<product>
+		<id>video_Reutilizar_Transf_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>376tEcfJHUk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Reutilizar_Transf_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>376tEcfJHUk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Reutilizar_Transf</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>376tEcfJHUk</action_value>
+		</action>
+	</product>
+	<!--  VIDEO COMPRAS ONLINE DICAS  -->
+	<product>
+		<id>video_dicas_compras_online</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>Wt2CG48adxU</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_dicas_compras_online_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>Wt2CG48adxU</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_dicas_compras_online_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>Wt2CG48adxU</action_value>
+		</action>
+	</product>
+	<!--  VIDEO MENSAGENS FRAUDULENTAS  -->
+	<product>
+		<id>video_msgs_fraudulentas</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>GoRDOPCHXmk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_msgs_fraudulentas_android</id>
+		<rules>
+			<rule>no_ios</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>GoRDOPCHXmk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_msgs_fraudulentas_iOS</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>GoRDOPCHXmk</action_value>
+		</action>
+	</product>
+	<product>
+		<id>ciberseguranca</id>
+		<never_expires>true</never_expires>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ www.santander.pt/ciberseguranca ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Escolher_PG</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>No2SMg7Jt0w</action_value>
+		</action>
+	</product>
+	<product>
+		<id>video_Personalizar_PG</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>tTUyQVbanW0</action_value>
+		</action>
+	</product>
+	<!--  oferta tooltip envio dinero  -->
+	<product>
+		<id>transfer_tutorial_video</id>
+		<rules/>
+		<never_expires>true</never_expires>
+		<banners/>
+		<action type="video">
+			<!-- poner id youtbe -->
+			<action_value>376tEcfJHUk</action_value>
+		</action>
+	</product>
+	<!--  GDPR  Esta oferta é fictícia, serve apenas para assignar à location GDPR para activar a chamada a webview (implementada em nativo) -->
+	<product>
+		<id>Virtual_GDPR</id>
+		<rules>
+			<rule>no_nwpt</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2099-12-31</end_date_utc>
+		<iterations>1000000</iterations>
+		<never_expires>true</never_expires>
+		<action type="open_webview">
+			<top_title>Privacidade e dados (RGPD)</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsentimentoGDPR</open_url>
+			<close_url> https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Extract_Account - Entry Point OPERAÇÕES -->
+	<product>
+		<id>Extract_Account</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/imgCar_Smart.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Extracto de conta</top_title>
+			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=ExtractosDigitaisContasDownload</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisContasDownload</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Extracto de Cartão só para iOS, já que para Android está por nativo
+       18/Maio retirar restrição de Android  -->
+	<product>
+		<id>card_extract_4all</id>
+		<rules>
+			<!--  <rule>no_android</rule>  -->
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Extrato de Cartão</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ExtractosDigitaisCartoesDownload</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NBP NBP NBP Efectivo al instante (Cash Advance) - id fixo porque é tb deeplink notificações  -->
+	<product>
+		<id>CASH_ADVANCE</id>
+		<rules>
+			<rule>CreditCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Transferir credito p/ conta</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">TransferenciaTarjetaLightDO</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Cambio Forma de Pago  -->
+	<product>
+		<id>Cambio_FormaPago</id>
+		<rules>
+			<rule>CreditCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<action type="open_webview">
+			<top_title>Condições de Pagamento</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">CambioCondicionesTarjeta</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP  PIN_Card  -->
+	<product>
+		<id>PIN_Card</id>
+		<rules>
+			<rule>Tarjetas</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<top_title>Pedir PIN</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">PedidoNovoPin</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+				<parameter name="language">pt</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP Contratar Cartão de Débito  -->
+	<product>
+		<id>Hire_DebitCard</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Contratar cartão de débito</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<!--  <title>Contratar cartão de débito</title>
+             <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaDebito</open_url>  -->
+			<title>Contratar cartao de débito</title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaDebito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NBP NBP NBP Contratar Cartão de Crédito  -->
+	<product>
+		<id>Hire_CreditCard</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Cartao_credito2_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar cartao de crédito</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaCredito</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaCredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Contratar Cartão Pre pago  -->
+	<product>
+		<id>Hire_PrepaidCard</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Contratar cartao pré-pago</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PedidoTarjetaPrePago</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PedidoTarjetaPrePago</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NBP NBP NBP Carregar Cartões PréPagos - id fixo porque é tb deeplink notificações  -->
+	<product>
+		<id>LOAD_RELOADABLE</id>
+		<rules>
+			<rule>PrepaidCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<!--  <banner app="ios,android">
+			<![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/imgCar_Smart.png]]></banner>  -->
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<top_title>Carregar pré-pago</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">CargaTarjetaPrePago</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Crear_PagaSimple - id fixo porque é tb deeplink notificações  -->
+	<product>
+		<id>PAGASIMPLES_PLAN_CREATION</id>
+		<rules>
+			<rule>CreditCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Criar plano PagaSIMPLES</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=CriarPlanoCompras</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Consultar_PagaSimples  -->
+	<product>
+		<id>Consultar_PagaSimples</id>
+		<rules>
+			<rule>CreditCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Os meus PagaSIMPLES</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PlanosFinanceiros</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Subscrição_Fundos só deeplink  -->
+	<product>
+		<id>Subscrição_Fundos</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<top_title>Subscrição Fundos</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=QueroInvestir</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>E_Broker</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>EBroker</top_title>
+			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=LanzaEBroker</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=LanzaEBroker</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Investments</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Fundos_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<top_title>Fundos, seguros e PPR</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Investments</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Security_Menu</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>Security_Menu</action_value>
+		</action>
+	</product>
+	<!--  DEBITOS DIRECTOS  -->
+	<product>
+		<id>debitos_directos</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Débitos Directos</top_title>
+			<!--  2025-06-25  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=ConsultaDDSepa</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsultaDDSepa</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  ALERTA PAGAMENTOS EM ATRASO  -->
+	<product>
+		<id>Alerta_Pag_atraso</id>
+		<rules>
+			<rule>CAMP822</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Collections/Alerta_pag_atraso_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>late_payments_collections</action_value>
+		</action>
+	</product>
+	<!--  PAGAMENTOS SEGURANÇA SOCIAL  -->
+	<product>
+		<id>pagamentos_ss</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Pagamento SS</top_title>
+			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocial</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocial</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  PAGAMENTOS SEGURANÇA SOCIAL ENTIDADE PATRONAL  -->
+	<product>
+		<id>pagamento_ss_entp</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Pagamento SS Ent Patronal</top_title>
+			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PagoSeguridadSocialEntidadesPatronales</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PagoSeguridadSocialEntidadesPatronales</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--   _________________Traspaso de Fondos Retail  _________________ -->
+	<product>
+		<id>TRASPASOS_FONDO_RETAIL</id>
+		<rules>
+			<rule>no_nwpt</rule>
+		</rules>
+		<start_date_utc>2017-07-01</start_date_utc>
+		<end_date_utc>2060-12-31</end_date_utc>
+		<iterations>5000000</iterations>
+		<never_expires>true</never_expires>
+		<action type="open_webview">
+			<top_title>Traspaso Fondos Retail</top_title>
+			<title>Traspaso de Fondos Retail</title>
+			<open_url>https://santanderbol.show.mdgms.com/webview/traspaso/tipo</open_url>
+			<close_url>https://www.bancosantander.es</close_url>
+			<pdf_name>Suscripción_fondos</pdf_name>
+			<parameters>
+				<parameter name="BKS-AUTH-TOKEN">$TOKEN</parameter>
+				<parameter name="accountNumber">$CONTRACT_ID</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP Gerir Utilização de Cartões  -->
+	<product>
+		<id>Gerir_Utilizacao_Crt</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<top_title>Permissões de cartão</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">GestaoUtilizacao</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Ingreso en tarjeta (Pagar Tarjeta)   -->
+	<product>
+		<id>Pagar_Tarjeta</id>
+		<rules>
+			<rule>CreditCards</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<action type="open_webview">
+			<method>GET</method>
+			<reload_session_on_close>true</reload_session_on_close>
+			<!--  <open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>  -->
+			<top_title>Pagar cartão</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">PagoManual</parameter>
+				<parameter name="directCard">true</parameter>
+				<parameter name="cardCode">$CARD_CODE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!-- Ofertas offersBookmarksPG   -->
+	<product>
+		<id>pt_app</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android" height="150" width="720">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V1_PT@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/salto/dicas-poupanca?ad_campaign=BN_BRA_BLG_OA_PAE0_AO_Generico0625_DicasPoupanca_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>pt_hbo</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android" height="150" width="720">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V2_PT@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/campanhas/seguros ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>pt_smart</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android" height="150" width="720">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Carrusel_PG_V3_PT@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/credito/credito-pessoal ]]>
+			</action_value>
+		</action>
+	</product>
+	<!-- FIN Ofertas offersBookmarksPG   -->
+	<!--  CAMPANHAS UNIVERSITÁRIOS   -->
+	<product>
+		<id>Universitarios_Moche_Bookmark</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<!--  A pedido da Célia Sirgado a 25/Jan/2024 (chat Teams) suspender esta oferta
+		<end_date_utc>2024-01-25</end_date_utc>
+		Pedido da Célia a 06/Fev/2024 para reactivar com alteração de URL
+        Célia 04/Abr/2024 Retirar, para a semana manda novo banner - reactivado a 07/abr   -->
+		<end_date_utc>2030-04-03</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/MOCHE_BK_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.moche.pt/tarifarios/fatura/aderir-santander ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Universitarios_Express_Bookmark</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/23_set_Uni/Banner_RedeExpresso_Uni_1.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://rede-expressos.pt/pt/registar/santander ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Bolsas_BK</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2022-09-04</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Bolsa_BK_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.becas-santander.com/pt_pt/index.html?ad_campaign=BOL_BOL_OA_BN_0S0_AO_BolsasGenerico0922_CLI&ad_source=one_app&ad_medium=banner&ad_content=AppUniv ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Toga_Lady_Sir_BK</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2024-03-15</start_date_utc>
+		<end_date_utc>2026-03-16</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Toga_Lady_Sir_2025.jpg ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.particulares.santander.pt/nbpstatic/OfertaUniv19.htm ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  FIM DE CAMPANHAS UNIVERSITÁRIOS  -->
+	<!--  CAMPANHA FlashSales BOTH CARDS  -->
+	<product>
+		<id>So_o_Banner_Bookmark</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2022-04-13</start_date_utc>
+		<end_date_utc>2022-04-30</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/ALLC_FlashSales_Abr/PAR_FlashSales04_BK1_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value/>
+		</action>
+	</product>
+	<!--  CAMPANHA Default Parcerias  -->
+	<product>
+		<id>Parcerias_MenuPrivado</id>
+		<rules> </rules>
+		<start_date_utc>2023-05-05</start_date_utc>
+		<end_date_utc>2030-06-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners/>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/descontos?tab=2&ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Default_Parcerias_notSmart</id>
+		<rules>
+			<rule>not_pgSmartOffer</rule>
+		</rules>
+		<start_date_utc>2023-05-05</start_date_utc>
+		<end_date_utc>2033-07-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Classic_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<top_title>Rewards</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=C_C_OA_BN_PAU0_AO_Rewards0623_CLI&ad_source=one_app&ad_medium=banner&ad_content=pgcta ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Default_Parcerias_Simple</id>
+		<rules>
+			<rule>pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_Parcerias/DefaultBanner_PGTOP_Simple_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/parcerias?ad_campaign=PAR_PAR_W039_AP_BN0T0_Parcerias_CLI&ad_source=app_bst&ad_medium=banner&ad_content=crtvy0 ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  FIM DE CAMPANHA DEFAULT PARCERIAS  -->
+	<!--  Ofertas Logout  -->
+	<product>
+		<id>TOUCH_ID_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_90_salida_tocuh.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>PERSONALIZADA_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_60_salida_personaliza.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>AYUDANOS_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_20_salida_ayudanos.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>FRACCIONAR_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_30_salida_fraccionar.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>TRANSFERENCIAS_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_70_salida_transf.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>CVV_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/POR_80_salida_cvv.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<title>Ajude-nos a melhorar</title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>01_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/01-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>02_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/02-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<open_url>https://www.opinator.com/opi/APP-PER-logout-NPS-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  03_LOGOUT não está activa, deveria ir para "Criar PagaSimples" ou algo do género.  -->
+	<product>
+		<id>03_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/03-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>04_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/04-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>gp_configure</action_value>
+		</action>
+	</product>
+	<product>
+		<id>05_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/05-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>transfers_history</action_value>
+		</action>
+	</product>
+	<product>
+		<id>06_LOGOUT</id>
+		<rules>
+			<rule>Tarjetas</rule>
+		</rules>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/06-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>07_LOGOUT</id>
+		<rules/>
+		<title/>
+		<long_title/>
+		<short_text/>
+		<description/>
+		<start_date_utc>2017-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<iterations>30000</iterations>
+		<banners>
+			<banner height="656" width="750" app="android,ios">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/logout/07-Logout_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>secset</action_value>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Menu de Documentos Digitais (Buzón de correspondencia) - id fixo porque é tb deeplink notificações  -->
+	<product>
+		<id>DOCUMENTS_COMMERCIAL_COMMUNICATIONS</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<ios_webview_engine_version>wkwebview</ios_webview_engine_version>
+			<!--  <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=DocumentosDigitais</open_url>  -->
+			<top_title>Documentos Digitais</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=DocumentosDigitais</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NBP NBP NBP   Contas Rendimento Poupança e Depósitos  -->
+	<product>
+		<id>CRPs_Depositos</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Poupancas_Depositos_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<!--  2025-05-28 João Almeida: PaginaIntermediaPoupanças DESCONTINUADA pelo NBP  -->
+			<top_title>Poupanças e Depósitos</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=PaginaIntermediaPoupancas ]]>
+			</open_url>
+			<!--  chama página de Polónia para evitar q webview feche quando chama site publico  -->
+			<close_url>https://www.santander.pl</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--     AVALIAR IMOVEL  -->
+	<product>
+		<id>Avaliar_imovel</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://valoravivienda.bancosantander.es/init/pt?language=pt&canal=MOV ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--     SEGUROS SEGUROS SEGUROS  -->
+	<product>
+		<id>seguros_menu_privado</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Seguros</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Menu_Seguros</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros4_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Seguros</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<title>Seguros</title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>consultar_seguros</id>
+		<start_date_utc>2022-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Consultar Seguros</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=SegurosAutonomos&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  BOUTIQUE  -->
+	<product>
+		<id>boutique_watch</id>
+		<rules> </rules>
+		<start_date_utc>2021-11-02</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_PT_ec01.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://boutique.santander.pt/pt/ ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  DEEPLINKS Seguros de Protecção  -->
+	<product>
+		<id>nbp_safecaresaude</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>SafeCare Saúde</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">ContratacaoSeguroSafeCareSaude</parameter>
+				<parameter name="idTipoSeguro">005XA5</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>nbp_safecaresaudevidamais</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>SafeCare Saúde Viva Mais</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">ContratacaoSeguroSafeCareVivaMais</parameter>
+				<parameter name="idTipoSeguro">005XA6</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>nbp_protecaovida</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Proteção Vida</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>nbp_protecaolar</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Proteção Lar</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005XBF ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>nbp_protecaoacidentes</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Proteção Acidentes</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">ContratacaoProteccaoAcidentes</parameter>
+				<parameter name="codigoProducto">005XAO</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>nbp_protecaoservicosdomesticos</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<!--  <banner app="ios,android">
+                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/Seguros_PT.png ]]></banner> -->
+		</banners>
+		<action type="open_webview">
+			<top_title>Proteção Serviços Domésticos</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+			<method>GET</method>
+			<parameters>
+				<parameter name="feature">ContratacaoEmpregadaDomestica</parameter>
+				<parameter name="idTipoSeguro">005XBE</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>nbp_protecaovidaselect</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Proteção Vida Select</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoPlanoProteccao&codigoProducto=005XAV&loginDirigido=true&codigoProductoSelect=005XAP ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>nbp_seguroauto</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Proteção Auto</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ESeguros&lparam1=true&idTipoSeguro=005AUM ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Comunicacoes_comerciais</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Comunicações Comerciais</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=DocumentosDigitaisComunicacoesComerciais</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Lanc Opi  -->
+	<product>
+		<id>pt_lanc_opi_classic</id>
+		<rules>
+			<!--  <rule>pgClassicOffer</rule>  -->
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/BannerPGTOP_Classic_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<open_url>https://www.opinator.com/opi/APP-PER-global-position-top-BETA-PT/</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--   Tutorial 23 Set   -->
+	<product>
+		<id>Tutoriais_23Set_android</id>
+		<!--  04/Abr/2022 <rules>
+           <rule>no_ios</rule>
+        </rules>  -->
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>1</iterations>
+		<action type="image_list_fullscreen">
+			<top_title>Bem-vindo</top_title>
+			<list>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-2-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-3-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-4-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-5-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+			</list>
+		</action>
+	</product>
+	<product>
+		<id>Tutoriais_23Set_ios</id>
+		<rules>
+			<rule>no_android</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>1</iterations>
+		<action type="image_list_fullscreen">
+			<top_title>Bem-vindo</top_title>
+			<list>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Lanc_23Set/Tutorial-1-PT.gif ]]>
+					</image_fullscreen>
+				</page>
+			</list>
+		</action>
+	</product>
+	<!--  TESTES DEEPLINKS TESTES DEEPLINKS TESTES DEEPLINKS   -->
+	<product>
+		<id>Area_Pessoal</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>apers</action_value>
+		</action>
+	</product>
+	<product>
+		<id>MB_homepage</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>mbway_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>MBWAY_history</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>mbway_historic</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Topups_homepage</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>topups_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Topups_flow</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>topups_send</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Payments_homepage</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>payments_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Services_payment_flow</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>service_payment</action_value>
+		</action>
+	</product>
+	<product>
+		<id>State_payments_flow</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>state_payment</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Security_settings</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>secset</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Enable_SAF_settings</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>settings_saf</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Notification_Inbox</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>notification_inbox</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Manage_Notification_settings</id>
+		<rules>
+			<!--   <rule>no_nwpt</rule>  -->
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>notification_settings</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CHANGE_CREDIT_LIMIT</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners> </banners>
+		<action type="navigate_screen">
+			<action_value>CHANGE_CREDIT_LIMIT</action_value>
+		</action>
+	</product>
+	<!--  CREDI_SIMPLES  -->
+	<product>
+		<id>CREDI_SIMPLES</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  FIM CREDI_SIMPLES  -->
+	<!--  Pedir Crédito MENU PRIVADO  -->
+	<product>
+		<id>Pedir_Credito</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Botoes_MenuPrivado/PedirCredito_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  A_CREDITO  -->
+	<product>
+		<id>A_Credito</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  MUNDO 123 MENU PRIVADO  -->
+	<product>
+		<id>Mundo_123</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Mundo 123</top_title>
+			<!--  2025-06-25 <open_url>https://www.particulares.santander.pt/pagina/indice/0,,1156_1_2_1,00.html?feature=OqueTenhoM123</open_url>  -->
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=OqueTenhoM123</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<!--  Existe só em Deeplink  -->
+		<id>Consultar_benefs_M123</id>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Consultar Benefícios</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ConsultarBeneficios123</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  DEEPLINK Gerir contas de menores: permissions_under_age  -->
+	<product>
+		<id>Gerir_contas_menores</id>
+		<rules> </rules>
+		<start_date_utc>2024-07-01</start_date_utc>
+		<end_date_utc>2034-06-27</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<!--  <banner app="ios,android">
+                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+		</banners>
+		<action type="navigate_screen">
+			<action_value>permissions_under_age</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Adesao_Proxy</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>proxy_lookup_association</action_value>
+		</action>
+	</product>
+	<!--  ********************** A PARTIR DAQUI ******* CAMPANHAS ********************  -->
+	<!--  BOUTIQUE  -->
+	<product>
+		<id>boutique_menu_privado</id>
+		<rules> </rules>
+		<start_date_utc>2022-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners> </banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://boutique.santander.pt/pt/ ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  Activar Notificações  -->
+	<product>
+		<id>Activar_notif</id>
+		<rules>
+			<rule>CAMP788</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>1</iterations>
+		<action type="detail">
+			<top_title>Dicas Santander</top_title>
+			<detail_banners>
+				<detail_banner>
+					<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Notificacoes01.png ]]>
+				</detail_banner>
+			</detail_banners>
+			<button_1>
+				<text>ATIVAR</text>
+				<action type="navigate_screen">
+					<action_value>settings_authorizations</action_value>
+				</action>
+			</button_1>
+		</action>
+	</product>
+	<product>
+		<id>Data4Deals</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<top_title>Rewards</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>Data4Deals_MenuPrivado</id>
+		<rules> </rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Boutique/BoutiqueSantander_Classic_EN_ec02.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<top_title>Rewards</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6 ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Aniversário  -->
+	<product>
+		<id>Niver_INTERSTITIAL</id>
+		<rules>
+			<rule>CL38</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>1</iterations>
+		<action type="image_list_fullscreen">
+			<top_title>Parabéns</top_title>
+			<list>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Aniversario/Santander_aniversario.gif ]]>
+					</image_fullscreen>
+				</page>
+			</list>
+		</action>
+	</product>
+	<!--  Cartão de Crédito - Aumentar Limite de Crédito  -->
+	<product>
+		<id>CC_Aumentar_LimCred_CL</id>
+		<rules>
+			<rule>Aumentar_Limite_CC</rule>
+			<rule>pgClassicOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CC_Aumentar_LimCred_SI</id>
+		<rules>
+			<rule>Aumentar_Limite_CC</rule>
+			<rule>pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_PGTAR_2_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CC_Aumentar_LimCred_SM</id>
+		<rules>
+			<rule>Aumentar_Limite_CC</rule>
+			<rule>pgSmartOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAumentarLimCred/CC_TARB_Smart_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<!--  Cartão de Crédito - Alterar Modo de Pagamento  -->
+	<product>
+		<id>CC_Alt_ModPgto_CL</id>
+		<rules>
+			<rule>Alt_Modo_Pgto_CC</rule>
+			<rule>pgClassicOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CC_Alt_ModPgto_SI</id>
+		<rules>
+			<rule>Alt_Modo_Pgto_CC</rule>
+			<rule>pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_PGTAR_2_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CC_Alt_ModPgto_SM</id>
+		<rules>
+			<rule>Alt_Modo_Pgto_CC</rule>
+			<rule>pgSmartOffer</rule>
+		</rules>
+		<start_date_utc>2023-04-01</start_date_utc>
+		<end_date_utc>2040-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CC_EventoAlterarModPgto/CC_TARB_Smart_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>cards_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>mbnet</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<!--  <banner app="ios,android">
+                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+		</banners>
+		<action type="navigate_screen">
+			<action_value>mbnet</action_value>
+		</action>
+	</product>
+	<!--  SEM CRÉDITOS NA POSIÇÃO GLOBAL  -->
+	<product>
+		<id>SEM_CREDITOS_PG_CL</id>
+		<rules>
+			<rule>pgClassicOffer</rule>
+		</rules>
+		<start_date_utc>2022-11-17</start_date_utc>
+		<end_date_utc>2032-11-24</end_date_utc>
+		<never_expires>true</never_expires>
+		<transparent_closure>true</transparent_closure>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Classica.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>SEM_CREDITOS_PG_SI</id>
+		<rules>
+			<rule>pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2022-11-17</start_date_utc>
+		<end_date_utc>2032-11-24</end_date_utc>
+		<never_expires>true</never_expires>
+		<transparent_closure>true</transparent_closure>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Creditos_Simples2.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito</top_title>
+			<open_url>https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  SEM SEGUROS NA POSIÇÃO GLOBAL  -->
+	<product>
+		<id>SEM_SEGUROS_PG_CL</id>
+		<rules>
+			<rule>pgClassicOffer</rule>
+		</rules>
+		<start_date_utc>2022-11-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<transparent_closure>true</transparent_closure>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Classica2.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Seguros</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>SEM_SEGUROS_PG_SI</id>
+		<rules>
+			<rule>pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2022-11-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<transparent_closure>true</transparent_closure>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Sem_Produto_na_PG/Sem_Seguros_Simples2.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Seguros</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Interstitial a pedir desculpa 20 Out 2022, 17:31  -->
+	<product>
+		<id>Sorry_Interstitial_2</id>
+		<rules> </rules>
+		<start_date_utc>2022-10-19</start_date_utc>
+		<end_date_utc>2022-10-22</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>1</iterations>
+		<action type="image_list_fullscreen">
+			<top_title>Aviso</top_title>
+			<list>
+				<page>
+					<image_fullscreen>
+						<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/aviso_netbanco_falha.png ]]>
+					</image_fullscreen>
+				</page>
+			</list>
+		</action>
+	</product>
+	<!--  Home Planner Platform  -->
+	<product>
+		<id>Home_Planner_Offer</id>
+		<rules>
+			<!--  24 Nov 2023 Pedido de retirar de Produção até nova ordem   -->
+			<rule>Sair_de_PRO</rule>
+		</rules>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<action type="open_webview">
+			<top_title>Home Planner</top_title>
+			<open_url>https://home-planner.santander.pt</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<method>GET</method>
+			<parameters>
+				<parameter name="channel">MOV</parameter>
+				<parameter name="language">pt_PT</parameter>
+				<parameter name="authenticationType">token</parameter>
+				<parameter name="token">$CORPORATIVE_TOKEN</parameter>
+				<parameter name="carryAppVersion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  CREDITO PESSOAL EXTRA para Deeplink  -->
+	<product>
+		<id>Contratar_CreditoExtra</id>
+		<rules> </rules>
+		<start_date_utc>2023-09-05</start_date_utc>
+		<end_date_utc>2033-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/CP_Extra_Ago23/CP_BK_PT.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Contratar Crédito Extra</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=E2ECredito&lparam5=true ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  DOMICILIAÇÃO ORDENADOS para Deeplink  -->
+	<product>
+		<id>Domiciliar_Ordenado</id>
+		<rules> </rules>
+		<start_date_utc>2023-10-05</start_date_utc>
+		<end_date_utc>2033-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Domiciliar Ordenado</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=OfertasENotificacoes&lparam=domiciliacao ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  NOVO MENU GESTÃO FINANCEIRA   -->
+	<product>
+		<id>FINANCIAL_ASSISTANT</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>fh</action_value>
+		</action>
+	</product>
+	<!--  NOVO MENU TRANSFERENCIAS E PAGAMENTOS   -->
+	<product>
+		<id>TRANSFERS_HOME_MENU</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>thab</action_value>
+		</action>
+	</product>
+	<product>
+		<id>PAYMENTS_HOME_MENU</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>payments_home</action_value>
+		</action>
+	</product>
+	<product>
+		<id>TOPUPS_HOME_MENU</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>topups_home</action_value>
+		</action>
+	</product>
+	<!--  NOVO MENU EDITAR PERFIL   -->
+	<product>
+		<id>PERSONAL_DATA_MENU</id>
+		<rules>
+			<rule>no_nwpt</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>datcon</action_value>
+		</action>
+	</product>
+	<!--  NOVO MENU Definições   -->
+	<product>
+		<id>DEFINITIONS_HOME_MENU</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<!--  <action_value>apers</action_value>  -->
+			<action_value>configuration_screen</action_value>
+		</action>
+	</product>
+	<product>
+		<id>NOTIF_MANAGEMENT_HOME_MENU</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>notification_settings</action_value>
+		</action>
+	</product>
+	<product>
+		<id>SECURTY_DEF_HOME_MENU</id>
+		<rules>
+			<rule>no_nwpt</rule>
+		</rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>secset</action_value>
+		</action>
+	</product>
+	<!--  NOVO MENU AJUDA e SUPORTE   -->
+	<product>
+		<id>Criar_Resolve</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>create_resolve</action_value>
+		</action>
+	</product>
+	<product>
+		<id>RESOLVE</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>santander_resolve</action_value>
+		</action>
+	</product>
+	<product>
+		<id>BRANCH_ATM</id>
+		<rules> </rules>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="navigate_screen">
+			<action_value>branch_locator</action_value>
+		</action>
+	</product>
+	<product>
+		<id>CONFLITOS_off</id>
+		<rules> </rules>
+		<start_date_utc>2023-05-05</start_date_utc>
+		<end_date_utc>2030-06-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners/>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/resolucao-alternativa-conflitos-consumo ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>RECLAMACOES_off</id>
+		<rules> </rules>
+		<start_date_utc>2023-05-05</start_date_utc>
+		<end_date_utc>2030-06-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners/>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.livroreclamacoes.pt/Inicio/ ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Ajuda_Opinator</id>
+		<start_date_utc>2024-01-01</start_date_utc>
+		<end_date_utc>2030-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Ajude-nos a melhorar</top_title>
+			<open_url>https://www.opinator.com/opi/appnew-general-PT</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<parameters>
+				<parameter name="id">$userId</parameter>
+				<parameter name="carry_os">$CARRY_OS</parameter>
+				<parameter name="carry_browser">$CARRY_BROWSER</parameter>
+				<parameter name="carry_language">$CARRY_LANGUAGE</parameter>
+				<parameter name="carry_devicemodel">$CARRY_DEVICE_MODEL</parameter>
+				<parameter name="carry_appversion">$CARRY_APP_VERSION</parameter>
+			</parameters>
+		</action>
+	</product>
+	<product>
+		<id>Simula_CredHabitacao</id>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<method>GET</method>
+			<top_title>Simular Crédito à Habitação</top_title>
+			<open_url>
+				<![CDATA[ https://www.credito-habitacao.santander.pt/SimulatorsSelfServiceReactive/ ]]>
+			</open_url>
+			<close_url>https://www.santander.pl</close_url>
+			<parameters>
+				<parameter name="ccliente">$USERID</parameter>
+				<parameter name="Language">PT</parameter>
+			</parameters>
+		</action>
+	</product>
+	<!--  SEGUROS CUF SANTANDER - deeplink  -->
+	<product>
+		<id>SEG_CUF_SANTANDER</id>
+		<rules> </rules>
+		<start_date_utc>2024-07-01</start_date_utc>
+		<end_date_utc>2034-06-27</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<!--  <banner app="ios,android">
+                <![CDATA[http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]></banner>  -->
+		</banners>
+		<action type="open_webview">
+			<top_title>Seguros</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=ContratacaoSeguroCUFSantander&idTipoSeguro=005XA9 ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  WORK CAFE  -->
+	<product>
+		<id>work_cafe</id>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/work-cafe ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  Ofertas Universitárias Início Março 2024  -->
+	<product>
+		<id>Ofertas_Univ_Mar2024</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2024-03-07</start_date_utc>
+		<end_date_utc>2025-07-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Universitarios/Novas_ofertas_Mar2024_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.particulares.santander.pt/nbpstatic/OfertaUniv19.htm?ad_campaign=BN_UNI_UNIV_OA_PAS0_CCO_Oferta0324_OfertaUniv19_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>End2End_Poupancas</id>
+		<never_expires>true</never_expires>
+		<start_date_utc>2016-08-05</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<iterations>99999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Poupanças</top_title>
+			<reload_session_on_close>true</reload_session_on_close>
+			<open_url>
+				<![CDATA[ https://poupinvest.santander.pt/entry ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$ACCESS_TOKEN</header>
+				<header name="device-info-token">$DEVICE_INFO_TOKEN</header>
+			</headers>
+		</action>
+	</product>
+	<!--  FORMULARIO CONTACTOS  -->
+	<product>
+		<id>Formulario_ContacteNos</id>
+		<rules> </rules>
+		<start_date_utc>2024-06-17</start_date_utc>
+		<end_date_utc>2034-06-27</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Balcão ou Gestor</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=FormularioContacteNos ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  KYC  -->
+	<product>
+		<id>KYC</id>
+		<rules> </rules>
+		<start_date_utc>2024-01-01</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<!--  a pedido de João Graça, desactivar KYC e substituir por acesso à página de Dados Pessoais antiga
+             2025-05-18 João Graça pede para reactivar a webview
+             2025-06-06 preparar tudo para reactivação a 09 Jun - Douglas executa pipeline deploy-pro  -->
+		<action type="open_webview">
+			<top_title>Dados de identificação</top_title>
+			<chrome>true</chrome>
+			<open_url>
+				<![CDATA[ https://madcli.santander.pt/oneApp ]]>
+			</open_url>
+			<close_url>https://www.santander.pl</close_url>
+			<headers>
+				<header name="Authorization">$ACCESS_TOKEN</header>
+			</headers>
+		</action>
+		<!--  2025-06-06      2025-05-18
+        <action type="navigate_screen">
+			<action_value>datcon</action_value>
+		</action>  -->
+	</product>
+	<!--  Teste Atualização de Dados F&F para v2.15.xx  -->
+	<product>
+		<id>FF_KYC</id>
+		<rules>
+			<rule>VCODEcheck_2_15</rule>
+		</rules>
+		<start_date_utc>2024-01-01</start_date_utc>
+		<end_date_utc>2030-06-12</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>FF_KYC</top_title>
+			<chrome>true</chrome>
+			<open_url>
+				<![CDATA[ https://madcli.santander.pt/oneApp ]]>
+			</open_url>
+			<close_url>https://www.santander.pl</close_url>
+			<headers>
+				<header name="Authorization">$ACCESS_TOKEN</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Transferências Imediatas para UNIVERSITÁRIOS   -->
+	<product>
+		<id>Transf_Imediata_Estudante</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2024-12-05</start_date_utc>
+		<end_date_utc>2024-12-13</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Univ_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_UNIA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  Transferências Imediatas para RESTO-DO-PPL   -->
+	<product>
+		<id>Transf_Imediata_notEstudante</id>
+		<rules>
+			<rule>not_SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2024-12-05</start_date_utc>
+		<end_date_utc>2024-12-13</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTH_Transferencias/OTH_TRF_Excepto_Univ_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/contas/transferencias-imediatas?ad_campaign=BN_CS_SR_OA_PAA0_CSO_Generico1224_TransferenciasImediatas_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<!--  Assinatura Remota  -->
+	<product>
+		<id>Assinatura_Remota</id>
+		<start_date_utc>2023-10-17</start_date_utc>
+		<end_date_utc>2033-12-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners> </banners>
+		<action type="open_webview">
+			<top_title>Assinatura Digital</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=AssinaturaRemota&language=pt ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Rewards Março 2025 M1  -->
+	<product>
+		<id>Data4Deals_Mar_M1_BK</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-03-06</start_date_utc>
+		<end_date_utc>2025-07-10</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Rewards/D4D_Mar25_M1_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<top_title>Rewards</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=BN_CAR_C_OA_PAU0_AO_Rewards0325_M1_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Rewards Julho 2025 M1  -->
+	<product>
+		<id>Data4Deals_Jul_M1_BK</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-07-10</start_date_utc>
+		<end_date_utc>2025-07-24</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>9999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Rewards/D4D_Jul25_M1_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<cache>false</cache>
+			<top_title>Rewards</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=Data4Deals&accion=6&ad_campaign=D4D_Jul25_M1_BK ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<!--  Seguros Proteção Jul 2025  -->
+	<product>
+		<id>SEG_Jul25_BK</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-07-01</start_date_utc>
+		<end_date_utc>2025-08-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/2025_Seguros/07_SeguroGeral_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="open_webview">
+			<top_title>Seguros de Proteção</top_title>
+			<open_url>
+				<![CDATA[ https://www.particulares.santander.pt/bepp/sanpt/webviews/entry?feature=PaginaIntermediaSeguros&ad_campaign=BN_INS_GEN_OA_PAS0_CCO_Cuidar0125_NA_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</open_url>
+			<close_url>https://www.santander.pt</close_url>
+			<headers>
+				<header name="Authorization">$BEARER_IDP</header>
+			</headers>
+		</action>
+	</product>
+	<product>
+		<id>OTH_OpenAcademy_Univers_BK</id>
+		<rules>
+			<rule>SegmentoEstudante</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-04-22</start_date_utc>
+		<end_date_utc>2025-07-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Univ_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santanderopenacademy.com/pt_pt/index.html?ad_campaign=BN_BRA_OAC_OA_UNIA0_CSO_Generico0425_NA_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>OTH_OpenAcademy_Geral_BK</id>
+		<rules>
+			<rule>not_SegmentoEstudante</rule>
+			<rule>not_SegmentoPrivate</rule>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-04-22</start_date_utc>
+		<end_date_utc>2025-07-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_OpenAcademy_Geral_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santanderopenacademy.com/pt_pt/index.html?ad_campaign=BN_BRA_OAC_OA_PAA0_CSO_Generico0425_NA_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>OTH_SmartService_3_BK</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-06-26</start_date_utc>
+		<end_date_utc>2025-12-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_Levant_3_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/depositos-automaticos ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>Aviso_Legal</id>
+		<rules> </rules>
+		<start_date_utc>2025-05-01</start_date_utc>
+		<end_date_utc>2033-12-31</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/Camp_color/PG_Classic/Campaign_6@2x.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/aviso-legal-copyright ]]>
+			</action_value>
+		</action>
+	</product>
+	<product>
+		<id>OTH_CiberSeg_BK</id>
+		<rules>
+			<rule>not_pgSimpleOffer</rule>
+		</rules>
+		<start_date_utc>2025-06-23</start_date_utc>
+		<end_date_utc>2025-08-01</end_date_utc>
+		<never_expires>true</never_expires>
+		<iterations>999999</iterations>
+		<banners>
+			<banner app="ios,android">
+				<![CDATA[ http://10.0.2.2:9090/microsite/filesFF/apps/SAN/img/OTHER/OTH_CiberSeg_BK.png ]]>
+			</banner>
+		</banners>
+		<action type="external_url">
+			<action_value>
+				<![CDATA[ https://www.santander.pt/ciberseguranca/santander-seguro?ad_campaign=BN_ITT_CYB_OA_PAA0_CSO_Generico0625_SantanderSeguro_OBM_NGAL&ad_source=one_app&ad_medium=banner&ad_content=OBM&ad_term=NA ]]>
+			</action_value>
+		</action>
+	</product>
+</offers>

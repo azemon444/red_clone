@@ -1,0 +1,29 @@
+{
+  "consents": [
+    {
+      "code": "C0001",
+      "title": "Cookies técnicos",
+      "description": "Estes cookies são necessários para garantir o funcionamento básico do Website e não podem ser desativados. Permitem, por exemplo, identificar a sessão, aceder a partes de acesso restrito, utilizar elementos de segurança durante a navegação, etc."
+    },
+    {
+      "code": "C0003",
+      "title": "Cookies de personalização ou de preferências",
+      "description": "Estes cookies permitem memorizar informação para que o utilizador aceda ao serviço com determinadas caraterísticas que podem diferenciar a sua experiência da de outros utilizadores sem que tal tenha sido expressamente solicitado, como, por exemplo, o idioma, o número de resultados a apresentar quando o utilizador efetua uma pesquisa e o aspeto ou conteúdo do serviço em função do tipo de navegador."
+    },
+    {
+      "code": "C0002",
+      "title": "Analíticos",
+      "description": "Estes cookies, próprios ou de terceiros, têm como objetivo obter informação acerca do rendimento do Website e da utilização do mesmo por parte do utilizador como, por exemplo, quantificar o número de utilizadores que visitaram o Website e realizar a medição e análise estatística de como os utilizadores chegam ao Website e da utilização do mesmo. Além disso, utilizamos estes cookies para criar modelos analíticos com base no seu perfil comercial elaborado pelo Banco."
+    },
+    {
+      "code": "C0004",
+      "title": "Publicidade comportamental",
+      "description": "Estes cookies, próprios ou de terceiros, armazenam informação acerca do comportamento do utilizador obtida através da observação contínua dos seus hábitos de navegação (visitas repetidas a um website específico, interações, palavras-chave, produção de conteúdos online, etc.), permitindo desenvolver um perfil específico para lhe apresentar publicidade em função do mesmo."
+    },
+    {
+      "code": "C0007",
+      "title": "Partilha do identificador de utilizador",
+      "description": "Caso o permita, partilharemos o seu identificador único de utilizador com os nossos colaboradores de cookies analíticos e publicitários para que possam interagir consigo em conformidade com as suas políticas de cookies e caso tenha consentido a instalação dos seus cookies."
+    }
+  ]
+}

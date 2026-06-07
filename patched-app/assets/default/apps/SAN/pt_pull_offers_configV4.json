@@ -1,0 +1,894 @@
+{
+	"pullOffersConfig": {
+		"categories": [{
+			"id": "cuentas",
+			"name": "Cuentas",
+			"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_accounts_smart.png",
+			"offers": [
+				"CUENTA_123",
+				"Buena_oferta_con_banner",
+				"180_Con_TarMiOtraProfPrem_PAR",
+				"141_CuentaZero_PAR",
+				"141_CuentaZero_SPB",
+				"112_HaztePremium",
+				"112_HazteSmart",
+				"REPORTAR_FRAUDE"
+			]
+		},
+			{
+				"id": "tarjetas",
+				"name": "Tarjetas",
+				"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_cards_smart.png",
+				"offers": [
+					"Buena_oferta_con_banner",
+					"CUENTA_123",
+					"180_Con_TarMiOtraProfPrem_PAR"
+				]
+			},
+			{
+				"id": "prestamos",
+				"name": "Préstamos",
+				"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_pregranted_loans_smart.png",
+				"offers": [
+					"Buena_oferta_con_banner",
+					"CUENTA_123",
+					"180_Con_TarMiOtraProfPrem_PAR"
+				]
+			},
+			{
+				"id": "renting_tecnologico",
+				"name": "Renting Tecnológico",
+				"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_tech_renting_smart.png",
+				"offers": [
+					"Buena_oferta_con_banner",
+					"CUENTA_123",
+					"180_Con_TarMiOtraProfPrem_PAR"
+				]
+			},
+			{
+				"id": "renting_autos",
+				"name": "Renting Autos",
+				"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_auto_renting_smart.png",
+				"offers": [
+					"Buena_oferta_con_banner",
+					"CUENTA_123",
+					"180_Con_TarMiOtraProfPrem_PA"
+				]
+			},
+			{
+				"id": "otros",
+				"name": "Otros",
+				"iconRelativeURL": "/apps/SAN/img/pull_offer_categories/icons/icn_others_smart.png",
+				"offers": [
+					"Buena_oferta_con_banner",
+					"CUENTA_123",
+					"180_Con_TarMiOtraProfPrem_PAR"
+				]
+			}
+		],
+		"tips": [{
+			"title": "Para el día a día",
+			"desc": "Tu oficina en el móvil 24 horas, 365 días, allí donde estés",
+			"icon": "/apps/SAN/img/tips/icn_info_tip.png",
+			"offerId": "152_PG_AporPlan_PAR"
+		},
+			{
+				"title": "Financiación al instante",
+				"desc": "Inmediato y sin papeleos",
+				"offerId": "Alertas_SPB"
+			},
+			{
+				"title": "Para ahorrar e invertir",
+				"desc": "Saca partido a tu dinero hoy y disfruta mañana",
+				"icon": "",
+				"offerId": "152_PG_AporPlan_PAR"
+			},
+			{
+				"title": "Más funcionalidades",
+				"desc": "Operativas y servicios que ayudarán a gestionar mejor tus finanzas",
+				"icon": "/apps/SAN/img/tips/icn_question_tip.png",
+				"offerId": "TUT2_Financiacion"
+			},
+			{
+				"title": "Otros consejos",
+				"desc": "Para que cada día tu experiencia sea mejor y más fácil",
+				"icon": "/apps/SAN/img/tips/icn_san_red_tip.png",
+				"offerId": ""
+			},
+			{
+				"title": "Te ayudamos",
+				"desc": "Elige la forma de contactar con nosotros",
+				"icon": "/apps/SAN/img/tips/icn_services_tip.png",
+				"offerId": "areapersdisseguro"
+			}
+		],
+		"securityTips_off": [
+			{
+				"title": "3DS - COMPRAS ONLINE",
+				"desc": "3D Secure Santander - como activar",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras_v2.png",
+				"tag": "Pagamentos",
+				"offerId": "video_3DS_Autorizar_compras_android"
+			},
+			{
+				"title": "3DS - COMPRAS ONLINE",
+				"desc": "3D Secure Santander - como activar",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras.png",
+				"tag": "Pagamentos",
+				"offerId": "video_3DS_Autorizar_compras_iOS"
+			},
+			{
+				"title": "ACESSO PIN e BIOMETRIA",
+				"desc": "Definir a senha da App Santander",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/Login_biometria_v2.png",
+				"tag": "Segurança",
+				"offerId": "video_PIN_Biometria_android"
+			},
+			{
+				"title": "ACESSO PIN e BIOMETRIA",
+				"desc": "Definir a senha da App Santander",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/Login_biometria.png",
+				"tag": "Segurança",
+				"offerId": "video_PIN_Biometria_iOS"
+			},
+			{
+				"title":"DICAS de SEGURANÇA",
+				"desc":"Compras online seguras",
+				"icon":"/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras_v2.png",
+				"tag": "Segurança",
+				"offerId":"video_dicas_compras_online_android"
+			},
+			{
+				"title":"DICAS de SEGURANÇA",
+				"desc":"Compras online seguras",
+				"icon":"/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras.png",
+				"tag": "Segurança",
+				"offerId":"video_dicas_compras_online_iOS"
+			},
+			{
+				"title":"DICAS de SEGURANÇA",
+				"desc":"Reconhecer mensagens fraudulentas",
+				"icon":"/apps/SAN/img/tips/Centro_Ajuda/reportar_fraude_v2.png",
+				"tag": "Segurança",
+				"offerId":"video_msgs_fraudulentas_android"
+			},
+			{
+				"title":"DICAS de SEGURANÇA",
+				"desc":"Reconhecer mensagens fraudulentas",
+				"icon":"/apps/SAN/img/tips/Centro_Ajuda/reportar_fraude.png",
+				"tag": "Segurança",
+				"offerId":"video_msgs_fraudulentas_iOS"
+			}
+		],
+		"securityTravelTips": [{
+			"title": "Precaución para QA al {{BOLD}}viajar{{/BOLD}}",
+			"desc": "QA! Ten cuidado con lo que gastas, especialmente si viajas todos los dias a La Mancha.",
+			"icon": "/apps/SAN/img/tips/img_music_tip.jpg",
+			"offerId": "areapersdisseguro"
+		},
+			{
+				"title": "QA sabe que estas en {{BOLD}}Modo Viaje{{/BOLD}}",
+				"desc": "Oferta tipo activity {{BOLD}}QA{{/BOLD}}.",
+				"icon": "/apps/SAN/img/tips/img_study_tip.jpg",
+				"offerId": "buena_oferta"
+			},
+			{
+				"title": "Precaución con {{BOLD}}Pavel{{/BOLD}}",
+				"desc": "{{BOLD}}Oferta{{/BOLD}} tipo tutorial.",
+				"icon": "/apps/SAN/img/tips/img_sport_tip.jpg",
+				"offerId": "tutorial_inicio"
+			},
+			{
+				"title": "Precaución al {{BOLD}}pagar{{/BOLD}}",
+				"desc": "Generador {{BOLD}}de{{/BOLD}} PDF.",
+				"icon": "/apps/SAN/img/tips/img_study_tip.jpg",
+				"offerId": "generardor_pdf"
+			},
+			{
+				"title": "{{BOLD}}pagar{{/BOLD}}",
+				"desc": "Oferta de {{BOLD}}idioma{{/BOLD}}.",
+				"icon": "/apps/SAN/img/tips/img_sport_tip.jpg",
+				"offerId": "idiomaweb"
+			},
+			{
+				"title": "La magia existe! Tu deuda desaparece misteriosamente al solicitar {{BOLD}}BlackCash+{{/BOLD}}",
+				"desc": "Oferta de {{BOLD}}tipo de cache{{/BOLD}}. La ves y en seguida desaparece para siempre. No te la pierdas!",
+				"icon": "/apps/SAN/img/tips/img_music_tip.jpg",
+				"offerId": "oferta_tipo_cache"
+			},
+			{
+				"title": "{{BOLD}}oferta deplink{{/BOLD}}",
+				"desc": "navegar a {{BOLD}}cuentas y tarjetas{{/BOLD}}.",
+				"icon": "/apps/SAN/img/tips/icn_presents_tip.png",
+				"offerId": "buena_oferta_deeplink"
+			}
+		],
+		"helpCenterTips_off": [
+			{
+				"title": "PAGAR SERVIÇOS",
+				"desc": "Como efetuar pagamento de serviços",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagamentos_v2.png",
+				"tag": "Pagamento",
+				"offerId": "video_Pagamento_serviços_android"
+			},
+			{
+				"title": "PAGAR SERVIÇOS",
+				"desc": "Como efetuar pagamento de serviços",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagamentos.png",
+				"tag": "Pagamento",
+				"offerId": "video_Pagamento_serviços_iOS"
+			},
+			{
+				"title": "PAGAR COM QRCODE",
+				"desc": "Como usar o QRCode Santander",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagar_qrCode_v2.png",
+				"tag": "Pagamento",
+				"offerId": "video_Pagamento_QRCODE_android"
+			},
+			{
+				"title": "PAGAR COM QRCODE",
+				"desc": "Como usar o QRCode Santander",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagar_qrCode.png",
+				"tag": "Pagamento",
+				"offerId": "video_Pagamento_QRCODE_iOS"
+			},
+			{
+				"title": "PERSONALIZAR NOTIFICAÇÕES",
+				"desc": "Como personalizar as notificações",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/notificacoes_v2.png",
+				"tag": "Notificações",
+				"offerId": "video_Definir_alertas_android"
+			},
+			{
+				"title": "PERSONALIZAR NOTIFICAÇÕES",
+				"desc": "Como personalizar as notificações",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/notificacoes.png",
+				"tag": "Notificações",
+				"offerId": "video_Definir_alertas_iOS"
+			},
+			{
+				"title": "TRANSFERIR POR MB WAY",
+				"desc": "Como transferir dinheiro através do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway_v2.png",
+				"tag": "MBWAY",
+				"offerId": "video_MBWAY_enviar_dinheiro_android"
+			},
+			{
+				"title": "TRANSFERIR POR MB WAY",
+				"desc": "Como transferir dinheiro através do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway.png",
+				"tag": "MBWAY",
+				"offerId": "video_MBWAY_enviar_dinheiro_iOS"
+			},
+			{
+				"title": "REUTILIZAR TRANSFERÊNCIAS",
+				"desc": "Como reutilizar transferências na App?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/transferencias_v2.png",
+				"tag": "Transferências",
+				"offerId": "video_Reutilizar_Transf_android"
+			},
+			{
+				"title": "REUTILIZAR TRANSFERÊNCIAS",
+				"desc": "Como reutilizar transferências na App?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/transferencias.png",
+				"tag": "Transferências",
+				"offerId": "video_Reutilizar_Transf_iOS"
+			},
+			{
+				"title": "MBWAY - HISTÓRICO e GERIR CARTÕES",
+				"desc": "Como estabelecer as definições do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway_v2.png",
+				"tag": "MBWAY",
+				"offerId": "video_MBWAY_ver_historico_android"
+			},
+			{
+				"title": "MBWAY - HISTÓRICO e GERIR CARTÕES",
+				"desc": "Como estabelecer as definições do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway.png",
+				"tag": "MBWAY",
+				"offerId": "video_MBWAY_ver_historico_iOS"
+			},
+			{
+				"title": "CONSULTAR DETALHES DO CARTÃO",
+				"desc": "Como consultar os detalhes dos cartões?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/detalhe_Cartao_v2.png",
+				"tag": "Cartões",
+				"offerId": "video_Consultar_detalhes_crt_android"
+			},
+			{
+				"title": "CONSULTAR DETALHES DO CARTÃO",
+				"desc": "Como consultar os detalhes dos cartões?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/detalhe_Cartao.png",
+				"tag": "Cartões",
+				"offerId": "video_Consultar_detalhes_crt_iOS"
+			}
+		],
+		"publicProducts": [{
+			"title": "Simulador {{BOLD}}prestamo personal{{/BOLD}}",
+			"desc": "Esta descripcion del {{BOLD}}prestamo personal{{/BOLD}} no tiene que mostrarse en ningun lado",
+			"icon": "/apps/SAN/img/tips/img_music_tip.jpg",
+			"offerId": "buena_oferta"
+		},
+			{
+				"title": "Simulador {{BOLD}}prestamo coche{{/BOLD}}",
+				"desc": "Esta descripcion del {{BOLD}}prestamo coche{{/BOLD}} no tiene que mostrarse en ningun lado",
+				"icon": "/apps/SAN/img/tips/img_study_tip.jpg",
+				"offerId": "buena_oferta"
+			},
+			{
+				"title": "Simulador {{BOLD}}prestamo hipoteca{{/BOLD}}",
+				"desc": "Esta descripcion del {{BOLD}}prestamo hipoteca{{/BOLD}} no tiene que mostrarse en ningun lado",
+				"icon": "/apps/SAN/img/tips/img_sport_tip.jpg",
+				"offerId": "buena_oferta"
+			},
+			{
+				"title": "UNA OFERTA CON MUCHÍSIMO TEXTO, {{BOLD}}MUY GRANDE{{/BOLD}}",
+				"desc": "Esta descripcion de la {{BOLD}}oferta grande{{/BOLD}} no tiene que mostrarse en ningun lado",
+				"icon": "/apps/SAN/img/tips/img_sport_tip.jpg",
+				"offerId": "buena_oferta"
+			},
+			{
+				"title": "{{BOLD}}OFERTA{{/BOLD}} DE QUICO",
+				"desc": "Esta descripcion de una {{BOLD}}oferta pequeña{{/BOLD}} no tiene que mostrarse en ningun lado",
+				"icon": "/apps/SAN/img/tips/img_music_tip.jpg",
+				"offerId": "buena_oferta"
+			}
+		],
+		"santanderExperiences": [],
+		"actionsTips_off": [{
+			"title": "Retirar efectivo sin tarjeta",
+			"desc": "¿En qué {{BOLD}}cajeros{{/BOLD}} preferirías {{BOLD}}retirar el efectivo sin tarjeta{{/BOLD}}?.",
+			"icon": "/apps/SAN/img/tips/icnGetMoneyMobile.png",
+			"offerId": "buena_oferta",
+			"keyWords": [
+				"actionsTips"
+			]
+		},
+			{
+				"title": "Chat directo 24/7",
+				"desc": "Añadimos {{BOLD}}más contacto{{/BOLD}} con nuestros clientes {{BOLD}}particulares{{/BOLD}}.",
+				"icon": "/apps/SAN/img/tips/icnHelpChat.png",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"actionsTips"
+				]
+			},
+			{
+				"title": "Firma digital",
+				"desc": "Cuando estés en un sitio público y necesitas realizar un pago, {{BOLD}}usa FaceID{{/BOLD}} para evitar introducir contraseñas.",
+				"icon": "/apps/SAN/img/tips/icnKeyLock.png",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"actionsTips",
+					"ppermin"
+				]
+			},
+			{
+				"title": "Contraseñas seguras",
+				"desc": "Utiliza {{BOLD}}contraseñas privadas y seguras{{BOLD}} y mantén actualizada la versión de tu sistema operativo.",
+				"icon": "/apps/SAN/img/tips/icnPin.png",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"actionsTips"
+				]
+			},
+			{
+				"title": "Enviar dinero",
+				"desc": "Envia tu dinero {{BOLD}}como tu quieras{{/BOLD}}. Desde Santander siempre ofrecemos {{BOLD}}amplias posibilidades{{/BOLD}}.",
+				"icon": "/apps/SAN/img/tips/icnSendMoney.png",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"actionsTips"
+				]
+			},
+			{
+				"title": "Reportar fraude",
+				"desc": "Evita el {{BOLD}}Phishing{{/BOLD}}. Desde Santander siempre {{BOLD}}te solicitaremos posiciones aleatorias{{/BOLD}} de tu Firma electrónica.",
+				"icon": "/apps/SAN/img/tips/icnThief.png",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"actionsTips"
+				]
+			}
+		],
+		"interestTips_off": [{
+			"title": "TARJETA FOOTBALL",
+			"desc": "Tarjeta Prepago {{BOLD}}LaLiga SANTANDER{{/BOLD}}",
+			"icon": "/apps/SAN/img/tips/tarjeta-negra.png",
+			"tag": "nuevo",
+			"offerId": "buena_oferta",
+			"keyWords": [
+				"liga",
+				"tarjeta",
+				"prepago",
+				"QA",
+				"contratar",
+				"ppermin",
+				"QAcard"
+			]
+		},
+			{
+				"title": "TARJETA CREDITO",
+				"desc": "Tarjeta Crédito Zero {{BOLD}}1|2|3{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta-roja.png",
+				"tag": "curioso",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"credito",
+					"tarjeta",
+					"credito",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA PRIME",
+				"desc": "Tarjeta Debito Prime {{BOLD}}7|7|7{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta-dorada.png",
+				"tag": "viejo",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"debito",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA PREPAGO",
+				"desc": "Tarjeta eCASH {{BOLD}}prepago virtual{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta_ecash.png",
+				"tag": "barato",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"ecash",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA ONEPAY",
+				"desc": "Tu dinero. Tus reglas.",
+				"icon": "/apps/SAN/img/tips/tarjeta_one.png",
+				"tag": "illimitado",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"onepay",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA ESPECIAL",
+				"desc": "Cuando eres {{BOLD}}Select{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta_select.png",
+				"tag": "desconocido",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"select",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA SMART WHITE",
+				"desc": "Cuando eres mas {{BOLD}}Smart{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta_smart_white.png",
+				"tag": "inteligente",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"smart",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA SMART RED",
+				"desc": "Cuando eres muy {{BOLD}}Smart{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta_smart_red.png",
+				"tag": "inteligente+",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"smart",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA VISA",
+				"desc": "Tarjeta Visa te abre muchas {{BOLD}}puertas{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta_visa.png",
+				"tag": "atractivo",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"visa",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "TARJETA IBERIA",
+				"desc": "Tarjeta {{BOLD}}Iberia Plus{{/BOLD}} te hace {{BOLD}}volar{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/tarjeta-iberia.png",
+				"tag": "aero",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"iberia",
+					"tarjeta",
+					"contratar",
+					"QA",
+					"QAcard"
+				]
+			},
+			{
+				"title": "MUSICA",
+				"desc": "Quieres una suscripcion Spotify para {{BOLD}}1 año gratis{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/img_music_tip.jpg",
+				"tag": "nuevo",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"Spotify",
+					"suscripcion",
+					"gratis",
+					"QA",
+					"ppermin"
+				]
+			},
+			{
+				"title": "DEPORTES",
+				"desc": "Acceso {{BOLD}}gratuito{{/BOLD}} a los gimnasios durante todo el año!",
+				"icon": "/apps/SAN/img/tips/img_sport_tip.jpg",
+				"tag": "temporal",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"deporte",
+					"gimnasio",
+					"gratis",
+					"QA"
+				]
+			},
+			{
+				"title": "BECAS UNIVERSIDAD",
+				"desc": "Solicita tu regalo gratis! {{BOLD}}¿A qué esperas?{{/BOLD}}",
+				"icon": "/apps/SAN/img/tips/img_study_tip.jpg",
+				"tag": "sospechoso",
+				"offerId": "buena_oferta",
+				"keyWords": [
+					"regalo",
+					"sorpresa",
+					"QA"
+				]
+			}
+		],
+		"pgTopOffers": [
+			{
+				"id": "Alerta_Pag_atraso",
+				"expireOnClick": false,
+				"priority": 1
+			},
+			{
+				"id": "Bolsas_PGTOP",
+				"expireOnClick": false,
+				"priority": 1
+			},
+			{
+				"id": "Univ_OfertasPGTOP_Classic",
+				"expireOnClick": false,
+				"priority": 1
+			},
+			{
+				"id": "pt_lanc_opi_classic",
+				"expireOnClick": false,
+				"priority": 1
+			}
+		],
+		"locations": {
+			"PG_TOP": [""],
+			"PERSONAL_AREA_DOCUMENTARY_MANAGEMENT": ["DOCUMENTS_COMMERCIAL_COMMUNICATIONS"],
+			"TRANSFER_TUTORIAL_VIDEO": ["transfer_tutorial_video"],
+			"TUTORIAL_BEFORE_ONBOARDING": [""],
+			"PG_CTA": ["Default_Parcerias_notSmart","Default_Parcerias_Smart"],
+			"PG_CTA_BELOW": [""],
+			"PG_TAR": ["CC_Aumentar_LimCred_CL","CC_Alt_ModPgto_CL"],
+			"PG_TAR_BELOW": ["CC_Aumentar_LimCred_SI","CC_Aumentar_LimCred_SM",
+				"ACM_Menores_TARB_SI",
+				"CC_Alt_ModPgto_SI","CC_Alt_ModPgto_SM"],
+			"PT_OPERAR_CREAR_PAGA_SIMPLE": ["PAGASIMPLES_PLAN_CREATION"],
+			"PT_OPERAR_CONSULTAR_PAGA_SIMPLE": ["Consultar_PagaSimples"],
+			"PT_OPERAR_LOAD_DOWNLOAD_PREPAID_CARD": ["LOAD_RELOADABLE"],
+			"PT_OPERAR_HIRE_CREDIT_CARD": ["Hire_CreditCard"],
+			"PT_OPERAR_HIRE_DEBIT_CARD": ["Hire_DebitCard"],
+			"PT_OPERAR_HIRE_PREPAID_CARD": ["Hire_PrepaidCard"],
+			"PT_OPERAR_EXTRACT_ACCOUNT": ["Extract_Account"],
+			"PT_OPERAR_CHANGE_CONDITIONS": ["Cambio_FormaPago"],
+			"PT_CARD_DEPOSIT": ["Pagar_Tarjeta"],
+			"PT_OPERAR_PIN_CARD": ["PIN_Card"],
+			"PT_OPERAR_INSTANT_CASH": ["CASH_ADVANCE"],
+			"PT_OPERAR_UTILIZATION_MANAGEMENT": ["Gerir_Utilizacao_Crt"],
+			"PT_OPERAR_EXTRACT_CARD": ["card_extract_4all"],
+			"PG_PRE_NO": ["SEM_CREDITOS_PG_CL","SEM_CREDITOS_PG_SI","SEM_CREDITOS_PG_SM"],
+			"PG_SPR_NO": ["SEM_SEGUROS_PG_CL","SEM_SEGUROS_PG_SI","SEM_SEGUROS_PG_SM"],
+			"PG_SHORTCUT_DOC_DIGITAIS": ["DOCUMENTS_COMMERCIAL_COMMUNICATIONS"],
+			"PG_SHORTCUT_CREDITO": ["Pedir_Credito"],
+			"PG_FLOATING_BANNER": [""],
+			"PG_SHORTCUT_REQUEST_MINOR_CARD": ["Hire_MinorsCard"],
+			"OPERAR_CONTRATAR_CUENTAS": [""],
+			"DEPOSITO_CUSTODIA": ["E_Broker"],
+			"ZF_FIRST_OFFER": ["boutique_watch"],
+			"ZF_SECOND_OFFER": [""],
+			"ZF_THIRD_OFFER": [""],
+			"PAGAMENTOS_SS": ["pagamentos_ss"],
+			"PAGAMENTOS_SS_EntP": ["pagamento_ss_entp"],
+			"PAGAMENTOS_PEDIR_CARTAO": ["Hire_DebitCard"],
+			"SIDERBAR_TRANSFERENCIAS_1": ["TRANSFERS_HOME_MENU"],
+			"PAYMENTS_HOME": ["PAYMENTS_HOME_MENU"],
+			"TOPUPS_HOME": ["TOPUPS_HOME_MENU"],
+			"DEBITOS_DIRECTOS": ["debitos_directos"],
+			"SIDEBAR_SEGUROS_1": ["consultar_seguros"],
+			"SIDEBAR_SEGUROS_2": ["seguros_menu_privado"],
+			"MENU_INVESTMENT_POUPANCA": ["End2End_Poupancas"],
+			"MENU_INVESTMENT_INVEST":["Investments"],
+			"MENU_INVESTMENT_EBROKER": ["E_Broker"],
+			"SIDEBAR_GESTAOFINANCIERA_1": ["FINANCIAL_ASSISTANT"],
+			"MY_HOME": ["Simula_CredHabitacao"],
+			"BENEFITS_MENU_MUNDO123": ["Mundo_123"],
+			"BENEFITS_MENU_PARTNERS":["Parcerias_MenuPrivado"],
+			"BOUTIQUE_SANTANDER": ["boutique_menu_privado"],
+			"BUZON_CORRESPONDENCIA": ["DOCUMENTS_COMMERCIAL_COMMUNICATIONS"],
+			"SIDEBAR_SECTION_LIST_1": ["KYC"],
+			"SIDEBAR_DEFINITIONS_1": ["DEFINITIONS_HOME_MENU"],
+			"SIDEBAR_DEFINITIONS_2": ["NOTIF_MANAGEMENT_HOME_MENU"],
+			"SIDEBAR_DEFINITIONS_3": ["SECURTY_DEF_HOME_MENU"],
+			"SIDEBAR_DEFINITIONS_AVISO_LEGAL": ["Aviso_Legal"],
+			"GDPR": ["Virtual_GDPR"],
+			"SIDEBAR_SECTION_LIST_3": ["SECURTY_DEF_HOME_MENU"],
+			"SIDEBAR_HELP_2": ["RESOLVE"],
+			"SIDEBAR_HELP_3": ["BRANCH_ATM"],
+			"SIDEBAR_HELP_4": ["CONFLITOS"],
+			"SIDEBAR_HELP_5": ["RECLAMACOES"],
+			"SIDEBAR_HELP_6": ["Ajuda_Opinator"],
+			"SIDEBAR_HELP_7": ["work_cafe"],
+			"BILLS&SUBSCRIPTIONS_HOMEINSIGHT1": ["debitos_directos_1"],
+			"SIDEBAR_STOCK":["Pedir_Credito"],
+			"SIDEBAR_PENSIONS":["Menu_Seguros"],
+			"SIDEBAR_FUNDS":["Hire_CreditCard"],
+			"SIDEBAR_INSURANCE":["Investments"],
+			"SIDEBAR_DEPOSITS":["CRPs_Depositos_off"],
+			"MENU_SEGUROS": ["seguros_menu_privado"],
+			"CONSULTAR_SEGUROS": ["consultar_seguros"],
+			"PG_SHORTCUT_CONTACTOS": ["Formulario_ContacteNos"],
+			"PG_SHORTCUT_PROCESSOS_DIGITAIS": ["Assinatura_Remota"],
+			"MENU_PRIVADO_PROC_DIGITAIS": ["Assinatura_Remota"],
+			"PG_SHORTCUT_HABITACAO": ["Simula_CredHabitacao"],
+            "CREDIT_MENU_HIRE_CREDITS": ["A_Credito"],
+
+			"PG_SHORTCUT_MUNDO123": ["Mundo_123"],
+			"PG_SHORTCUT_PARTNERS":["Parcerias_MenuPrivado"],
+			"PG_SHORTCUT_BOUTIQUE": ["boutique_menu_privado"],
+
+			"LANDING_PAGE_KYC": ["KYC"],
+			"SECTION_DIGITAL_BRANCH_1": ["Formulario_ContacteNos"],
+
+			"SIDEBAR_ACCOUNTS_1": ["Adesao_Proxy"],
+			"SIDEBAR_ACCOUNTS_2": ["Gerir_contas_menores"],
+			"SIDEBAR_CARDS_1": ["Hire_DebitCard"],
+			"SIDEBAR_CARDS_2": ["Hire_CreditCard"],
+			"SIDEBAR_CARDS_3": ["Hire_PrepaidCard"],
+			"SIDEBAR_CARDS_4": ["Hire_MinorsCard"],
+
+			"PG_SHORTCUT_POUPAR": ["End2End_Poupancas"],
+			"PG_SHORTCUT_INVESTIR": ["Investments"],
+			"CARD_SHORTCUT_REQUEST_MINOR_CARD" : ["Hire_MinorsCard"],
+			"FINANCIALHEALTH_GPSIMPLE": ["FINANCIAL_ASSISTANT"]
+		},
+		"offersBookmarksPG": [
+			{
+				"title": "Rewards",
+				"size": "1",
+				"offersId": ["Data4Deals_Jul_M1_BK"]
+			},
+			{
+				"title": "Cibersegurança",
+				"size": "1",
+				"offersId": ["OTH_CiberSeg_BK"]
+			},
+			{
+				"title": "Cibersegurança",
+				"size": "1",
+				"offersId": ["OTH_CiberSeg_Ago_BK"]
+			},
+			{
+				"title": "Smart Service",
+				"size": "1",
+				"offersId": ["OTH_SmartService_3_BK"]
+			},
+			{
+				"title": "Ofertas Universitárias",
+				"size": "1",
+				"offersId": ["Ofertas_Univ_Mar2024"]
+			},
+			{
+				"title": "Ofertas Universitárias",
+				"size": "1",
+				"offersId": ["Toga_Lady_Sir_BK"]
+			},
+			{
+				"title": "Ofertas Universitárias",
+				"size": "1",
+				"offersId": ["Bolsas_BK"]
+			},
+			{
+				"title": "Ofertas Universitárias",
+				"size": "1",
+				"offersId": ["Universitarios_Moche_Bookmark"]
+			},
+			{
+				"title": "Ofertas Universitárias",
+				"size": "1",
+				"offersId": ["Universitarios_Express_Bookmark"]
+			},
+			{
+				"title": "Dicas financeiras",
+				"size": "1",
+				"offersId": ["pt_app"]
+			}
+		]
+	},
+	"homeTips_off": [{
+		"title": "Básicos da {{BOLD}}sua app{{/BOLD}}",
+		"content": [
+			{
+				"title": "PAGAR SERVIÇOS",
+				"desc": "Como efetuar pagamento de serviços",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagamentos.png",
+				"offerId": "video_Pagamento_serviços",
+				"keyWords": [
+					"pagamento",
+					"pagar"
+				]
+			},
+			{
+				"title": "PAGAR COM QRCODE",
+				"desc": "Como usar o QRCode Santander",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/pagar_qrCode.png",
+				"offerId": "video_Pagamento_QRCODE",
+				"keyWords": [
+					"QRCode","QR",
+					"pagar",
+					"pagamento"
+				]
+			},
+			{
+				"title": "PERSONALIZAR NOTIFICAÇÕES",
+				"desc": "Como personalizar as notificações",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/notificacoes.png",
+				"offerId": "video_Definir_alertas",
+				"keyWords": [
+					"notificações","notif",
+					"SMS",
+					"Push","compras","autorizar"
+				]
+			},
+			{
+				"title": "TRANSFERIR POR MB WAY",
+				"desc": "Como transferir dinheiro através do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway.png",
+				"offerId": "video_MBWAY_enviar_dinheiro",
+				"keyWords": [
+					"MBWAY","transferir","transferência", "transferencia",
+					"enviar"
+				]
+			},
+			{
+				"title": "REUTILIZAR TRANSFERÊNCIAS",
+				"desc": "Como reutilizar transferências na App?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/transferencias.png",
+				"offerId": "video_Reutilizar_Transf",
+				"keyWords": [
+					"reutilizar",
+					"transferir","transferência", "transferencia"
+				]
+			},
+			{
+				"title": "MBWAY - HISTÓRICO e GERIR CARTÕES",
+				"desc": "Como estabelecer as definições do MB Way?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/mbway.png",
+				"offerId": "video_MBWAY_ver_historico",
+				"keyWords": [
+					"MBWAY","movimentos","cartões",
+					"histórico","historico",
+					"cartao","cartão"
+				]
+			},
+			{
+				"title": "CONSULTAR DETALHES DO CARTÃO",
+				"desc": "Como consultar os detalhes dos cartões?",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/detalhe_Cartao.png",
+				"offerId": "video_Consultar_detalhes_crt",
+				"keyWords": [
+					"MBWAY","movimentos","cartões",
+					"histórico","historico",
+					"cartao","cartão"
+				]
+			},
+			{
+				"title": "3 VISTAS POSIÇÃO GLOBAL",
+				"desc": "Escolher a Posição Global que melhor se adapta a si",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/99_PG_Geral.png",
+				"offerId": "video_Escolher_PG",
+				"keyWords": [
+					"posição global"
+				]
+			},
+			{
+				"title": "PERSONALIZAR POSIÇÃO GLOBAL",
+				"desc": "Como personalizar a Posição Global",
+				"icon": "/apps/SAN/img/tips/Centro_Ajuda/99_PG_Geral.png",
+				"offerId": "video_Personalizar_PG",
+				"keyWords": [
+					"posição global"
+				]
+			}
+		]
+	},
+		{
+			"title": "{{BOLD}}Sobre Segurança{{/BOLD}}",
+			"content": [
+				{
+					"title": "3DS - COMPRAS ONLINE",
+					"desc": "3D Secure Santander - como activar",
+					"icon": "/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras.png",
+					"offerId": "video_3DS_Autorizar_compras",
+					"keyWords": [
+						"pagamento","pagar",
+						"compras", "3DS", "3D", "Secure", "seguranca", "segurança"
+					]
+				},
+				{
+					"title": "ACESSO PIN e BIOMETRIA",
+					"desc": "Definir a senha da App Santander",
+					"icon": "/apps/SAN/img/tips/Centro_Ajuda/Login_biometria.png",
+					"offerId": "video_PIN_Biometria",
+					"keyWords": [
+						"Login","PIN","Biometria","acesso",
+						"senha", "password", "pass",
+						"seguranca", "segurança"
+					]
+				},
+				{
+					"title":"DICAS de SEGURANÇA",
+					"desc":"Compras online seguras",
+					"icon":"/apps/SAN/img/tips/Centro_Ajuda/3DS_AutorizarCompras.png",
+					"offerId":"video_dicas_compras_online",
+					"keyWords": [
+						"compras",
+						"seguranca", "segurança"
+					]
+				},
+				{
+					"title":"DICAS de SEGURANÇA",
+					"desc":"Reconhecer mensagens fraudulentas",
+					"icon":"/apps/SAN/img/tips/Centro_Ajuda/reportar_fraude.png",
+					"offerId":"video_msgs_fraudulentas",
+					"keyWords": [
+						"seguranca", "segurança"
+					]
+				}
+			]
+		}
+	]
+}

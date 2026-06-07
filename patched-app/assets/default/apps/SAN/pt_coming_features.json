@@ -1,0 +1,54 @@
+{
+	"comingFeatures": [
+		{
+			"identifier": "12123132",
+			"title": "Compartir gastos con amigos",
+			"description": "Hola {{BOLD}}compartir{{/BOLD}} es vivir",
+			"logo": "/RWD/icon/mmm.png",
+			"owner": "Luis G.",
+			"date": "12/2020",
+			"offerPayload": {
+				"preview": "/RWD/icon/mmm.png",
+				"offerId": "OFFER_ID"
+			}
+		},
+		{
+			"identifier": "12123132",
+			"title": "Compensar tu huella de carbono",
+			"description": "Aprovecha tu {{BOLD}}huella{{/BOLD}} para conseguir energia",
+			"logo": "/RWD/icon/mmm.png",
+			"owner": "Luis G.",
+			"date": "12/2020",
+			"offerPayload": {
+				"preview": "/RWD/icon/mmm.png",
+				"offerId": "OFFER_ID"
+			}
+		}
+	],
+	"alreadyImplementedFeatures": [
+		{
+			"identifier": "12123132",
+			"title": "Bizum",
+			"description": "Envio de dinero {{BOLD}}Bizum{{/BOLD}}",
+			"logo": "/RWD/icon/mmm.png",
+			"owner": "Luis G.",
+			"date": "01/12/2020",
+			"offerPayload": {
+				"preview": "/RWD/icon/mmm.png",
+				"offerId": "OFFER_ID"
+			}
+		},
+		{
+			"identifier": "12123132",
+			"title": "Customizacion",
+			"description": "Disponible la customizacion de toda la {{BOLD}}App{{/BOLD}}",
+			"logo": "/RWD/icon/mmm.png",
+			"owner": "Luis G.",
+			"date": "01/12/2020",
+			"offerPayload": {
+				"preview": "/RWD/icon/mmm.png",
+				"offerId": "OFFER_ID"
+			}
+		}
+	]
+}

@@ -1,0 +1,517 @@
+{
+	"spb": [
+		{
+			"bdpType": "Default",
+			"commercialSegments": [
+				{
+					"commercialType": "Default",
+					"semanticSegmentType": "spb",
+					"contact": {
+						"superlinea": {
+							"title": "Atención al cliente e Información General",
+							"desc": "Servicio de atención al cliente e Información General exclusivo para clientes de Santander Private Banking. De lunes a domingo atención 24 horas:",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a este numero de teléfono:",
+							"numbers": [
+								"900811381",
+								"+34912769921"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_es",
+							"appUrl": "twitter://user?screen_name=santander_es",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		}
+	],
+	"generic": [
+		{
+			"bdpType": "PI",
+			"commercialSegments": [
+				{
+					"commercialType": "Default",
+					"semanticSegmentType": "select",
+					"contact": {
+						"superlinea": {
+							"title": "Superlínea Select",
+							"desc": "QA Servicio exclusivo para clientes Select. Estaremos encantados de atenderles las 24 horas del día:",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"902114400",
+								"900811381"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				},
+				{
+					"commercialType": "PV",
+					"semanticSegmentType": "retail",
+					"contact": {
+						"superlinea": {
+							"title": "Super-línea PV segment",
+							"desc": "QA Atención al cliente e Información General. Llame al teléfono",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"900811381",
+								"900811381"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		},
+		{
+			"bdpType": "CN",
+			"commercialSegments": [
+				{
+					"commercialType": "DN",
+					"semanticSegmentType": "select",
+					"contact": {
+						"superlinea": {
+							"title": "Superlínea Select",
+							"desc": "Servicio exclusivo para clientes Select. Estaremos encantados de atenderles las 24 horas del día:",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"902114400",
+								"900811381"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		},
+		{
+			"bdpType": "PR",
+			"commercialSegments": [
+				{
+					"commercialType": "DM",
+					"semanticSegmentType": "select",
+					"contact": {
+						"superlinea": {
+							"title": "Superlínea Select",
+							"desc": "Superlínea Select. Estaremos encantados de atenderles las 24 horas del día",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"902114400",
+								"900811381"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				},
+				{
+					"commercialType": "JV",
+					"semanticSegmentType": "universitarios",
+					"contact": {
+						"superlinea": {
+							"title": "Superlínea unvis",
+							"desc": "Atención al cliente e Información General. Llame al teléfono",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"900811381",
+								"+34912769921"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		},
+		{
+			"bdpType": "FS",
+			"commercialSegments": [
+				{
+					"commercialType": "Default",
+					"semanticSegmentType": "select",
+					"contact": {
+						"superlinea": {
+							"title": "Superlínea Select",
+							"desc": " Servicio exclusivo para clientes Select. Estaremos encantados de atenderles las 24 horas del día:",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"902114400",
+								"900811381"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811381"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		},
+		{
+			"bdpType": "Default",
+			"commercialSegments": [
+				{
+					"commercialType": "Default",
+					"semanticSegmentType": "retail",
+					"contact": {
+						"superlinea": {
+							"title": "Super-línea QA",
+							"desc": "Atención al cliente e Información General. Llame al teléfono:",
+							"numbers": [
+								"915 123 123"
+							]
+						},
+						"cardBlock": {
+							"title": "Bloqueo de tarjetas en caso de robo o pérdida",
+							"desc": "Para proceder al bloqueo de su tarjeta, llame inmediatamente a cualquiera de estos números de teléfono:",
+							"numbers": [
+								"900811381",
+								"+34912769921"
+							]
+						},
+						"fraudFeedback": {
+							"title": "Reportar fraude",
+							"desc": null,
+							"numbers": [
+								"900811777",
+								"+34992233999"
+							]
+						},
+						"contactTwitter": {
+							"active": "N",
+							"url": "http://twitter.com/santander_resp",
+							"appUrl": "twitter://user?screen_name=santander_resp",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactFacebook": {
+							"active": "N",
+							"url": "http://www.facebook.com/bancosantander",
+							"appUrl": "fb://profile/164700433551414",
+							"mail": null,
+							"phone": null,
+							"hint": null
+						},
+						"contactWhatsapp": {
+							"active": "Y",
+							"url": null,
+							"appUrl": "https://wa.me/+34689123123",
+							"mail": null,
+							"phone": "689123123",
+							"hint": "De lunes a sábado de 8 a 21"
+						},
+						"contactMail": {
+							"active": "N",
+							"url": null,
+							"appUrl": null,
+							"mail": "info@bancosantander.es",
+							"phone": null,
+							"hint": "Atención por correo electrónico"
+						}
+					}
+				}
+			]
+		}
+	]
+}

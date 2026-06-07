@@ -1,0 +1,291 @@
+{
+	"allCountries": [
+		{
+			"code": "PT",
+			"name": "Portugal",
+			"currency": "EUR",
+			"bbanLength": 21,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "ES",
+			"name": "Espanha",
+			"currency": "EUR",
+			"bbanLength": 20,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "NL",
+			"name": "Holanda",
+			"currency": "EUR",
+			"bbanLength": 14,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "FR",
+			"name": "França",
+			"currency": "EUR",
+			"bbanLength": 23,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "IT",
+			"name": "Itália",
+			"currency": "EUR",
+			"bbanLength": 23,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "GB",
+			"name": "Reino Unido",
+			"currency": "GBP",
+			"bbanLength": 18,
+			"sepa": true,
+			"fxpay": true
+		},
+		{
+			"code": "AT",
+			"name": "Áustria",
+			"currency": "EUR",
+			"bbanLength": 16,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "BE",
+			"name": "Bélgica",
+			"currency": "EUR",
+			"bbanLength": 12,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "CY",
+			"name": "Chipre",
+			"currency": "EUR",
+			"bbanLength": 24,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "EE",
+			"name": "Estónia",
+			"currency": "EUR",
+			"bbanLength": 16,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "FI",
+			"name": "Finlândia",
+			"currency": "EUR",
+			"bbanLength": 14,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "DE",
+			"name": "Alemanha",
+			"currency": "EUR",
+			"bbanLength": 18,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "GR",
+			"name": "Grécia",
+			"currency": "EUR",
+			"bbanLength": 23,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "IE",
+			"name": "Irlanda",
+			"currency": "EUR",
+			"bbanLength": 18,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "LV",
+			"name": "Letónia",
+			"currency": "EUR",
+			"bbanLength": 17,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "LT",
+			"name": "Lituânia",
+			"currency": "EUR",
+			"bbanLength": 16,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "LU",
+			"name": "Luxemburgo",
+			"currency": "EUR",
+			"bbanLength": 16,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "MT",
+			"name": "Malta",
+			"currency": "EUR",
+			"bbanLength": 27,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "SK",
+			"name": "Eslováquia",
+			"currency": "EUR",
+			"bbanLength": 20,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "SI",
+			"name": "Eslovénia",
+			"currency": "EUR",
+			"bbanLength": 15,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "BG",
+			"name": "Bulgária",
+			"currency": "BGN",
+			"bbanLength": 18,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "HR",
+			"name": "Croácia",
+			"currency": "HRK",
+			"bbanLength": 17,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "CZ",
+			"name": "República Checa",
+			"currency": "CZK",
+			"bbanLength": 20,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "DK",
+			"name": "Dinamarca",
+			"currency": "DKK",
+			"bbanLength": 14,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "HU",
+			"name": "Hungria",
+			"currency": "HUF",
+			"bbanLength": 24,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "PL",
+			"name": "Polónia",
+			"currency": "PLN",
+			"bbanLength": 24,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "RO",
+			"name": "Roménia",
+			"currency": "RON",
+			"bbanLength": 20,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "SE",
+			"name": "Suécia",
+			"currency": "SEK",
+			"bbanLength": 20,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "NO",
+			"name": "Noruega",
+			"currency": "NOK",
+			"bbanLength": 11,
+			"sepa": true,
+			"fxpay": false
+		},
+		{
+			"code": "CH",
+			"name": "Suíça",
+			"currency": "CHF",
+			"bbanLength": 17,
+			"sepa": true,
+			"fxpay": false
+		}
+	],
+	"allCurrencies": [
+		{
+			"code": "EUR",
+			"name": "Euro",
+			"symbol": "€"
+		},
+		{
+			"code": "USD",
+			"name": "Dólar Americano",
+			"symbol": "$"
+		},
+		{
+			"code": "BRL",
+			"name": "Real Brasileiro",
+			"symbol": "R$"
+		},
+		{
+			"code": "GBP",
+			"name": "Libra",
+			"symbol": "£"
+		},
+		{
+			"code": "JPY",
+			"name": "Yen",
+			"symbol": "¥"
+		},
+		{
+			"code": "RUB",
+			"name": "Rublo",
+			"symbol": "₽"
+		},
+		{
+			"code": "AUD",
+			"name": "Dólar Australiano",
+			"symbol": "A$"
+		},
+		{
+			"code": "CAD",
+			"name": "Dólar Canadiano",
+			"symbol": "C$"
+		},
+		{
+			"code": "PLN",
+			"name": "Zloty",
+			"symbol": "zl"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "cards": [
+    {
+      "cardId": "CARD-001-DEMO",
+      "displayNumber": "**** 8891",
+      "alias": "Cartão Débito",
+      "status": "ACTIVE",
+      "enrolled": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "generic": [
+    {
+      "question": "Não me lembro dos meus acessos e não consigo entrar na App. O que posso fazer?",
+      "answer": "Caso não se lembre da sua Palavra-passe ou tem a sua conta bloqueada, pode recuperar o seu acesso, clicando em \"Novo registo ou recuperar acesso\" no ecrã de Login. \nInsira o seu NIF e número de telemóvel.  insira os seus dados e valide a operação. Receberá um código de segurança no seu  dispositivo móvel. Depois é só escolher uma nova senha de acesso. Em caso de dúvida adicional, contacte directamente a Superlinha através do +351 217 807 364, ou visite um dos nossos balcões.",
+      "keywords": [
+        "segurança",
+        "_generic"
+      ]
+    },
+    {
+      "question": "O que é o código IBAN?",
+      "answer": "O IBAN (International Bank Account Number) é o formato internacionalmente aceite para número de conta em todos os países.\nPara Portugal, o IBAN é composto pelo antigo NIB (Número de Identificação Bancária), que corresponde ao BBAN português (Basic Bank Account Number), precedido pelo código do país (PT) e por dois dígitos de controlo que no caso português serão sempre '50'",
+      "keywords": [
+        "conta",
+        "_generic"
+      ]
+    },
+    {
+      "question": "Como posso fazer uma transferência nacional?",
+      "answer": "Para efetuar uma transferência nacional, abra o Menu Lateral, canto superior direito, e clique em \"Enviar dinheiro\" > \"Novo envio\" e selecione a opção mais adequada  transferência nacional, internacional, transferência entre as suas contas, MB WAY.... \nLembre-se de que pode precisar de um o código de segurança que receberá no seu telemóvel.",
+      "keywords": [
+        "transferências",
+        "_generic"
+      ]
+    },
+    {
+      "question": "Como posso carregar um telemóvel?",
+      "answer": "Para efetuar um carregamento de telemóvel, aceda à Posição Global e selecione \"Carregar telemóvel\" nos acessos diretos, ou selecione a mesma opção em \"Contas\".",
+      "keywords": [
+        "móvel",
+        "_generic"
+      ]
+    },
+    {
+      "question": "Como posso personalizar a Posição Global da minha App?",
+      "answer": "Para personalizar a Posição Global, clique em \"Configure o que vê\" para ocultar contas e cartões, modificar a sua ordem de apresentação e dar nomes aos seus produtos. Para mais opções de personalização, clique no Menu Lateral, canto superior direito, e visite a \"Área pessoal\" > \"Personalização da Posição Global\".",
+      "keywords": [
+        "móvel",
+        "_generic"
+      ]
+    },
+    {
+      "question": "O que devo fazer quando deteto um movimento com o meu cartão, mas que não corresponde a uma compra minha?",
+      "answer": "Se não reconhece algum dos débitos no seu cartão ou na sua conta, contacte a SuperLinha para o número +351 217 807 364 em Portugal e no estrangeiro, a qualquer hora, 24h por dia.",
+      "keywords": [
+        "_generic"
+      ]
+    },
+    {
+      "question": "Posso consultar a comissão de transferência antes de a efetuar?",
+      "answer": "Sim. Sempre e antes de efetuar uma transferência, quer no NetBanco (www.santander.pt/netbanco-particulares) quer na App, é-lhe sempre apresentada informação sobre os custos e comissões de confirmar a operação.",
+      "keywords": [
+        "comissões",
+        "_generic"
+      ]
+    },
+    {
+      "question": "Quanto tempo demora uma transferência para um beneficiário?",
+      "answer": "Esta informação é meramente  indicativa, pelo que, se pretende esclarecer o prazo de receção de uma transferência que acabou de realizar, contacte o banco beneficiário para que lhe possam dar uma informação mais concreta. Prazos aproximados de receção de transferências: \n- Transferências SEPA: imediatas entre contas Santander ou para outro bancos no máximo até dois úteis desde a data de execução.\n- Transferências não SEPA: com operações cambiais, podem demorar até 6 dias úteis.",
+      "keywords": [
+        "_generic"
+      ]
+    },
+    {
+      "question": "Como posso consultar o saldo da minha conta?",
+      "answer": "Para consultar o saldo da sua conta, entre na Posição Global e veja-o  facilmente, na secção que diz \"Contas\".",
+      "keywords": [
+        "conta",
+        "_generic"
+      ]
+    },
+    {
+      "question": "Como posso consultar o saldo disponível no cartão de crédito?",
+      "answer": "Para consultar o saldo disponível no seu cartão de crédito, selecione o cartão na Posição Global e, na imagem, verá o crédito utilizado e o disponível.",
+      "keywords": [
+        "_generic"
+      ]
+    }
+  ]
+}

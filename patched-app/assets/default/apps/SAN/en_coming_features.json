@@ -1,0 +1,86 @@
+{
+    "comingFeatures": [
+        {
+            "identifier": "001",
+            "title": "Request account certificates",
+            "description": "Being able to request a certificate of title of an account, for example, without having to go to the branch.",
+            "logo": "/apps/SAN/img/tips/certificadoscuenta.png",
+            "owner": "Estefania A.",
+            "date": "12/2020"
+        },
+        {
+            "identifier": "002",
+            "title": "ON/OFF cards depending on the merchant",
+            "description": "Being able to select what type of shopping my card should be OFF for, e.g. online shopping.",
+            "logo": "/apps/SAN/img/tips/seguridadtarjeta.png",
+            "owner": "David O.",
+            "date": "12/2020"
+        },
+        {
+            "identifier": "003",
+            "title": "Build piggy banks",
+            "description": "It would great to have a section for savings.",
+            "logo": "/apps/SAN/img/tips/huchas.png",
+            "owner": "Sergio M.",
+            "date": "03/2020"
+        },
+		{
+            "identifier": "004",
+            "title": "Pets",
+            "description": "Having a section for our pets (insurance, inoculation costs, monthly vet expenses, etc.)",
+            "logo": "/apps/SAN/img/tips/mascotas.png",
+            "owner": "Rocio C.",
+            "date": "03/2020"
+        },
+		{
+            "identifier": "005",
+            "title": "Add notes to activity",
+            "description": "Being able to add comments to account and card activity.",
+            "logo": "/apps/SAN/img/tips/notamovimiento.png",
+            "owner": "Carlos R.",
+            "date": "03/2020"
+        }
+    ],
+    "alreadyImplementedFeatures": [
+        {
+            "identifier": "006",
+            "title": "Card subscriptions",
+            "description": "A section with a list of the merchants where I have registered my card for online payments (e.g. Zara) and the bills I have linked to my account (e.g. Netflix).",
+            "logo": "/apps/SAN/img/tips/suscripcion.png",
+            "owner": "Paco P.",
+            "date": "03/03/2020"
+        },
+		{
+            "identifier": "007",
+            "title": "Discreet mode",
+            "description": "Being able to enable a “discreet mode” so that the product balances are not shown in the accounts overview.",
+            "logo": "/apps/SAN/img/tips/mododiscreto.png",
+            "owner": "María D.",
+            "date": "03/03/2020"
+        },
+		{
+            "identifier": "008",
+            "title": "Customisation",
+            "description": "Being able to choose the accounts overview and theme of the photos shown on the login page.",
+            "logo": "/apps/SAN/img/tips/personalizacionPG.png",
+            "owner": "Javier T.",
+            "date": "03/03/2020"
+        },
+		{
+            "identifier": "009",
+            "title": "See future bills",
+            "description": "Being able to see future activity.",
+            "logo": "/apps/SAN/img/tips/recibosfuturos.png",
+            "owner": "Mario R.",
+            "date": "03/03/2020"
+        },
+		{
+            "identifier": "010",
+            "title": "Shortcuts",
+            "description": "Having access to the most frequently used transactions directly from the accounts overview.",
+            "logo": "/apps/SAN/img/tips/accesosdirectos.png",
+            "owner": "Silvia D.",
+            "date": "03/03/2020"
+        }		
+    ]
+}

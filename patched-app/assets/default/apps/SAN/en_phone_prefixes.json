@@ -1,0 +1,10 @@
+{
+  "phone_prefixes": [
+    {
+      "prefix_code": "+351",
+      "country_code": "PT",
+      "country_name": "Portugal",
+      "max_length": 9
+    }
+  ]
+}

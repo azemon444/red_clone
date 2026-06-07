@@ -1,0 +1,413 @@
+{
+	"deeplinks": [
+		{
+			"description": "Alterar vista da PG",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "ERD5S5VYRBVK",
+			"offerId": "selectgp",
+			"buttonTitle": "Alterar posição global"
+		},
+		{
+			"description": "Permissões menores",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "L6R256BMXGUW",
+			"offerId": "permissions_under_age"
+		},
+		{
+			"description": "Gerir Notificações",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "SE5T667ZVSGM",
+			"offerId": "notification_settings"
+		},
+		{
+			"description": "Loans Home",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "PPGG2Z15L356",
+			"offerId": "loans_home"
+		},
+		{
+			"description": "MB WAY Home",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "T3R80RVVW29Z",
+			"offerId": "mbway_home"
+		},
+		{
+			"description": "Configuration Screen",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "7L2ZFNXNB35C",
+			"offerId": "configuration_screen"
+		},
+		{
+			"description": "Proxy Lookup",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "9D5LU0MD760D",
+			"offerId": "proxy_lookup_association"
+		},
+		{
+			"description": "Fluxo 3DS",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "SF9FDAFD00",
+			"offerId": "PT3DSECURE",
+			"openDetailScreen": 0
+		},
+		{
+			"description": "Historico MBWAY",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "j3a47aa1c3",
+			"offerId": "mbway_historic",
+			"openDetailScreen": 0
+		},
+		{
+			"description": "Alterar Limite Cartao Credito",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "wa332c6624",
+			"offerId": "CHANGE_CREDIT_LIMIT",
+			"buttonTitle": "Alterar aqui"
+		},
+		{
+			"description": "Alterar Limite Cartao Credito",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "LAWU5645GAUY",
+			"offerId": "CHANGE_CREDIT_LIMIT",
+			"buttonTitle": "Alterar aqui"
+		},
+		{
+			"description": "Menu Contas",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "755786BBC01B",
+			"offerId": "account"
+		},
+		{
+			"description": "Menu Cartões",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "9D4AA5A841AF",
+			"offerId": "cards_home"
+		},
+		{
+			"description": "Posição Global",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "RMS490106RUF",
+			"offerId": "globalposition"
+		},
+		{
+			"description": "Collections - Pagamentos em atraso",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "D9F8RMF629DJ",
+			"offerId": "late_payments_collections"
+		},
+		{
+			"description": "MBNET",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "UQIX586OR7AT",
+			"offerId": "mbnet"
+		},
+		{
+			"description": "Menu Notificações",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "OKANFHCIE198",
+			"offerId": "NOTIFICATIONS"
+		},
+		{
+			"description": "Pagamentos",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "5000A03E785E",
+			"offerId": "payments_home"
+		},
+		{
+			"description": "Santander Resolve",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "RESOLVE",
+			"offerId": "santander_resolve"
+		},
+		{
+			"description": "Menu Segurança",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "DQIAL6QW88VG",
+			"offerId": "Security_Menu"
+		},
+		{
+			"description": "Transferências",
+			"actionType": "navigate_screen",
+			"deeplinkCode": "2523C1958623",
+			"offerId": "thab"
+		},
+		{
+			"description": "Processos Digitais",
+			"actionType": "open_webview",
+			"deeplinkCode": "LHBSN5E56T5W",
+			"offerId": "Assinatura_Remota"
+		},
+		{
+			"description": "Webview Investimentos",
+			"actionType": "open_webview",
+			"deeplinkCode": "7MD3GJHSKEK6",
+			"offerId": "Investments"
+		},
+		{
+			"description": "Webview Contactos",
+			"actionType": "open_webview",
+			"deeplinkCode": "RNZPL493XYW5",
+			"offerId": "Formulario_ContacteNos"
+		},
+		{
+			"description": "Webview End2End_Poupanças",
+			"actionType": "open_webview",
+			"deeplinkCode": "JJSB3NWQM3JH",
+			"offerId": "End2End_Poupancas"
+		},
+		{
+			"description": "Webview Débitos Diretos",
+			"actionType": "open_webview",
+			"deeplinkCode": "G99KBFLW2UO2",
+			"offerId": "debitos_directos"
+		},
+		{
+			"description": "Seguros CUF Santander",
+			"actionType": "open_webview",
+			"deeplinkCode": "ZYP3WDNCS4HP",
+			"offerId": "SEG_CUF_SANTANDER"
+		},
+		{
+			"description": "Atualização de Dados - KYC",
+			"actionType": "open_webview",
+			"deeplinkCode": "X01U073EKV3Z",
+			"offerId": "KYC"
+		},
+		{
+			"description": "Webview Transferir Cartao/DO",
+			"actionType": "open_webview",
+			"deeplinkCode": "TGH5344F6FOG",
+			"offerId": "CASH_ADVANCE"
+		},
+		{
+			"description": "Webview Comunicacoes Comerciais",
+			"actionType": "open_webview",
+			"deeplinkCode": "LCIA68MJ7Z71",
+			"offerId": "Comunicacoes_comerciais"
+		},
+		{
+			"description": "Webview Consultar Beneficios Mundo 123",
+			"actionType": "open_webview",
+			"deeplinkCode": "RG597B3UI5YH",
+			"offerId": "Consultar_benefs_M123"
+		},
+		{
+			"description": "Webview Consultar Beneficios Mundo 123",
+			"actionType": "open_webview",
+			"deeplinkCode": "OPAKFOCPA983",
+			"offerId": "Consultar_Deposito"
+		},
+		{
+			"description": "Webview Consultar Fundos",
+			"actionType": "open_webview",
+			"deeplinkCode": "4CF1Q5Q2FELR",
+			"offerId": "Consultar_Fundos"
+		},
+		{
+			"description": "Webview Consultar PagaSimples",
+			"actionType": "open_webview",
+			"deeplinkCode": "4MPWPOW2SYF6",
+			"offerId": "Consultar_PagaSimples"
+		},
+		{
+			"description": "Webview Contratar Credito Extra",
+			"actionType": "open_webview",
+			"deeplinkCode": "kJ3wREsJnNdX",
+			"offerId": "Contratar_CreditoExtra"
+		},
+		{
+			"description": "Webview Contratar Deposito",
+			"actionType": "open_webview",
+			"deeplinkCode": "FFB8UJL67JPP",
+			"offerId": "Contratar_Deposito"
+		},
+		{
+			"description": "Webview Acredito",
+			"actionType": "open_webview",
+			"deeplinkCode": "DLTEST123",
+			"offerId": "CREDI_SIMPLES"
+		},
+		{
+			"description": "Webview Data4Deals",
+			"actionType": "open_webview",
+			"deeplinkCode": "C9GCHZT0HQN",
+			"offerId": "Data4Deals"
+		},
+		{
+			"description": "Webview Comunicacoes Comerciais",
+			"actionType": "open_webview",
+			"deeplinkCode": "EIEJDNC9347H",
+			"offerId": "DOCUMENTS_COMMERCIAL_COMMUNICATIONS"
+		},
+		{
+			"description": "Webview Domiciliar Ordenado",
+			"actionType": "open_webview",
+			"deeplinkCode": "wk7LcxPHvzUe",
+			"offerId": "Domiciliar_Ordenado"
+		},
+		{
+			"description": "Webview Contratar Cartao Credito",
+			"actionType": "open_webview",
+			"deeplinkCode": "FGHGH5678GHJ",
+			"offerId": "Hire_CreditCard"
+		},
+		{
+			"description": "Webview Contratar Cartao Debito",
+			"actionType": "open_webview",
+			"deeplinkCode": "263JDKWL5176",
+			"offerId": "Hire_DebitCard"
+		},
+		{
+			"description": "Webview Contratar Cartao Pre-Pago",
+			"actionType": "open_webview",
+			"deeplinkCode": "52APCHQ5ZCXD",
+			"offerId": "Hire_PrepaidCard"
+		},
+		{
+			"description": "Webview Carregar Cartao Pre-Pago",
+			"actionType": "open_webview",
+			"deeplinkCode": "CHBNJK987SDF",
+			"offerId": "LOAD_RELOADABLE"
+		},
+		{
+			"description": "Webview Seguros",
+			"actionType": "open_webview",
+			"deeplinkCode": "KDM39FJ5ODMF",
+			"offerId": "Menu_Seguros"
+		},
+		{
+			"description": "Webview Questionario MIFID",
+			"actionType": "open_webview",
+			"deeplinkCode": "CB2WLI564Y86",
+			"offerId": "MIFID_QUESTIONNAIRE"
+		},
+		{
+			"description": "Webview Talvez Lhe Interesse",
+			"actionType": "open_webview",
+			"deeplinkCode": "Q8COM12MEX0I",
+			"offerId": "MIGHT_BE_INTERESTING"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Acidentes",
+			"actionType": "open_webview",
+			"deeplinkCode": "e48c0c7ad6",
+			"offerId": "nbp_protecaoacidentes"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Acidentes",
+			"actionType": "open_webview",
+			"deeplinkCode": "B62VQJB9FYBB",
+			"offerId": "nbp_protecaoacidentes"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Lar",
+			"actionType": "open_webview",
+			"deeplinkCode": "ked4654eb5",
+			"offerId": "nbp_protecaolar"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Lar",
+			"actionType": "open_webview",
+			"deeplinkCode": "K9ESS8Q267FN",
+			"offerId": "nbp_protecaolar"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Servicos Domesticos",
+			"actionType": "open_webview",
+			"deeplinkCode": "xc392a23b8",
+			"offerId": "nbp_protecaoservicosdomesticos"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Servicos Domesticos",
+			"actionType": "open_webview",
+			"deeplinkCode": "QRL18LRMC8N7",
+			"offerId": "nbp_protecaoservicosdomesticos"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Vida",
+			"actionType": "open_webview",
+			"deeplinkCode": "h21fc5be27",
+			"offerId": "nbp_protecaovida"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Vida",
+			"actionType": "open_webview",
+			"deeplinkCode": "IOIN8WRFJFB8",
+			"offerId": "nbp_protecaovida"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Vida Select",
+			"actionType": "open_webview",
+			"deeplinkCode": "iab3a166dc",
+			"offerId": "nbp_protecaovidaselect"
+		},
+		{
+			"description": "Webview Contratar Seguro Protecao Vida Select",
+			"actionType": "open_webview",
+			"deeplinkCode": "P3TSH59T4BIK",
+			"offerId": "nbp_protecaovidaselect"
+		},
+		{
+			"description": "Webview Contratar Seguro SafeCare Saude",
+			"actionType": "open_webview",
+			"deeplinkCode": "yd6b061eed",
+			"offerId": "nbp_safecaresaude"
+		},
+		{
+			"description": "Webview Contratar Seguro SafeCare Saude",
+			"actionType": "open_webview",
+			"deeplinkCode": "ML8L46SD46S7",
+			"offerId": "nbp_safecaresaude"
+		},
+		{
+			"description": "Webview Contratar Seguro SafeCare Saude Vida Mais",
+			"actionType": "open_webview",
+			"deeplinkCode": "ae861979d8",
+			"offerId": "nbp_safecaresaudevidamais"
+		},
+		{
+			"description": "Webview Contratar Seguro SafeCare Saude Vida Mais",
+			"actionType": "open_webview",
+			"deeplinkCode": "975HTXJD1QC1",
+			"offerId": "nbp_safecaresaudevidamais"
+		},
+		{
+			"description": "Webview Contratar Seguro Auto",
+			"actionType": "open_webview",
+			"deeplinkCode": "GR1AO4P83LBU",
+			"offerId": "nbp_seguroauto"
+		},
+		{
+			"description": "Webview Criar Plano PagaSimples Mainframe",
+			"actionType": "open_webview",
+			"deeplinkCode": "m44cfd7d85",
+			"offerId": "PAGASIMPLES_PLAN_CREATION",
+			"buttonTitle": "Criar plano PagaSIMPLES"
+		},
+		{
+			"description": "Webview Criar Plano PagaSimples",
+			"actionType": "open_webview",
+			"deeplinkCode": "N36FPKBAAAF4",
+			"offerId": "PAGASIMPLES_PLAN_CREATION",
+			"buttonTitle": "Criar plano PagaSIMPLES"
+		},
+		{
+			"description": "Webview Subscrição Fundos",
+			"actionType": "open_webview",
+			"deeplinkCode": "9PWBWY4BPYUK",
+			"offerId": "Subscrição_Fundos"
+		},
+		{
+			"description": "Webview GDPR",
+			"actionType": "open_webview",
+			"deeplinkCode": "3STWNYAHXIQR",
+			"offerId": "Virtual_GDPR"
+		},
+		{
+			"description": "Webview Simular Crédito à Habitação",
+			"actionType": "open_webview",
+			"deeplinkCode": "SNjB5DCsiX85",
+			"offerId": "Simula_CredHabitacao"
+		}
+	]
+}

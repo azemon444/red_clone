@@ -1,0 +1,66 @@
+{
+  "tricks_OFF" : [
+    {
+      "textButton": "¿Checking QA Cómo ahorrar en {{COLOR:#EC0000}}{{BOLD}}tus gastos mensuales?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnMonthlyExpenses.png",
+      "title": "¿Cómo ahorrar \nen {{COLOR:#EC0000}}tus gastos \nmensuales?{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "QA Cehcking parametriaztinon Hoy en día tienes a tu disposición herramientas para analizar y categorizar tus gastos, como {{COLOR:#137E84}}{{BOLD}}Santander Money Plan,{{/COLOR}}{{/BOLD}} pero si todavía no te atreves con las nuevas tecnologías puedes hacer un listado de tus gastos en una libreta o en una hoja de cálculo. Consulta y revisa todos tus gastos del mes, si estos sobrepasan lo que ingresas deberás ir revisando qué clase de gastos puedes reducir para conseguir ahorrar un poco. Si no puedes salir todos los sábados a comer, pues saldrás dos al mes. El gimnasio se puede hacer al aire libre sin pagar un gimnasio,…puede que te ayude el ponerte un presupuesto general para no pasarte o quizás uno por la categoría en la que más puedes ahorrar. \nPara poder realizar esto y no llegar ahogados a final de mes tienes que intentar ahorrar un {{BOLD}}10%-15%{{/BOLD}} de tus ganancias al mes."
+    },
+    {
+      "textButton": "¿Te vas de {{COLOR:#EC0000}}{{BOLD}}viaje?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnTravels.png",
+      "title": "¿Te vas de {{COLOR:#EC0000}}viaje con QA?{{/COLOR}} \nConsejos para \nahorrar a la hora \nde viajar",
+      "description": "Dependiendo de en qué fecha viajes podrás ahorrar más. Si te vas en temporada alta y tienes que viajar en Avión, lo mejor es buscar los vuelos con {{BOLD}}4/6 meses{{/BOLD}} de antelación, aunque a veces puedes encontrar chollos de última hora (mejor no te arriesgues, esto pasa en muy pocas ocasiones). Así además podrás ahorrar en hoteles, excursiones y transportes.  \nEn los alojamientos lo mejor es estar cerca del centro, tendrás que mirar si sale mejor Hotel o un apartamento, ya que así podremos ahorrar en los transportes, y podremos ir andando. Si es en la playa y temporada alta, lo mejor es coger segunda línea de playa, aunque estarás a unos 300 metros de la playa {{COLOR:#137E84}}{{BOLD}}puedes llegar a ahorrar mucho.{{/COLOR}}{{/BOLD}}"
+    },
+    {
+      "textButton": "¿Cómo ahorrar {{COLOR:#EC0000}}{{BOLD}}en el Supermercado?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnSupermarket.png",
+      "title": "¿Cómo ahorrar {{COLOR:#EC0000}}en \nel Supermercado?{{/COLOR}} \nConsejos para \nahorrar. (Gastos \nhormiga)",
+      "description": "Cuando hagas la compra, ya sea de la semana o del mes, se debe ir siempre recién comido, ya que se compra más con el estómago vacío.  \n{{COLOR:#137E84}}{{BOLD}}Es fundamental llevar una lista,{{/COLOR}}{{/BOLD}} así evitamos las tentaciones de comprar lo que no es necesario. Podemos aprovechar a comprar algunos productos congelados y también utilizar las ofertas del supermercado, así seguro que nos ahorraremos algunos euros en la compra. \nIntentaremos mirar las ofertas de todos los productos del Supermercado, en vez de Marca conocida, podemos comprar productos de Marca Blanca, para que salgan más baratos y en algunos casos las {{BOLD}}ofertas de 2x1.{{/BOLD}}"
+    },
+    {
+      "textButton": "¿Cómo ahorrar {{COLOR:#EC0000}}{{BOLD}}dinero extra al mes?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnExtraMoney.png",
+      "title": "¿Cómo ahorrar \n{{COLOR:#EC0000}}dinero extra al mes?{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "Si tienes una hucha o frasco puedes meter las monedas y billetes pequeños que te van sobrando de las compras que haces. \nPor ejemplo, se puede empezar en septiembre, cuando volvemos todos de vacaciones, así podrás ahorrar dinero para las siguientes, o para los regalos de Navidad.  \nSi tienes una paga extra, {{BOLD}}mete una parte de ese dinero en la hucha.{{/BOLD}} De esta forma lo tendrás ahí y no te lo gastarás, ya que a veces no medimos lo que nos gastamos con la tarjeta o bien cuando tenemos efectivo en el monedero. \nSi te apetece ahorrar sin enterarte y el efectivo no es lo tuyo puedes crearte un {{COLOR:#137E84}}{{BOLD}}objetivo de ahorro en tu App{{/COLOR}}{{/BOLD}} e ir ahorrando poco a poco personalizando cómo quieres ahorrar, es muy fácil."
+    },
+    {
+      "textButton": "Disminuir los {{COLOR:#EC0000}}{{BOLD}}gastos excesivos{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnExcessiveExpenses.png",
+      "title": "Disminuir {{COLOR:#EC0000}}los \ngastos excesivos.{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "No se puede ir a cenar con los amigos todos los findes o comprar la crema más cara todos los meses.  \nHay que mirar a que tipo de restaurantes vamos, hay muchas ofertas en Internet, con descuentos.  \nTampoco se puede estar viajando todos los días, pero si queremos salir una o dos veces al mes,{{BOLD}} habrá que buscar las mejores ofertas,{{/BOLD}} hay muchas plataformas que informan de los descuentos que hay y de las ofertas o chollos para diferentes destinos. \n{{COLOR:#137E84}}{{BOLD}}Usa los comparadores{{/COLOR}}{{/BOLD}} para conseguir las mejores ofertas en viajes, coches de alquiler, tarifas de teléfono…ahorrar está a un click."
+    }
+  ],
+  "financingTricks" : [
+    {
+      "textButton": "¿QA-ZF- Cómo ahorrar en {{COLOR:#EC0000}}{{BOLD}}tus gastos mensuales?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnMonthlyExpenses.png",
+      "title": "¿QA-ZF- Cómo ahorrar \nen {{COLOR:#EC0000}}tus gastos \nmensuales?{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "QA-ZF- Cehcking parametriaztinon Hoy en día tienes a tu disposición herramientas para analizar y categorizar tus gastos, como {{COLOR:#137E84}}{{BOLD}}Santander Money Plan,{{/COLOR}}{{/BOLD}} pero si todavía no te atreves con las nuevas tecnologías puedes hacer un listado de tus gastos en una libreta o en una hoja de cálculo. Consulta y revisa todos tus gastos del mes, si estos sobrepasan lo que ingresas deberás ir revisando qué clase de gastos puedes reducir para conseguir ahorrar un poco. Si no puedes salir todos los sábados a comer, pues saldrás dos al mes. El gimnasio se puede hacer al aire libre sin pagar un gimnasio,…puede que te ayude el ponerte un presupuesto general para no pasarte o quizás uno por la categoría en la que más puedes ahorrar. \nPara poder realizar esto y no llegar ahogados a final de mes tienes que intentar ahorrar un {{BOLD}}10%-15%{{/BOLD}} de tus ganancias al mes."
+    },
+    {
+      "textButton": "¿QA-ZF-Te vas de {{COLOR:#EC0000}}{{BOLD}}viaje?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnTravels.png",
+      "title": "QA-ZF- ¿Te vas de {{COLOR:#EC0000}}viaje con QA?{{/COLOR}} \nConsejos para \nahorrar a la hora \nde viajar",
+      "description": "QA-Dependiendo de en qué fecha viajes podrás ahorrar más. Si te vas en temporada alta y tienes que viajar en Avión, lo mejor es buscar los vuelos con {{BOLD}}4/6 meses{{/BOLD}} de antelación, aunque a veces puedes encontrar chollos de última hora (mejor no te arriesgues, esto pasa en muy pocas ocasiones). Así además podrás ahorrar en hoteles, excursiones y transportes.  \nEn los alojamientos lo mejor es estar cerca del centro, tendrás que mirar si sale mejor Hotel o un apartamento, ya que así podremos ahorrar en los transportes, y podremos ir andando. Si es en la playa y temporada alta, lo mejor es coger segunda línea de playa, aunque estarás a unos 300 metros de la playa {{COLOR:#137E84}}{{BOLD}}puedes llegar a ahorrar mucho.{{/COLOR}}{{/BOLD}}"
+    },
+    {
+      "textButton": "¿QA-ZF- Cómo ahorrar {{COLOR:#EC0000}}{{BOLD}}en el Supermercado?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnSupermarket.png",
+      "title": "¿QA-ZF-Cómo ahorrar {{COLOR:#EC0000}}en \nel Supermercado?{{/COLOR}} \nConsejos para \nahorrar. (Gastos \nhormiga)",
+      "description": "QA-ZF- Cuando hagas la compra, ya sea de la semana o del mes, se debe ir siempre recién comido, ya que se compra más con el estómago vacío.  \n{{COLOR:#137E84}}{{BOLD}}Es fundamental llevar una lista,{{/COLOR}}{{/BOLD}} así evitamos las tentaciones de comprar lo que no es necesario. Podemos aprovechar a comprar algunos productos congelados y también utilizar las ofertas del supermercado, así seguro que nos ahorraremos algunos euros en la compra. \nIntentaremos mirar las ofertas de todos los productos del Supermercado, en vez de Marca conocida, podemos comprar productos de Marca Blanca, para que salgan más baratos y en algunos casos las {{BOLD}}ofertas de 2x1.{{/BOLD}}"
+    },
+    {
+      "textButton": "¿QA-Cómo ahorrar {{COLOR:#EC0000}}{{BOLD}}dinero extra al mes?{{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnExtraMoney.png",
+      "title": "QA-ZF- ¿Cómo ahorrar \n{{COLOR:#EC0000}}dinero extra al mes?{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "QA-ZF-Si tienes una hucha o frasco puedes meter las monedas y billetes pequeños que te van sobrando de las compras que haces. \nPor ejemplo, se puede empezar en septiembre, cuando volvemos todos de vacaciones, así podrás ahorrar dinero para las siguientes, o para los regalos de Navidad.  \nSi tienes una paga extra, {{BOLD}}mete una parte de ese dinero en la hucha.{{/BOLD}} De esta forma lo tendrás ahí y no te lo gastarás, ya que a veces no medimos lo que nos gastamos con la tarjeta o bien cuando tenemos efectivo en el monedero. \nSi te apetece ahorrar sin enterarte y el efectivo no es lo tuyo puedes crearte un {{COLOR:#137E84}}{{BOLD}}objetivo de ahorro en tu App{{/COLOR}}{{/BOLD}} e ir ahorrando poco a poco personalizando cómo quieres ahorrar, es muy fácil."
+    },
+    {
+      "textButton": "QA-ZF--¿Quieres{{COLOR:#EC0000}}{{BOLD}}aplazar los recibos de tus tarjetas{/COLOR}}{{/BOLD}}",
+      "icon": "/apps/SAN/img/tricks/icnExcessiveExpenses.png",
+      "title": "QA-ZF-Disminuir {{COLOR:#EC0000}}los \ngastos excesivos.{{/COLOR}} \nConsejos para \nahorrar",
+      "description": "QA-ZF-Aplazar los recibos de tarjetas es una funcionalidad de pago con la que podrás retrasar un mes el pago correspondiente a la cuota mensual de tu tarjeta. ... Elige qué cantida de importe total de tu cuota mensual quieres pagar. El resto, ¿dejalo para el mes siguiente! Financiación sin Tramites ni papeleos."
+    }
+  ]
+}

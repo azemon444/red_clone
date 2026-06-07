@@ -1,0 +1,112 @@
+{
+	"loadingTips": [
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode ativar o acesso",
+			"boldTitle": "com impressão digital / Touch ID",
+			"subtitle": "Faça-o em Definições de Segurança / Impressão digital ou Touch ID"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode ativar o acesso",
+			"boldTitle": "com reconhecimento facial / Face ID",
+			"subtitle": "Faça-o em Definições de Segurança / Reconhecimento facial ou Face ID"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode pesquisar por tipo e ver horários",
+			"boldTitle": "dos Balcões Santander",
+			"subtitle": "Faça-o no Menu lateral / Multibancos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode escolher",
+			"boldTitle": "as fotografias de fundo da App",
+			"subtitle": "Faça-o em Definições / Tema fotográfico"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode usar a App",
+			"boldTitle": "em diferentes idiomas",
+			"subtitle": "Faça-o em Definições / Seleção de idioma"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode colocar um botão de",
+			"boldTitle": "acesso direto ao MB WAY na Posição Global",
+			"subtitle": "Faça-o em Mais opções (+) na Posição Global / Configurar Acessos Diretos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode ativar notificações para receber alertas",
+			"boldTitle": "quando o saldo está abaixo do valor que definir",
+			"subtitle": "Faça-o na Área pessoal / Definições de Notificações"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode enviar dinheiro",
+			"boldTitle": "para um telemóvel sem precisar do IBAN",
+			"subtitle": "Aceda a Enviar dinheiro / MB WAY o desde o Menu Lateral / MB WAY / Novo envio"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode personalizar os acessos diretos",
+			"boldTitle": "às suas funcionalidades mais usadas na Posição Global",
+			"subtitle": "Faça-o em Mais opções Posição Global / configurar Acessos Diretos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode alterar a sua Palavra-passe ou PIN",
+			"boldTitle": "a qualquer altura",
+			"subtitle": "Faça-o em Segurança / Definições de Segurança"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Com as transferências imediatas",
+			"boldTitle": "o seu dinheiro chega ao destinatário em segundos",
+			"subtitle": "Faça-o em Enviar dinheiro / Transferência imediata"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode adaptar a App às suas preferências",
+			"boldTitle": "na zona de personalização da Área Pessoal",
+			"subtitle": "Faça-o na Área pessoal / Definições"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode ocultar os produtos",
+			"boldTitle": "que não deseja ver na Posição Global",
+			"subtitle": "Faça-o em Definições da Posição Global / Ordenar e apresentar produtos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Altere o nome de contas e cartões",
+			"boldTitle": "Para ser mais fácil distingui-los e consultá-los",
+			"subtitle": "Faça-o em Definições da Posição Global / Ordenar e apresentar produtos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode acompanhar as suas despesas",
+			"boldTitle": "para estar em cima da sua saúde financeira",
+			"subtitle": "Faça-o no Menu Lateral / Análise de Gastos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode definir um objetivo de gastos",
+			"boldTitle": "para controlar a sua saúde financeira",
+			"subtitle": "Faça-o em Definições da Posição Global / Orçamento geral de despesas ou no gráfico da Posição Global, clicando em Objetivo"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode realizar Pagamentos",
+			"boldTitle": "de Serviços ou ao Estado desde a sua App",
+			"subtitle": "Aceda a Pagamentos desde o Menu Lateral / Pagamentos"
+		},
+		{
+			"mainTitle": "SABIA QUE...?",
+			"title": "Pode carregar um número de telemóvel",
+			"boldTitle": "através da sua App",
+			"subtitle": "Aceda desde o Menu lateral / Carregamentos ou desde o carrossel de Contas"
+		}
+	]
+}

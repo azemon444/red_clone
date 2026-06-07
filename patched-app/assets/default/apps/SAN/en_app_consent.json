@@ -1,0 +1,29 @@
+{
+  "consents": [
+    {
+      "code": "C0001",
+      "title": "Technical cookies",
+      "description": "These cookies are necessary to ensure the basic functioning of the site and cannot be deactivated. They facilitate, for example, identifying the session, allowing access to restricted access areas, the use of security elements while browsing, etc."
+    },
+    {
+      "code": "C0003",
+      "title": "Personalization or preference cookies",
+      "description": "These cookies allow information to be recorded so that the user can access the service with certain characteristics that effectively make their experience different from that of other users, such as their preferred language, the number of search results to be shown, and the appearance or the content of the service, depending on the type of browser."
+    },
+    {
+      "code": "C0002",
+      "title": "Analytics cookies",
+      "description": "These cookies, which may be proprietary or third-party, make it possible to obtain information about the performance of the site and the browsing activity of its users. For example, they make it possible to quantify the number of users that have visited the site, recording how these users reach the site and how they browse the site, in order to perform statistical analysis. These cookies can also be used to create analytical models based on your business profile created by the Bank."
+    },
+    {
+      "code": "C0004",
+      "title": "Targeting cookies",
+      "description": "These cookies, which may be proprietary or third-party, store information on user behavior, as obtained through the continuous observation of their browsing habits (repeated visits to a specific site, interactions, keywords, online content creation). This information is then used to draw up a specific profile for delivering tailored advertising."
+    },
+    {
+      "code": "C0007",
+      "title": "Sharing your unique identifier",
+      "description": "If you give your consent, we will share your unique identifier with our analytical and targeted cookie collaborators so that they can interact with you in accordance with your cookie policies and provided that you have agreed to install their cookies."
+    }
+  ]
+}

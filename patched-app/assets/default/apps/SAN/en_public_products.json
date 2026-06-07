@@ -1,0 +1,23 @@
+{
+  "publicProducts": [
+    {
+      "id": "accounts",
+      "text": "{{BOLD}}Bank{{/BOLD}} accounts",
+      "icon": "/apps/SAN/img/public_products/ic_accounts.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/accounts"
+    },
+    {
+      "id": "loans",
+      "text": "Personal {{BOLD}}loans{{/BOLD}}",
+      "icon": "/apps/SAN/img/public_products/ic_loans.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/loans"
+    },
+    {
+      "id": "funds",
+      "text": "Investment {{BOLD}}funds{{/BOLD}}",
+      "icon": "/apps/SAN/img/public_products/ic_funds.png",
+      "absoluteUrl": "http://10.0.2.2:9090/demo/products/funds"
+    }
+  ],
+  "stockHolders": []
+}

@@ -1,0 +1,73 @@
+{
+  "contractsBalances": {
+    "customerSegment": "Mass Market",
+    "accounts": {
+      "totalBalancesAccounts": {
+        "totalMainBalance": { "amount": -65.72, "currencyCode": "EUR" },
+        "totalWithholdingBalance": { "amount": 0.0, "currencyCode": "EUR" },
+        "totalAvailableBalance": { "amount": -65.72, "currencyCode": "EUR" }
+      },
+      "accountsList": [
+        {
+          "accountDataDetail": {
+            "mainItem": true,
+            "displayNumber": "PT50001800036554281302058",
+            "alias": "Current Account",
+            "status": "ACTIVE",
+            "description": "Current Account",
+            "accountId": "000365542813020",
+            "type": "Current Account",
+            "mainBalance": { "amount": -65.72, "currencyCode": "EUR" },
+            "availableBalance": { "amount": -65.72, "currencyCode": "EUR" },
+            "pendingBalance": { "amount": 0.0, "currencyCode": "EUR" },
+            "authorizedBalance": { "amount": -65.72, "currencyCode": "EUR" },
+            "withholdingBalance": { "amount": 0.0, "currencyCode": "EUR" },
+            "overdraftLimit": { "amount": 0.0, "currencyCode": "EUR" },
+            "_links": {
+              "accountDetailsLink": "/accounts/000365542813020",
+              "transactionsListLink": "/accounts/000365542813020/transactions"
+            }
+          }
+        }
+      ]
+    },
+    "cards": {
+      "cardList": [
+        {
+          "cardDataDetail": {
+            "mainItem": true,
+            "displayNumber": "XXXXXXXXXXXX6079",
+            "alias": "Debit | *6079",
+            "status": "active",
+            "cardId": "CARD-6079",
+            "type": "debit",
+            "operable": true,
+            "statusInformation": "",
+            "expirationDate": "12/28",
+            "availableBalance": { "amount": -65.72, "currencyCode": "EUR" },
+            "creditLimit": { "amount": 0.0, "currencyCode": "EUR" },
+            "disposedAmount": { "amount": 0.0, "currencyCode": "EUR" },
+            "productCardDescription": "Debit",
+            "relatedAccounts": [],
+            "cardEmbossingType": {
+              "id": "CLASSIC",
+              "description": "Classic Debit"
+            },
+            "_links": {
+              "statementsListLink": "/cards/CARD-6079/statements",
+              "transactionsListLink": "/cards/CARD-6079/transactions",
+              "cardDetailsLink": "/cards/CARD-6079"
+            }
+          }
+        }
+      ]
+    },
+    "loans": null,
+    "deposits": null,
+    "pensions": null,
+    "securities": null,
+    "investmentFunds": null,
+    "unitLink": null,
+    "savings": null
+  }
+}

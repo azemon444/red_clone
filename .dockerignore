@@ -1,0 +1,12 @@
+.git
+.gitignore
+**/.DS_Store
+**/node_modules
+apktool-output
+patched-app/smali
+patched-app/res
+*.apk
+*.jks
+scripts
+SantanderSS
+agent-transcripts
