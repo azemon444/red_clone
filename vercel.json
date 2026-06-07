@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "cd mock-server && npm install",
+  "installCommand": "npm install",
   "functions": {
     "api/index.js": {
       "memory": 1024,

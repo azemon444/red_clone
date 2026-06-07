@@ -12,7 +12,12 @@ export async function initDataStore() {
   const databaseUrl = process.env.DATABASE_URL?.trim();
   if (databaseUrl) {
     console.log("[data] using PostgreSQL (Supabase)");
-    return createPostgresDataStore(databaseUrl);
+    try {
+      return await createPostgresDataStore(databaseUrl);
+    } catch (err) {
+      console.error("[data] PostgreSQL connection failed:", err.message);
+      throw new Error(`Database connection failed: ${err.message}`);
+    }
   }
 
   const activeDataDir = process.env.DATA_DIR || defaultDataDir;

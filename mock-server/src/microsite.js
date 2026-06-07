@@ -6,7 +6,9 @@ import { emptySuccess } from "./responses.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ASSETS_ROOT =
   process.env.ASSETS_ROOT ||
-  join(__dirname, "..", "..", "patched-app", "assets", "default");
+  (process.env.VERCEL
+    ? join(process.cwd(), "patched-app", "assets", "default")
+    : join(__dirname, "..", "..", "patched-app", "assets", "default"));
 
 const MIME = {
   json: "application/json; charset=utf-8",

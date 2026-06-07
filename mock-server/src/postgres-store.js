@@ -7,11 +7,26 @@ import { DATASETS } from "./data-store.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SEED_DIR = join(__dirname, "..", "data");
 
+function normalizeConnectionString(url) {
+  let s = url.trim();
+  if (!s.includes("localhost") && !s.includes("127.0.0.1")) {
+    if (s.includes(":6543/") && !s.includes("pgbouncer=")) {
+      s += s.includes("?") ? "&pgbouncer=true" : "?pgbouncer=true";
+    }
+    if (!s.includes("sslmode=")) {
+      s += s.includes("?") ? "&sslmode=require" : "?sslmode=require";
+    }
+  }
+  return s;
+}
+
 export async function createPostgresDataStore(connectionString) {
   const pool = new pg.Pool({
-    connectionString,
+    connectionString: normalizeConnectionString(connectionString),
     ssl: connectionString.includes("localhost") ? false : { rejectUnauthorized: false },
-    max: 3,
+    max: 2,
+    connectionTimeoutMillis: 15000,
+    idleTimeoutMillis: 10000,
   });
 
   const cache = {};

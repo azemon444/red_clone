@@ -5,5 +5,11 @@
   "scripts": {
     "start": "npm start --prefix mock-server",
     "dev": "npm run dev --prefix mock-server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.0"
   }
 }
