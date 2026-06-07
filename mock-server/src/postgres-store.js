@@ -13,17 +13,21 @@ function normalizeConnectionString(url) {
     if (s.includes(":6543/") && !s.includes("pgbouncer=")) {
       s += s.includes("?") ? "&pgbouncer=true" : "?pgbouncer=true";
     }
-    if (!s.includes("sslmode=")) {
-      s += s.includes("?") ? "&sslmode=require" : "?sslmode=require";
-    }
   }
   return s;
+}
+
+function poolSsl(connectionString) {
+  if (connectionString.includes("localhost") || connectionString.includes("127.0.0.1")) {
+    return false;
+  }
+  return { rejectUnauthorized: false };
 }
 
 export async function createPostgresDataStore(connectionString) {
   const pool = new pg.Pool({
     connectionString: normalizeConnectionString(connectionString),
-    ssl: connectionString.includes("localhost") ? false : { rejectUnauthorized: false },
+    ssl: poolSsl(connectionString),
     max: 2,
     connectionTimeoutMillis: 15000,
     idleTimeoutMillis: 10000,
