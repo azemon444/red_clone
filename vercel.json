@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd mock-server && npm install",
+  "functions": {
+    "api/index.js": {
+      "memory": 1024,
+      "maxDuration": 30,
+      "includeFiles": "patched-app/assets/**,mock-server/public/**,mock-server/data/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+  ]
+}

@@ -77,7 +77,7 @@ export function bootstrapDataDir(targetDir, sourceDir) {
 export function createDataStore(dataDir) {
   const cache = {};
 
-  function reload(key) {
+  async function reload(key) {
     const meta = DATASETS[key];
     if (!meta) throw new Error(`Unknown dataset: ${key}`);
     const path = join(dataDir, meta.file);
@@ -94,7 +94,7 @@ export function createDataStore(dataDir) {
     return cache[key];
   }
 
-  function set(key, data) {
+  async function set(key, data) {
     const meta = DATASETS[key];
     if (!meta) throw new Error(`Unknown dataset: ${key}`);
     const path = join(dataDir, meta.file);
@@ -120,5 +120,5 @@ export function createDataStore(dataDir) {
     }
   }
 
-  return { get, set, reload, list, dataDir };
+  return { get, set, reload, list, dataDir, backend: "files" };
 }

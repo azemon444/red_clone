@@ -1,0 +1,9 @@
+{
+  "name": "red-clone",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm start --prefix mock-server",
+    "dev": "npm run dev --prefix mock-server"
+  }
+}

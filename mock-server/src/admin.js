@@ -32,9 +32,9 @@ export function registerAdmin(app, dataStore, { adminPassword = "" } = {}) {
     }
   });
 
-  router.put("/api/data/:key", requireAuth, (req, res) => {
+  router.put("/api/data/:key", requireAuth, async (req, res) => {
     try {
-      const saved = dataStore.set(req.params.key, req.body);
+      const saved = await dataStore.set(req.params.key, req.body);
       console.log(`[admin] saved ${req.params.key}`);
       res.json({ ok: true, key: req.params.key, data: saved });
     } catch (e) {
@@ -42,9 +42,9 @@ export function registerAdmin(app, dataStore, { adminPassword = "" } = {}) {
     }
   });
 
-  router.post("/api/reload/:key", requireAuth, (req, res) => {
+  router.post("/api/reload/:key", requireAuth, async (req, res) => {
     try {
-      const data = dataStore.reload(req.params.key);
+      const data = await dataStore.reload(req.params.key);
       res.json({ ok: true, key: req.params.key, data });
     } catch (e) {
       res.status(404).json({ error: e.message });

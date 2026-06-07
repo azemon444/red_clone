@@ -1,107 +1,107 @@
-# Hosted mock API + Admin (free)
+# Deploy free forever (GitHub + Supabase + Vercel)
 
-Edit demo data from **any browser** and use the clone app on your phone **without your Mac running**.
+No Fly.io. No credit card traps. All three services have **permanent free tiers**.
 
-**Cost: $0** on [Fly.io](https://fly.io) free allowance (machine sleeps when idle).
-
-| URL | Purpose |
-|-----|---------|
-| `https://YOUR-APP.fly.dev/health` | API health |
-| `https://YOUR-APP.fly.dev/admin` | Admin UI |
-| `https://YOUR-APP.fly.dev/santander/eeic/...` | API the patched app calls |
-
-App login: **demo** / **demo123** (change in Admin → Customer profile).
+| Service | Free forever | Role |
+|---------|--------------|------|
+| [GitHub](https://github.com) | Yes | Your code |
+| [Supabase](https://supabase.com) | Yes | Database (PostgreSQL) |
+| [Vercel](https://vercel.com) | Yes (Hobby) | Hosts API + Admin UI |
 
 ---
 
-## Step 1 — Deploy to Fly.io (free)
+## Step 1 — Code is on GitHub
 
-### Install Fly CLI
-
-```bash
-curl -L https://fly.io/install.sh | sh
-```
-
-Restart the terminal, then:
-
-```bash
-fly auth login
-```
-
-### Deploy (automated script)
-
-```bash
-cd /Users/azemon/Desktop/clone_santander
-chmod +x scripts/deploy-fly.sh scripts/rebuild-apk-cloud.sh
-./scripts/deploy-fly.sh
-```
-
-It will ask for:
-- **App name** (default `santander-clone-mock` → URL `https://santander-clone-mock.fly.dev`)
-- **Admin password** (for `/admin` sidebar token)
-- **Region** (`ams` = Amsterdam, good for Portugal)
-
-### Deploy (manual)
-
-```bash
-cd /Users/azemon/Desktop/clone_santander
-fly launch --no-deploy --copy-config
-fly volumes create santander_data --region ams --size 1
-fly secrets set ADMIN_PASSWORD="your-strong-password" PUBLIC_URL="https://YOUR-APP.fly.dev"
-fly deploy
-```
-
-Open `https://YOUR-APP.fly.dev/admin` → paste **ADMIN_PASSWORD** in the sidebar.
-
-> **Note:** First request after idle may take ~10s (machine wakes up). Admin edits persist in the `/data` volume.
+Repo: **https://github.com/azemon444/red_clone**
 
 ---
 
-## Step 2 — Rebuild APK for cloud URL
+## Step 2 — Create free Supabase database
 
-```bash
-./scripts/rebuild-apk-cloud.sh https://YOUR-APP.fly.dev
+1. Go to [supabase.com](https://supabase.com) → **Start your project** (free)
+2. Create a project (save the database password)
+3. Open **Project Settings → Database**
+4. Copy the **URI** connection string (mode: **Transaction** pooler, port **6543**)
+   - Looks like: `postgresql://postgres.xxxx:YOUR_PASSWORD@aws-0-eu-central-1.pooler.supabase.com:6543/postgres`
+5. Replace `[YOUR-PASSWORD]` with your real password
+
+> The app auto-creates the table and seeds Shuaib demo data on first start.  
+> Optional: run `supabase/schema.sql` in **SQL Editor** if you prefer.
+
+---
+
+## Step 3 — Deploy on Vercel (connects to GitHub)
+
+1. Go to [vercel.com](https://vercel.com) → **Sign up with GitHub**
+2. **Add New Project** → import **azemon444/red_clone**
+3. Leave settings as default (Vercel reads `vercel.json` automatically)
+4. Add **Environment Variables**:
+
+| Name | Value |
+|------|--------|
+| `DATABASE_URL` | Your Supabase connection string (step 2) |
+| `ADMIN_PASSWORD` | A password you choose (for `/admin`) |
+| `NODE_ENV` | `production` |
+
+5. Click **Deploy**
+6. Copy your URL, e.g. `https://red-clone.vercel.app`
+7. Add one more variable → **Redeploy**:
+
+| Name | Value |
+|------|--------|
+| `PUBLIC_URL` | `https://red-clone.vercel.app` (your real URL, no trailing slash) |
+
+---
+
+## Step 4 — Open Admin from any browser
+
+```
+https://YOUR-PROJECT.vercel.app/admin
 ```
 
-Install on phone:
+- Paste **ADMIN_PASSWORD** in the sidebar token field
+- Edit customer name, balance, transactions, etc.
+- Data saves to **Supabase** permanently
+
+Health check:
+
+```
+https://YOUR-PROJECT.vercel.app/health
+```
+
+---
+
+## Step 5 — Rebuild APK for cloud URL
+
+On your Mac:
 
 ```bash
+cd /Users/azemon/Desktop/clone_santander
+python3 scripts/patch-apk.py --mock-host https://YOUR-PROJECT.vercel.app
 adb install -r SantanderClone-signed.apk
 adb shell pm clear com.azemon.santanderclone
 ```
 
-One APK works on **emulator + physical phone** anywhere.
+Login: **demo** / **demo123** (change in Admin).
 
 ---
 
-## Step 3 — Later: PostgreSQL (Supabase, still free)
-
-When JSON files feel limiting:
-
-1. Create free project at [supabase.com](https://supabase.com)
-2. Add `DATABASE_URL` to Fly secrets
-3. Migrate `mock-server/src/data-store.js` from JSON → Postgres
-
-The clone app and admin UI stay the same — only the server storage changes.
-
----
-
-## Other hosts (paid or limited free)
-
-- **Railway** — `railway.toml` included; hobby plan may cost after trial
-- **Render** — `render.yaml` included; disk on paid plans
-
----
-
-## Local test (optional)
+## Local development (no Supabase needed)
 
 ```bash
-docker build -f mock-server/Dockerfile -t santander-mock .
-docker run --rm -p 9090:9090 \
-  -e PUBLIC_URL=http://localhost:9090 \
-  -e ADMIN_PASSWORD=test \
-  -v santander-data:/data \
-  santander-mock
+cd mock-server
+npm install
+npm start
+```
+
+Open http://localhost:9090/admin — uses JSON files in `mock-server/data/`.
+
+To test with Supabase locally, create `mock-server/.env`:
+
+```
+DATABASE_URL=postgresql://...
+ADMIN_PASSWORD=test
+PUBLIC_URL=http://localhost:9090
 ```
 
 ---
@@ -110,7 +110,17 @@ docker run --rm -p 9090:9090 \
 
 | Problem | Fix |
 |---------|-----|
-| Admin shows 401 | Enter `ADMIN_PASSWORD` in sidebar token field |
-| App shows errors | Rebuild APK with correct `--mock-host` URL |
-| Old data in app | Force-close app or `adb shell pm clear com.azemon.santanderclone` |
-| Slow first load | Fly machine was sleeping — wait a few seconds |
+| Admin 401 | Enter `ADMIN_PASSWORD` in sidebar |
+| Deploy fails | Check `DATABASE_URL` uses port **6543** (pooler) |
+| App errors | Rebuild APK with correct Vercel URL |
+| Supabase paused | Open Supabase dashboard → Resume project (still free) |
+| Slow first request | Vercel cold start — wait ~5s, retry |
+
+---
+
+## Cost summary
+
+- **GitHub**: free
+- **Supabase**: free (500 MB, pauses after 1 week idle — click resume)
+- **Vercel Hobby**: free for personal projects
+- **Total**: $0
