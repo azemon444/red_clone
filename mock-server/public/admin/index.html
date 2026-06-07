@@ -79,8 +79,10 @@
         <p>Edit demo data · updates both apps live</p>
       </div>
       <div class="auth-bar hidden" id="authBar">
-        <label>Admin token (optional)</label>
-        <input type="password" id="adminToken" placeholder="ADMIN_PASSWORD" />
+        <label id="authLabel">Admin password</label>
+        <input type="password" id="adminToken" placeholder="Paste your Vercel ADMIN_PASSWORD" />
+        <button type="button" class="btn btn-primary" id="authConnect" style="margin-top:.5rem;width:100%">Unlock admin</button>
+        <p class="hint" id="authHint">Set in Vercel → Settings → Environment Variables → ADMIN_PASSWORD</p>
       </div>
       <nav id="nav"></nav>
     </aside>
@@ -644,24 +646,44 @@
       document.getElementById("raw_json").value = JSON.stringify(data, null, 2);
     };
 
+    let authRequired = false;
+
     async function initAuth() {
       try {
         const cfg = await fetch("/admin/api/config").then((r) => r.json());
-        if (cfg.requiresAuth) {
+        authRequired = !!cfg.requiresAuth;
+        if (authRequired) {
           const bar = document.getElementById("authBar");
           bar.classList.remove("hidden");
           const input = document.getElementById("adminToken");
           const saved = localStorage.getItem("santanderAdminToken");
           if (saved) input.value = saved;
-          input.addEventListener("input", () => {
-            localStorage.setItem("santanderAdminToken", input.value);
+          const persist = () => localStorage.setItem("santanderAdminToken", input.value);
+          input.addEventListener("input", persist);
+          document.getElementById("authConnect").addEventListener("click", () => {
+            persist();
+            render().catch((e) => toast(e.message, false));
+          });
+          input.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") document.getElementById("authConnect").click();
           });
         }
       } catch (_) {}
     }
 
+    function needsUnlock() {
+      return authRequired && !document.getElementById("adminToken")?.value?.trim();
+    }
+
     buildNav();
-    initAuth().then(render);
+    initAuth().then(() => {
+      if (needsUnlock()) {
+        document.getElementById("panels").innerHTML =
+          '<div class="card"><h3>Locked</h3><p class="subtitle">Enter your <strong>ADMIN_PASSWORD</strong> in the sidebar, then click <strong>Unlock admin</strong>.</p><p class="hint">This is the value you set in Vercel — not the word "ADMIN_PASSWORD".</p></div>';
+        return;
+      }
+      return render().catch((e) => toast(e.message, false));
+    });
   </script>
 </body>
 </html>

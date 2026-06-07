@@ -3,7 +3,6 @@
   "installCommand": "npm install",
   "functions": {
     "api/index.js": {
-      "memory": 1024,
       "maxDuration": 30,
       "includeFiles": "patched-app/assets/**,mock-server/public/**,mock-server/data/**"
     }
