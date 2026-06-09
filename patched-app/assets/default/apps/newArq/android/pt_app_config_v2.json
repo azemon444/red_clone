@@ -200,7 +200,7 @@
     "duplicatedMovementsPhoneNumber": "648140936",
     "enableTripMode": "true",
     "timerLoadingTips": "4",
-    "disableOnboarding": "false",
+    "disableOnboarding": "true",
     "onboardingVersion": "1",
     "enabledAnalysisZoneMovements": "false",
     "enabledAnalysisZoneFinancialHealth": "false",

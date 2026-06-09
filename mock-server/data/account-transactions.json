@@ -1,126 +1,76 @@
 {
-  "_transactionsDataList": [
+  "accountId": "000365542813020",
+  "alias": "Current Account",
+  "displayNumber": "PT50001800036554281302058",
+  "transactionsDataList": [
     {
-      "transactionId": "TX-20260529-001",
-      "hasPdfAssociated": false,
-      "description": "Imposto Selo P/Utilização De Crédito",
-      "typeCode": "CHG",
-      "typeDescription": "Charge",
-      "categoryCode": "TAX",
-      "categoryDescription": "Tax",
-      "creationDateTime": "2026-05-29T00:00:00",
-      "accountingDateTime": "2026-05-29T00:00:00",
-      "processedDateTime": "2026-05-29T00:00:00",
-      "amount": { "amount": "-0.08", "currency": "EUR" },
-      "balanceResult": { "amount": "-65.72", "currency": "EUR" },
-      "swiftOperation": {
-        "operationMT940": {
-          "localOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "customerOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "swiftCode": "NTRF"
-        },
-        "referencesMT940": {
-          "transactionClientReference": "",
-          "transactionBatchReference": "",
-          "transactionInternalReference": ""
-        }
+      "transactionDetails": {
+        "transactionId": "TX-20260529-001",
+        "description": "Imposto Selo P/Utilização De Crédito",
+        "description2": "",
+        "amount": { "amount": -0.08, "currencyCode": "EUR" },
+        "balanceResult": { "amount": -65.72, "currencyCode": "EUR" },
+        "accountingDate": "20260529T000000000",
+        "creationDate": "20260529T000000000",
+        "processedDate": "20260529T000000000",
+        "transactionCategory": "TAX",
+        "transactionType": "CHG",
+        "status": "Emitida"
       },
-      "sourceIBAN": "PT50001800036554281302058",
-      "destIBAN": "",
-      "destName": "",
-      "statementDesc": "Imposto Selo P/Utilização De Crédito",
-      "newCommissions": [],
-      "description2": "",
-      "link": { "href": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260529-001" }
+      "transactionDetailsLink": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260529-001"
     },
     {
-      "transactionId": "TX-20260528-002",
-      "hasPdfAssociated": false,
-      "description": "Imp. Selo Juros Ultrap. Credito",
-      "typeCode": "CHG",
-      "typeDescription": "Charge",
-      "categoryCode": "TAX",
-      "categoryDescription": "Tax",
-      "creationDateTime": "2026-05-28T00:00:00",
-      "accountingDateTime": "2026-05-28T00:00:00",
-      "processedDateTime": "2026-05-28T00:00:00",
-      "amount": { "amount": "-0.03", "currency": "EUR" },
-      "balanceResult": { "amount": "-65.64", "currency": "EUR" },
-      "swiftOperation": {
-        "operationMT940": {
-          "localOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "customerOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "swiftCode": "NTRF"
-        },
-        "referencesMT940": {
-          "transactionClientReference": "",
-          "transactionBatchReference": "",
-          "transactionInternalReference": ""
-        }
+      "transactionDetails": {
+        "transactionId": "TX-20260528-002",
+        "description": "Imp. Selo Juros Ultrap. Credito",
+        "description2": "",
+        "amount": { "amount": -0.03, "currencyCode": "EUR" },
+        "balanceResult": { "amount": -65.64, "currencyCode": "EUR" },
+        "accountingDate": "20260528T000000000",
+        "creationDate": "20260528T000000000",
+        "processedDate": "20260528T000000000",
+        "transactionCategory": "TAX",
+        "transactionType": "CHG",
+        "status": "Emitida"
       },
-      "sourceIBAN": "PT50001800036554281302058",
-      "destIBAN": "",
-      "destName": "",
-      "statementDesc": "Imp. Selo Juros Ultrap. Credito",
-      "newCommissions": [],
-      "description2": "",
-      "link": { "href": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260528-002" }
+      "transactionDetailsLink": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260528-002"
     },
     {
-      "transactionId": "TX-20260528-001",
-      "hasPdfAssociated": false,
-      "description": "Juros Ultrap. Credito",
-      "typeCode": "INT",
-      "typeDescription": "Interest",
-      "categoryCode": "INT",
-      "categoryDescription": "Interest",
-      "creationDateTime": "2026-05-28T00:00:00",
-      "accountingDateTime": "2026-05-28T00:00:00",
-      "processedDateTime": "2026-05-28T00:00:00",
-      "amount": { "amount": "-0.76", "currency": "EUR" },
-      "balanceResult": { "amount": "-65.61", "currency": "EUR" },
-      "swiftOperation": {
-        "operationMT940": {
-          "localOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "customerOperation": {
-            "logicalTerminalControl": { "code": "NTRF", "description": "Transfer" },
-            "additionalInformation": ""
-          },
-          "swiftCode": "NTRF"
-        },
-        "referencesMT940": {
-          "transactionClientReference": "",
-          "transactionBatchReference": "",
-          "transactionInternalReference": ""
-        }
+      "transactionDetails": {
+        "transactionId": "TX-20260528-001",
+        "description": "Juros Ultrap. Credito",
+        "description2": "",
+        "amount": { "amount": -0.76, "currencyCode": "EUR" },
+        "balanceResult": { "amount": -65.61, "currencyCode": "EUR" },
+        "accountingDate": "20260528T000000000",
+        "creationDate": "20260528T000000000",
+        "processedDate": "20260528T000000000",
+        "transactionCategory": "INT",
+        "transactionType": "INT",
+        "status": "Emitida"
       },
-      "sourceIBAN": "PT50001800036554281302058",
-      "destIBAN": "",
-      "destName": "",
-      "statementDesc": "Juros Ultrap. Credito",
-      "newCommissions": [],
-      "description2": "",
-      "link": { "href": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260528-001" }
+      "transactionDetailsLink": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260528-001"
+    },
+    {
+      "transactionDetails": {
+        "transactionId": "TX-20260511-001",
+        "description": "Comissão Manutenção Conta",
+        "description2": "",
+        "amount": { "amount": -2.5, "currencyCode": "EUR" },
+        "balanceResult": { "amount": -64.85, "currencyCode": "EUR" },
+        "accountingDate": "20260511T000000000",
+        "creationDate": "20260511T000000000",
+        "processedDate": "20260511T000000000",
+        "transactionCategory": "FEE",
+        "transactionType": "CHG",
+        "status": "Emitida"
+      },
+      "transactionDetailsLink": "/santander/eeic/retail_accounts/000365542813020/transactions/TX-20260511-001"
     }
   ],
   "_links": {
-    "accountDetailLink": { "href": "/santander/eeic/retail_accounts/000365542813020" },
-    "_first": { "href": "/santander/eeic/retail_accounts/000365542813020/transactions?_offset=0&_limit=20" },
-    "_last": { "href": "/santander/eeic/retail_accounts/000365542813020/transactions?_offset=0&_limit=20" }
+    "accountDetailsLink": "/santander/eeic/retail_accounts/000365542813020",
+    "_first": "/santander/eeic/retail_accounts/000365542813020/transactions?_offset=0&_limit=20",
+    "_next": null
   }
 }

@@ -51,7 +51,7 @@ const CONFIG_OVERRIDES = {
   logoutTimer: "0",
 };
 
-function resolveAssetPath(requestPath) {
+function normalizeRelPath(requestPath) {
   let rel = requestPath.replace(/^\//, "");
 
   if (rel.startsWith("filesFF/")) {
@@ -68,11 +68,39 @@ function resolveAssetPath(requestPath) {
     rel = sftp[1];
   }
 
+  return rel;
+}
+
+function assetCandidates(rel) {
+  const candidates = [rel];
+
+  if (rel.includes("apps/SAN/") && rel.includes("offersV4.xml") && !rel.includes("/offers/")) {
+    candidates.push(rel.replace("apps/SAN/", "apps/SAN/offers/"));
+  }
+
+  if (/apps\/SAN\/(en|pt)_app_config_v2\.json$/.test(rel)) {
+    const lang = rel.match(/(en|pt)_app_config_v2\.json$/)[1];
+    candidates.push(`apps/newArq/android/${lang}_app_config_v2.json`);
+  }
+
+  return candidates;
+}
+
+function resolveAssetPath(requestPath) {
+  const rel = normalizeRelPath(requestPath);
+
+  for (const candidate of assetCandidates(rel)) {
+    const resolved = normalize(join(ASSETS_ROOT, candidate));
+    if (resolved.startsWith(ASSETS_ROOT) && existsSync(resolved)) {
+      return resolved;
+    }
+  }
+
   const resolved = normalize(join(ASSETS_ROOT, rel));
   if (!resolved.startsWith(ASSETS_ROOT)) {
     return null;
   }
-  return resolved;
+  return existsSync(resolved) ? resolved : null;
 }
 
 function patchAppConfig(body) {

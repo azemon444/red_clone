@@ -3,6 +3,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import pg from "pg";
 import { DATASETS } from "./data-store.js";
+import { loadSeed } from "./seed-utils.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SEED_DIR = join(__dirname, "..", "data");
@@ -116,10 +117,25 @@ export async function createPostgresDataStore(connectionString) {
     return cache[key];
   }
 
+  async function resetFromSeed(key) {
+    const data = loadSeed(key);
+    return set(key, data);
+  }
+
+  async function resetAllFromSeed() {
+    const restored = {};
+    for (const key of Object.keys(DATASETS)) {
+      restored[key] = await resetFromSeed(key);
+    }
+    return restored;
+  }
+
   cachedStore = {
     get,
     set,
     reload,
+    resetFromSeed,
+    resetAllFromSeed,
     list,
     backend: "postgres",
     async close() {

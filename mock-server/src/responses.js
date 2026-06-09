@@ -33,10 +33,44 @@ export function emptyList(key = "items") {
 
 export function challengeResponse() {
   return {
-    challenge_id: "mock-challenge-001",
-    challenge_type: "none",
-    status: "completed",
+    challenge: "mock-challenge-" + Date.now(),
+    statusCode: "200",
   };
+}
+
+const MOCK_PIN_DEVICE_ID = "MOCK-DEVICE-001";
+
+export function registerPinResponse({ withSaf = false } = {}) {
+  if (withSaf) {
+    return {
+      userDeviceId: null,
+      session_id: "MOCK-SAF-SESSION-001",
+      additionalInfo: {
+        message: "SAF verification required",
+        phoneDataList: [
+          { number: "+351 900 000 000", uuid: "MOCK-PHONE-UUID-001" },
+        ],
+      },
+    };
+  }
+  return {
+    userDeviceId: MOCK_PIN_DEVICE_ID,
+    session_id: null,
+    additionalInfo: {
+      message: "PIN registered",
+      phoneDataList: null,
+    },
+  };
+}
+
+export function validatePinResponse() {
+  return {
+    pinValidationId: "MOCK-PIN-VALIDATION-" + Date.now(),
+  };
+}
+
+export function changePinResponse() {
+  return { userDeviceId: MOCK_PIN_DEVICE_ID };
 }
 
 export function safInformations(customerInfo) {
@@ -166,7 +200,19 @@ export function smartStub(path, method) {
 
   if (p.includes("simulation") || p.includes("simulate")) return simulationResult();
   if (p.includes("execution") || p.includes("execute")) return executionResult();
-  if (p.includes("transactions")) return emptyList("transactions");
+  if (p.includes("transactions")) {
+    return {
+      accountId: "000365542813020",
+      alias: "Current Account",
+      displayNumber: "PT50001800036554281302058",
+      transactionsDataList: [],
+      _links: {
+        accountDetailsLink: "/santander/eeic/retail_accounts/000365542813020",
+        _first: "/santander/eeic/retail_accounts/000365542813020/transactions?_offset=0&_limit=20",
+        _next: null,
+      },
+    };
+  }
   if (p.includes("payees")) return emptyList("payees");
   if (p.includes("notifications")) return notificationsList();
   if (p.includes("devices")) return deviceList();
@@ -178,6 +224,8 @@ export function smartStub(path, method) {
   if (p.includes("scheduled_payments")) return emptyList("scheduledPayments");
   if (p.includes("resolve")) return resolveHelpList();
   if (p.includes("verification") || p.includes("credentials")) return { status: "OK", verified: true };
+  if (p.includes("pin/validation")) return validatePinResponse();
+  if (p.includes("user_identity_mgmt/pin")) return registerPinResponse();
   if (p.includes("pin") || p.includes("password")) return { status: "OK" };
   if (p.includes("carbon") || p.includes("assertion")) return { token: "mock-assertion-token", valid: true };
   if (p.includes("kyc")) return { status: "OK", result: "PASS" };

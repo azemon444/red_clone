@@ -400,20 +400,29 @@ def patch_kotlin_builtin_strings():
     text = wt_h.read_text(encoding="utf-8")
     replacements = [
         (
-            "    sget-object v0, Lq2/RCrk/GeeKAbXKd;->ITYYlRiFvb:Ljava/lang/String;\n\n"
-            "    invoke-static {v0}, LWT/i;->b(Ljava/lang/String;)LWT/b;",
-            '    const-string v0, "Comparable"\n\n'
-            "    invoke-static {v0}, LWT/i;->b(Ljava/lang/String;)LWT/b;",
+            r"\n    const/4 v0, 0x0\n\n    sget-object v0, Lq2/RCrk/GeeKAbXKd;->ITYYlRiFvb:Ljava/lang/String;\n\n    invoke-static {v0}, LWT/i;->b\(Ljava/lang/String;\)LWT/b;",
+            '\n    const-string v0, "Comparable"\n\n    invoke-static {v0}, LWT/i;->b(Ljava/lang/String;)LWT/b;',
         ),
         (
-            "    sget-object v2, Lu3/aan/HiKReLihbCmCBQ;->oRDTx:Ljava/lang/String;\n\n"
-            "    invoke-static {v2}, LWT/i;->c(Ljava/lang/String;)LWT/b;",
-            '    const-string v2, "Collection"\n\n'
-            "    invoke-static {v2}, LWT/i;->c(Ljava/lang/String;)LWT/b;",
+            r"\n    const/4 v2, 0x0\n\n    sget-object v2, Lu3/aan/HiKReLihbCmCBQ;->oRDTx:Ljava/lang/String;\n\n    invoke-static {v2}, LWT/i;->c\(Ljava/lang/String;\)LWT/b;",
+            '\n    const-string v2, "Collection"\n\n    invoke-static {v2}, LWT/i;->c(Ljava/lang/String;)LWT/b;',
         ),
     ]
-    for old, new in replacements:
-        text = text.replace(old, new)
+    for pattern, replacement in replacements:
+        text, n = re.subn(pattern, replacement, text, count=1)
+        if not n:
+            text = text.replace(
+                "    sget-object v0, Lq2/RCrk/GeeKAbXKd;->ITYYlRiFvb:Ljava/lang/String;\n\n"
+                "    invoke-static {v0}, LWT/i;->b(Ljava/lang/String;)LWT/b;",
+                '    const-string v0, "Comparable"\n\n'
+                "    invoke-static {v0}, LWT/i;->b(Ljava/lang/String;)LWT/b;",
+            )
+            text = text.replace(
+                "    sget-object v2, Lu3/aan/HiKReLihbCmCBQ;->oRDTx:Ljava/lang/String;\n\n"
+                "    invoke-static {v2}, LWT/i;->c(Ljava/lang/String;)LWT/b;",
+                '    const-string v2, "Collection"\n\n'
+                "    invoke-static {v2}, LWT/i;->c(Ljava/lang/String;)LWT/b;",
+            )
     wt_h.write_text(text, encoding="utf-8")
     print("  Patched Kotlin StandardNames VM strings (Comparable, Collection)")
 
@@ -640,11 +649,13 @@ def patch_disable_marketing_cloud():
         "com.salesforce.marketingcloud.MCInitContentProvider",
         "com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider",
     ):
-        pattern = rf'(<provider\b)([^>]*android:name="{re.escape(provider)}"[^>]*)(/?>)'
+        pattern = rf'(<provider\b)([^/>]*android:name="{re.escape(provider)}"[^/>]*)(/>|>)'
 
         def _disable_provider(match, _pattern=pattern):
             attrs = re.sub(r'\s*android:enabled="[^"]*"', "", match.group(2))
-            return f'{match.group(1)}{attrs} android:enabled="false"{match.group(3)}'
+            if match.group(3) == "/>":
+                return f'{match.group(1)}{attrs} android:enabled="false" />'
+            return f'{match.group(1)}{attrs} android:enabled="false">'
 
         text = re.sub(pattern, _disable_provider, text)
     manifest.write_text(text, encoding="utf-8")
@@ -654,7 +665,16 @@ def patch_disable_marketing_cloud():
 def patch_missing_drawables():
     """Fix drawables that reference split-APK assets missing from the base package."""
     print("Patching missing drawable resources...")
-    default_thumb = PATCHED_DIR / "res" / "drawable" / "default_thumbnail.xml"
+    drawable_dir = PATCHED_DIR / "res" / "drawable"
+    drawable_dir.mkdir(parents=True, exist_ok=True)
+    brand_fill = """<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/santander_red" />
+</shape>
+"""
+    (drawable_dir / "bg_splash.xml").write_text(brand_fill, encoding="utf-8")
+    (drawable_dir / "bg_thumbnail.xml").write_text(brand_fill, encoding="utf-8")
+    default_thumb = drawable_dir / "default_thumbnail.xml"
     default_thumb.write_text(
         """<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
@@ -717,7 +737,6 @@ def patch_missing_drawables():
         "private_menu_dotted_separator.xml": dotted_gray,
         "notification_tile_bg.xml": tile_bg,
     }
-    drawable_dir = PATCHED_DIR / "res" / "drawable"
     for name, content in null_bitmap_fixes.items():
         (drawable_dir / name).write_text(content, encoding="utf-8")
 
@@ -734,7 +753,697 @@ def patch_missing_drawables():
 """,
             encoding="utf-8",
         )
+    transfer_red = """<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dp" android:width="32.0dp" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ec0000" android:pathData="M8.38,8.867c0.32,0 0.58,0.262 0.58,0.586 0,0.292 -0.21,0.534 -0.486,0.58l-0.094,0.007L7.162,10.04c-0.256,2.042 -1.8,3.664 -3.787,4.015l-0.215,0.032L3.16,18.9c2.019,0.259 3.623,1.82 3.97,3.83l0.032,0.217h12.877c0.256,-2.042 1.8,-3.664 3.787,-4.014l0.215,-0.033v-4.812c-2.019,-0.258 -3.623,-1.82 -3.97,-3.83l-0.032,-0.217L18.82,10.041c-0.32,0 -0.58,-0.263 -0.58,-0.587 0,-0.292 0.21,-0.533 0.486,-0.579l0.094,-0.007h5.8c0.29,0 0.528,0.212 0.573,0.491l0.008,0.095L25.2,11.5l1.65,0.001 0.045,0.003 0.045,-0.003c0.288,0 0.527,0.213 0.572,0.492l0.008,0.095 -0.001,2.244c0.059,-0.02 0.122,-0.031 0.188,-0.031h1.344l0.044,0.003 0.045,-0.003c0.288,0 0.527,0.213 0.572,0.492l0.008,0.095v13.266c0,0.292 -0.21,0.534 -0.486,0.58l-0.094,0.007L6.78,28.741c-0.32,0 -0.58,-0.263 -0.58,-0.587v-0.004,-1.572c0,-0.053 0.007,-0.104 0.02,-0.153L4.58,26.425c-0.32,0 -0.58,-0.263 -0.58,-0.587v-0.004,-1.572c0,-0.049 0.006,-0.097 0.018,-0.142L2.58,24.12c-0.289,0 -0.528,-0.212 -0.572,-0.49L2,23.532L2,9.453c0,-0.292 0.21,-0.533 0.486,-0.579l0.094,-0.007h5.8zM27.519,15.442v10.395c0,0.292 -0.21,0.534 -0.485,0.58l-0.094,0.007L7.34,26.424c0.013,0.049 0.02,0.1 0.02,0.153v0.989h21.2l-0.001,-12.093h-0.852c-0.066,0 -0.129,-0.01 -0.188,-0.03zM26.359,12.673L25.2,12.673v10.86c0,0.292 -0.21,0.534 -0.485,0.579l-0.094,0.008 -19.479,-0.001c0.012,0.045 0.018,0.093 0.018,0.143v0.988h21.2l-0.001,-12.577zM3.16,20.073v2.873h2.841c-0.245,-1.47 -1.388,-2.625 -2.841,-2.874zM24.04,20.073c-1.39,0.237 -2.495,1.305 -2.804,2.683l-0.037,0.19h2.842v-2.874zM13.93,3.103l0.08,0.068 3.48,3.52c0.227,0.229 0.227,0.6 0,0.83 -0.113,0.114 -0.261,0.171 -0.41,0.171 -0.118,0 -0.237,-0.036 -0.338,-0.11l-0.072,-0.062 -2.49,-2.518v7.443c1.963,0.288 3.48,1.984 3.48,4.047 0,2.264 -1.821,4.107 -4.06,4.107 -2.238,0 -4.06,-1.843 -4.06,-4.107 0,-1.994 1.418,-3.646 3.286,-4.014l0.194,-0.033L13.02,5.003L10.53,7.52c-0.226,0.23 -0.593,0.23 -0.82,0 -0.201,-0.203 -0.224,-0.52 -0.067,-0.748l0.067,-0.081 3.48,-3.52c0.202,-0.204 0.514,-0.226 0.74,-0.068zM13.6,13.56c-1.599,0 -2.9,1.315 -2.9,2.933 0,1.618 1.301,2.933 2.9,2.933 1.6,0 2.9,-1.315 2.9,-2.933 0,-1.618 -1.3,-2.933 -2.9,-2.933zM24.04,10.04L21.2,10.04c0.234,1.405 1.29,2.524 2.653,2.836l0.188,0.038L24.041,10.04zM6.001,10.04L3.16,10.04v2.874c1.453,-0.249 2.596,-1.405 2.841,-2.874z" android:fillType="evenOdd" />
+</vector>
+"""
+    (drawable_dir / "icn_transfer_red.xml").write_text(transfer_red, encoding="utf-8")
+    public_xml = PATCHED_DIR / "res" / "values" / "public.xml"
+    if public_xml.exists():
+        text = public_xml.read_text(encoding="utf-8")
+        needle = '    <public type="drawable" name="icn_transfer_packages" id="0x7f080a90" />\n'
+        insert = (
+            needle
+            + '    <public type="drawable" name="icn_transfer_red" id="0x7f080a91" />\n'
+        )
+        if "icn_transfer_red" not in text and needle in text:
+            text = text.replace(needle, insert)
+        pending_needle = (
+            '    <public type="drawable" name="icn_send_pending" id="0x7f080a56" />\n'
+        )
+        programmed_insert = (
+            pending_needle
+            + '    <public type="drawable" name="icn_send_programmed" id="0x7f080a57" />\n'
+        )
+        if "icn_send_programmed" not in text and pending_needle in text:
+            text = text.replace(pending_needle, programmed_insert)
+        if text != public_xml.read_text(encoding="utf-8"):
+            public_xml.write_text(text, encoding="utf-8")
+    pending_src = PATCHED_DIR / "res" / "drawable" / "icn_send_pending.xml"
+    programmed_dst = drawable_dir / "icn_send_programmed.xml"
+    if pending_src.exists() and not programmed_dst.exists():
+        shutil.copy2(pending_src, programmed_dst)
     print("  Fixed splash/thumbnail/null-bitmap drawables missing from split APKs")
+
+
+GP_SEED_SMALI = """.class public Lcom/azemon/santanderclone/GpSeed;
+.super Ljava/lang/Object;
+.source "GpSeed.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;)Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;
+    .locals 4
+
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object p0
+
+    const-string v0, "default/apps/SAN/global_position_seed.json"
+
+    invoke-virtual {p0, v0}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
+
+    move-result-object p0
+
+    new-instance v0, Ljava/util/Scanner;
+
+    invoke-direct {v0, p0}, Ljava/util/Scanner;-><init>(Ljava/io/InputStream;)V
+
+    const-string p0, "\\\\A"
+
+    invoke-virtual {v0, p0}, Ljava/util/Scanner;->useDelimiter(Ljava/lang/String;)Ljava/util/Scanner;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/util/Scanner;->next()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v0, Lcom/google/gson/e;
+
+    invoke-direct {v0}, Lcom/google/gson/e;-><init>()V
+
+    const-class v1, Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;
+
+    invoke-virtual {v0, p0, v1}, Lcom/google/gson/e;->m(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public static b(Landroidx/fragment/app/Fragment;)V
+    .locals 1
+
+    :try_start_0
+    instance-of v0, p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;
+
+    if-eqz v0, :cond_end
+
+    check-cast p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;
+
+    iget-object v0, p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;->Q7:Lcom/santander/one/gp/legacy/ui/simple/SimplePGView;
+
+    if-eqz v0, :cond_end
+
+    invoke-virtual {v0}, Lcom/santander/one/gp/legacy/ui/simple/SimplePGView;->z0()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_end
+    return-void
+
+    :catch_0
+    return-void
+.end method
+
+.method public static c(Landroidx/fragment/app/Fragment;)V
+    .locals 2
+
+    :try_start_0
+    instance-of v0, p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;
+
+    if-eqz v0, :cond_end
+
+    check-cast p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;
+
+    invoke-virtual {p0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->e8()Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+
+    move-result-object v0
+
+    if-nez v0, :cond_have_wrapper
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_ctx
+
+    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;
+
+    move-result-object v0
+
+    :cond_ctx
+    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->d(Landroid/content/Context;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_hide_only
+
+    invoke-virtual {p0, v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rs(Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;)V
+
+    :cond_have_wrapper
+    invoke-virtual {p0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rr()V
+
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;->ks(Ljava/util/List;)V
+
+    invoke-static {p0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V
+
+    goto :cond_end
+
+    :cond_hide_only
+    invoke-static {p0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V
+
+    :cond_end
+    return-void
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    invoke-static {p0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V
+
+    return-void
+.end method
+
+.method public static d(Landroid/content/Context;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+    .locals 0
+
+    invoke-static {p0}, Lcom/azemon/santanderclone/GpSeedHelper;->build(Landroid/content/Context;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+"""
+
+GP_SEED_HELPER_SMALI = """.class public Lcom/azemon/santanderclone/GpSeedHelper;
+.super Ljava/lang/Object;
+.source "GpSeedHelper.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static build(Landroid/content/Context;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+    .registers 19
+
+    move-object/from16 v0, p0
+
+    :try_start_0
+    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->a(Landroid/content/Context;)Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;
+
+    move-result-object v0
+
+    if-eqz v0, :catch_0
+
+    const-string v1, "000365542813020"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Lc/e;->a(Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;Ljava/lang/String;Lcom/santander/one/pt/data/remote/services/customer/model/CustomerResponseDTO;)Lcom/santander/one/sanlibrary/v3/common/dto/GlobalPositionDTO;
+
+    move-result-object v0
+
+    const-string v1, "Shuaib"
+
+    invoke-virtual {v0, v1}, Lcom/santander/one/sanlibrary/v3/common/dto/GlobalPositionDTO;->setClientName(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/santander/one/sanlibrary/v3/common/dto/GlobalPositionDTO;->setClientNameWithoutSurname(Ljava/lang/String;)V
+
+    new-instance v1, Lcom/santander/one/data/feature/userprefs/dto/UserPrefDTO;
+
+    invoke-direct {v1}, Lcom/santander/one/data/feature/userprefs/dto/UserPrefDTO;-><init>()V
+
+    invoke-static {}, Les/bancosantander/apps/domain/domain_objects/config/GlobalPositionConfig;->create()Les/bancosantander/apps/domain/domain_objects/config/GlobalPositionConfig;
+
+    move-result-object v7
+
+    new-instance v8, Ljava/util/HashMap;
+
+    invoke-direct {v8}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v9, Ljava/util/HashMap;
+
+    invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v10, Ljava/util/HashMap;
+
+    invoke-direct {v10}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v11, Ljava/util/HashMap;
+
+    invoke-direct {v11}, Ljava/util/HashMap;-><init>()V
+
+    const/4 v12, 0x0
+
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v13
+
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v14
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    new-instance v5, Luu/a;
+
+    invoke-direct {v5}, Luu/a;-><init>()V
+
+    new-instance v6, Liz/a;
+
+    invoke-direct {v6}, Liz/a;-><init>()V
+
+    new-instance v17, Liz/b;
+
+    invoke-direct/range {v17 .. v17}, Liz/b;-><init>()V
+
+    invoke-static/range {v0 .. v17}, Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;->createFromDTO(Lcom/santander/one/sanlibrary/v3/common/dto/GlobalPositionDTO;Lcom/santander/one/data/feature/userprefs/dto/UserPrefDTO;ZZZLUe/d;LUe/b;Les/bancosantander/apps/domain/domain_objects/config/GlobalPositionConfig;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/santander/one/sanlibrary/v3/common/dto/transaction/CardSuperSpeedListDTO;Ljava/util/List;Ljava/util/List;Lcom/santander/one/publicfiles/accountsinfo/model/AccountInfoWrapperDTO;LiR/a;LUe/k;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;
+
+    move-result-object v0
+
+    return-object v0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+.end method
+"""
+
+
+def patch_gp_seed_fallback():
+    """Bundle offline GP JSON and fall back when API/session GP is missing."""
+    print("Patching global position seed fallback...")
+    seed_src = ROOT / "mock-server" / "data" / "global-position.json"
+    seed_dst = PATCHED_DIR / "assets" / "default" / "apps" / "SAN" / "global_position_seed.json"
+    if seed_src.exists():
+        seed_dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(seed_src, seed_dst)
+
+    gp_seed_dir = PATCHED_DIR / "smali" / "com" / "azemon" / "santanderclone"
+    gp_seed_dir.mkdir(parents=True, exist_ok=True)
+    (gp_seed_dir / "GpSeed.smali").write_text(GP_SEED_SMALI, encoding="utf-8")
+    gp_helper_dir = PATCHED_DIR / "smali_classes3" / "com" / "azemon" / "santanderclone"
+    gp_helper_dir.mkdir(parents=True, exist_ok=True)
+    (gp_helper_dir / "GpSeedHelper.smali").write_text(GP_SEED_HELPER_SMALI, encoding="utf-8")
+
+    bsan_gp = PATCHED_DIR / "smali" / "b.1" / "b.smali"
+    if bsan_gp.exists():
+        text = bsan_gp.read_text(encoding="utf-8")
+        old = (
+            "    invoke-virtual {v0}, Lcom/santander/one/pt/data/remote/services/session/model/PortugalSessionData;->getGlobalPosition()Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;\n\n"
+            "    move-result-object v2\n\n"
+            "    iget-object v3, p0, Lb/b;->b:LSy/a;"
+        )
+        new = (
+            "    invoke-virtual {v0}, Lcom/santander/one/pt/data/remote/services/session/model/PortugalSessionData;->getGlobalPosition()Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;\n\n"
+            "    move-result-object v2\n\n"
+            "    if-nez v2, :gp_ready\n\n"
+            "    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;\n\n"
+            "    move-result-object v2\n\n"
+            "    invoke-static {v2}, Lcom/azemon/santanderclone/GpSeed;->a(Landroid/content/Context;)Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;\n\n"
+            "    move-result-object v2\n\n"
+            "    :gp_ready\n"
+            "    iget-object v3, p0, Lb/b;->b:LSy/a;"
+        )
+        if old in text:
+            text = text.replace(old, new)
+            bsan_gp.write_text(text, encoding="utf-8")
+
+    gp_repo = PATCHED_DIR / "smali_classes11" / "zx.1" / "d.smali"
+    if gp_repo.exists():
+        text = gp_repo.read_text(encoding="utf-8")
+        if ":gp_try_seed" not in text:
+            old_fail = (
+                "    instance-of v1, v0, LuP/a$a;\n\n"
+                "    if-eqz v1, :cond_0\n\n"
+                "    new-instance v1, LuP/a$a;\n\n"
+                "    new-instance v2, Lyf/a;\n\n"
+                "    check-cast v0, LuP/a$a;\n\n"
+                "    invoke-virtual {v0}, LuP/a$a;->a()Ljava/lang/Object;\n\n"
+                "    move-result-object v0\n\n"
+                "    check-cast v0, Lcom/santander/one/pt/data/remote/rest/PortugalError;\n\n"
+                "    invoke-virtual {v0}, Lcom/santander/one/pt/data/remote/rest/PortugalError;->getStatusCode()I\n\n"
+                "    move-result v0\n\n"
+                "    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;\n\n"
+                "    move-result-object v0\n\n"
+                "    const-string v3, \"\"\n\n"
+                "    invoke-direct {v2, v0, v3}, Lyf/a;-><init>(Ljava/lang/String;Ljava/lang/String;)V\n\n"
+                "    invoke-direct {v1, v2}, LuP/a$a;-><init>(Ljava/lang/Object;)V\n\n"
+                "    return-object v1\n\n"
+                "    :cond_0\n"
+            )
+            new_fail = (
+                "    instance-of v1, v0, LuP/a$a;\n\n"
+                "    if-nez v1, :gp_try_seed\n\n"
+                "    goto :gp_after_remote\n\n"
+                "    :gp_try_seed\n"
+                "    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;\n\n"
+                "    move-result-object v1\n\n"
+                "    invoke-static {v1}, Lcom/azemon/santanderclone/GpSeed;->a(Landroid/content/Context;)Lcom/santander/one/pt/data/remote/services/pg/response/PgDataDTO;\n\n"
+                "    move-result-object v1\n\n"
+                "    if-eqz v1, :cond_0\n\n"
+                "    new-instance v0, LuP/a$b;\n\n"
+                "    invoke-direct {v0, v1}, LuP/a$b;-><init>(Ljava/lang/Object;)V\n\n"
+                "    :gp_after_remote\n"
+                "    instance-of v1, v0, LuP/a$a;\n\n"
+                "    if-eqz v1, :cond_0\n\n"
+                "    new-instance v1, LuP/a$a;\n\n"
+                "    new-instance v2, Lyf/a;\n\n"
+                "    check-cast v0, LuP/a$a;\n\n"
+                "    invoke-virtual {v0}, LuP/a$a;->a()Ljava/lang/Object;\n\n"
+                "    move-result-object v0\n\n"
+                "    check-cast v0, Lcom/santander/one/pt/data/remote/rest/PortugalError;\n\n"
+                "    invoke-virtual {v0}, Lcom/santander/one/pt/data/remote/rest/PortugalError;->getStatusCode()I\n\n"
+                "    move-result v0\n\n"
+                "    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;\n\n"
+                "    move-result-object v0\n\n"
+                "    const-string v3, \"\"\n\n"
+                "    invoke-direct {v2, v0, v3}, Lyf/a;-><init>(Ljava/lang/String;Ljava/lang/String;)V\n\n"
+                "    invoke-direct {v1, v2}, LuP/a$a;-><init>(Ljava/lang/Object;)V\n\n"
+                "    return-object v1\n\n"
+                "    :cond_0\n"
+            )
+            if old_fail in text:
+                text = text.replace(old_fail, new_fail)
+                gp_repo.write_text(text, encoding="utf-8")
+
+    load_pg = (
+        PATCHED_DIR
+        / "smali_classes3"
+        / "es.2"
+        / "bancosantander"
+        / "apps"
+        / "mobile"
+        / "features"
+        / "private_home"
+        / "pg"
+        / "BasePGPresenter$loadPGData$1.smali"
+    )
+    if load_pg.exists():
+        text = load_pg.read_text(encoding="utf-8")
+        old_fail_ui = (
+            "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/android/base/presenters/BasePresenter;->Bn()V\n\n"
+            "    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;\n\n"
+            "    move-result-object v0\n\n"
+            "    const-string v1, \"Critical\"\n\n"
+            "    if-eqz v0, :cond_6\n\n"
+            "    invoke-static {v0}, LAU/C;->p0(Ljava/lang/CharSequence;)Z\n\n"
+            "    move-result v2\n\n"
+            "    if-eqz v2, :cond_5\n\n"
+            "    goto :goto_2\n\n"
+            "    :cond_5\n"
+            "    invoke-virtual {p1, v0, v1}, Les/bancosantander/apps/mobile/android/base/presenters/BasePresenter;->io(Ljava/lang/CharSequence;Ljava/lang/String;)V\n\n"
+            "    goto :goto_3\n\n"
+            "    :cond_6\n"
+            "    :goto_2\n"
+            "    sget v0, Lcom/santander/one/strings/R$string;->generic_error_internetConnection:I\n\n"
+            "    invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;\n\n"
+            "    move-result-object v0\n\n"
+            "    invoke-virtual {p1, v0, v1}, Les/bancosantander/apps/mobile/android/base/presenters/BasePresenter;->io(Ljava/lang/CharSequence;Ljava/lang/String;)V\n\n"
+            "    :cond_7\n"
+            "    :goto_3\n"
+        )
+        new_fail_ui = (
+            "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+            "    :cond_7\n"
+            "    :goto_3\n"
+        )
+        if old_fail_ui in text:
+            text = text.replace(old_fail_ui, new_fail_ui)
+            load_pg.write_text(text, encoding="utf-8")
+
+    print("  GP seed asset + session/BSAN fallback installed")
+
+
+def patch_san_asset_aliases():
+    """Copy bundled assets to alternate paths requested by microsite/CDN."""
+    print("Patching SAN microsite asset aliases...")
+    assets = PATCHED_DIR / "assets" / "default"
+    copies = [
+        (
+            assets / "apps" / "SAN" / "offers" / "en_offersV4.xml",
+            assets / "apps" / "SAN" / "en_offersV4.xml",
+        ),
+        (
+            assets / "apps" / "SAN" / "offers" / "pt_offersV4.xml",
+            assets / "apps" / "SAN" / "pt_offersV4.xml",
+        ),
+        (
+            assets / "apps" / "newArq" / "android" / "en_app_config_v2.json",
+            assets / "apps" / "SAN" / "en_app_config_v2.json",
+        ),
+        (
+            assets / "apps" / "newArq" / "android" / "pt_app_config_v2.json",
+            assets / "apps" / "SAN" / "pt_app_config_v2.json",
+        ),
+    ]
+    for src, dst in copies:
+        if src.exists():
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+    print("  SAN asset aliases installed")
+
+
+def patch_pg_shortcuts_trigger():
+    """Guard ov() until GP wrapper exists; trigger fillView via ks() after load."""
+    print("Patching GP dashboard crash guard + fillView trigger...")
+    simple_pg = (
+        PATCHED_DIR
+        / "smali_classes10"
+        / "com"
+        / "santander"
+        / "one"
+        / "gp"
+        / "legacy"
+        / "ui"
+        / "simple"
+        / "SimplePGPresenter.smali"
+    )
+    if simple_pg.exists():
+        text = simple_pg.read_text(encoding="utf-8")
+        old_ov = (
+            "    .end annotation\n\n"
+            "    invoke-static {p0}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/v;)Landroidx/lifecycle/LifecycleCoroutineScope;\n"
+        )
+        new_ov = (
+            "    .end annotation\n\n"
+            "    invoke-virtual {p0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->e8()Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;\n\n"
+            "    move-result-object v0\n\n"
+            "    if-nez v0, :cond_gp_ready\n\n"
+            "    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;\n\n"
+            "    move-result-object v0\n\n"
+            "    if-nez v0, :cond_ov_ctx\n\n"
+            "    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;\n\n"
+            "    move-result-object v0\n\n"
+            "    :cond_ov_ctx\n"
+            "    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->d(Landroid/content/Context;)Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;\n\n"
+            "    move-result-object v0\n\n"
+            "    if-eqz v0, :cond_ov_abort\n\n"
+            "    invoke-virtual {p0, v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rs(Les/bancosantander/apps/domain/domain_objects/common/GlobalPositionWrapper;)V\n\n"
+            "    goto :cond_gp_ready\n\n"
+            "    :cond_ov_abort\n"
+            "    iget-object v0, p0, Lcom/santander/one/gp/legacy/ui/simple/SimplePGPresenter;->Q7:Lcom/santander/one/gp/legacy/ui/simple/SimplePGView;\n\n"
+            "    if-eqz v0, :cond_ov_done\n\n"
+            "    invoke-virtual {v0}, Lcom/santander/one/gp/legacy/ui/simple/SimplePGView;->z0()V\n\n"
+            "    :cond_ov_done\n"
+            "    return-void\n\n"
+            "    :cond_gp_ready\n"
+            "    invoke-static {p0}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/v;)Landroidx/lifecycle/LifecycleCoroutineScope;\n"
+        )
+        if old_ov in text and ":cond_gp_ready" not in text:
+            text = text.replace(old_ov, new_ov, 1)
+        old_en = (
+            "    :cond_0\n"
+            "    return-void\n"
+            ".end method\n\n"
+            ".method public Eq()Z\n"
+        )
+        new_en = (
+            "    :cond_0\n"
+            "    invoke-static {p0}, Lcom/azemon/santanderclone/GpSeed;->c(Landroidx/fragment/app/Fragment;)V\n\n"
+            "    return-void\n"
+            ".end method\n\n"
+            ".method public Eq()Z\n"
+        )
+        if old_en in text and "GpSeed;->c" not in text.split(".method public En()V")[1].split(".method public Eq()Z")[0]:
+            text = text.replace(old_en, new_en, 1)
+        if text != simple_pg.read_text(encoding="utf-8"):
+            simple_pg.write_text(text, encoding="utf-8")
+
+    load_pg = (
+        PATCHED_DIR
+        / "smali_classes3"
+        / "es.2"
+        / "bancosantander"
+        / "apps"
+        / "mobile"
+        / "features"
+        / "private_home"
+        / "pg"
+        / "BasePGPresenter$loadPGData$1.smali"
+    )
+    if load_pg.exists():
+        text = load_pg.read_text(encoding="utf-8")
+        for old, new in [
+            (
+                "    :goto_1\n"
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rr()V\n\n"
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+                "    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V\n",
+                "    :goto_1\n"
+                "    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;\n\n"
+                "    move-result-object v1\n\n"
+                "    invoke-virtual {v0, v1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->ks(Ljava/util/List;)V\n\n"
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n",
+            ),
+            (
+                "    :goto_1\n"
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n",
+                "    :goto_1\n"
+                "    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;\n\n"
+                "    move-result-object v1\n\n"
+                "    invoke-virtual {v0, v1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->ks(Ljava/util/List;)V\n\n"
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n",
+            ),
+            (
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+                "    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V\n\n"
+                "    invoke-static {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->lp(Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;)V\n",
+                "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+                "    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V\n\n"
+                "    invoke-static {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->lp(Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;)V\n",
+            ),
+        ]:
+            if old in text:
+                text = text.replace(old, new)
+                break
+        old_fail_b = (
+            "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+            "    invoke-static {p1}, Lcom/azemon/santanderclone/GpSeed;->b(Landroidx/fragment/app/Fragment;)V\n\n"
+            "    :cond_7\n"
+        )
+        new_fail = (
+            "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+            "    invoke-static {p1}, Lcom/azemon/santanderclone/GpSeed;->c(Landroidx/fragment/app/Fragment;)V\n\n"
+            "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rr()V\n\n"
+            "    :cond_7\n"
+        )
+        if old_fail_b in text:
+            text = text.replace(old_fail_b, new_fail)
+        else:
+            old_fail = (
+                "    invoke-virtual {p1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n\n"
+                "    :cond_7\n"
+            )
+            if old_fail in text:
+                text = text.replace(old_fail, new_fail)
+        old_success = (
+            "    :goto_1\n"
+            "    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;\n\n"
+            "    move-result-object v1\n\n"
+            "    invoke-virtual {v0, v1}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->ks(Ljava/util/List;)V\n\n"
+            "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n"
+        )
+        new_success = (
+            "    :goto_1\n"
+            "    invoke-static {v0}, Lcom/azemon/santanderclone/GpSeed;->c(Landroidx/fragment/app/Fragment;)V\n\n"
+            "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Rr()V\n\n"
+            "    invoke-virtual {v0}, Les/bancosantander/apps/mobile/features/private_home/pg/BasePGPresenter;->Fp()V\n"
+        )
+        if old_success in text and "GpSeed;->c" not in text.split(":goto_1")[1].split(":cond_4")[0]:
+            text = text.replace(old_success, new_success)
+        load_pg.write_text(text, encoding="utf-8")
+
+    simple_pg_view = (
+        PATCHED_DIR
+        / "smali_classes10"
+        / "com"
+        / "santander"
+        / "one"
+        / "gp"
+        / "legacy"
+        / "ui"
+        / "simple"
+        / "SimplePGView.smali"
+    )
+    if simple_pg_view.exists():
+        text = simple_pg_view.read_text(encoding="utf-8")
+        old_z0 = (
+            "    sget v0, Lcom/santander/one/legacy/R$id;->fake_pg:I\n\n"
+            "    invoke-static {p0, v0}, LDR/b;->b(LGR/b;I)Landroid/view/View;\n\n"
+            "    move-result-object v0\n\n"
+            "    check-cast v0, Landroid/widget/FrameLayout;\n\n"
+            "    const/16 v1, 0x8\n\n"
+            "    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V\n\n"
+            "    sget v0, Lcom/santander/one/gp/legacy/R$id;->simple_pg_coordinator_layout:I\n\n"
+            "    invoke-static {p0, v0}, LDR/b;->b(LGR/b;I)Landroid/view/View;\n"
+        )
+        new_z0 = (
+            "    sget v0, Lcom/santander/one/legacy/R$id;->fake_pg:I\n\n"
+            "    invoke-static {p0, v0}, LDR/b;->b(LGR/b;I)Landroid/view/View;\n\n"
+            "    move-result-object v0\n\n"
+            "    if-eqz v0, :cond_skip_fake\n\n"
+            "    const/16 v1, 0x8\n\n"
+            "    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V\n\n"
+            "    :cond_skip_fake\n"
+            "    sget v0, Lcom/santander/one/gp/legacy/R$id;->simple_pg_coordinator_layout:I\n\n"
+            "    invoke-static {p0, v0}, LDR/b;->b(LGR/b;I)Landroid/view/View;\n"
+        )
+        if old_z0 in text and ":cond_skip_fake" not in text:
+            text = text.replace(old_z0, new_z0, 1)
+        old_z0b = (
+            "    move-result-object v0\n\n"
+            "    check-cast v0, Lcom/santander/one/gp/legacy/ui/simple/SimplePgCoordinatorLayout;\n\n"
+            "    const/4 v1, 0x0\n\n"
+            "    invoke-virtual {v0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setVisibility(I)V\n\n"
+            "    return-void\n"
+        )
+        new_z0b = (
+            "    move-result-object v0\n\n"
+            "    if-eqz v0, :cond_skip_coord\n\n"
+            "    check-cast v0, Lcom/santander/one/gp/legacy/ui/simple/SimplePgCoordinatorLayout;\n\n"
+            "    const/4 v1, 0x0\n\n"
+            "    invoke-virtual {v0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setVisibility(I)V\n\n"
+            "    :cond_skip_coord\n"
+            "    return-void\n"
+        )
+        if old_z0b in text:
+            text = text.replace(old_z0b, new_z0b, 1)
+            simple_pg_view.write_text(text, encoding="utf-8")
+    print("  GP dashboard crash guard installed")
 
 
 def patch_sqlcipher_native():
@@ -849,17 +1558,64 @@ def patch_startup_error_dialog():
         / "PublicProductsFragment.smali"
     )
     if fragment.exists():
-        text = fragment.read_text(encoding="utf-8")
-        marker = ".method public final Gn()V\n    .locals"
-        if "return-void\n\n    new-instance v0, Lcom/santander/flame" not in text:
-            text = text.replace(
-                ".method public final Gn()V\n    .locals 14\n\n"
-                "    new-instance v0, Lcom/santander/flame/components/view/v2/bottomsheet/modal/FlameModal;",
-                ".method public final Gn()V\n    .locals 14\n\n"
-                "    return-void\n\n"
-                "    new-instance v0, Lcom/santander/flame/components/view/v2/bottomsheet/modal/FlameModal;",
-            )
-            fragment.write_text(text, encoding="utf-8")
+        patch_smali_method(
+            fragment,
+            "public final Gn()V",
+            """.method public final Gn()V
+    .locals 0
+
+    return-void
+.end method""",
+        )
+    ui_effect = (
+        PATCHED_DIR
+        / "smali_classes12"
+        / "com"
+        / "santander"
+        / "one"
+        / "publicproducts"
+        / "ui"
+        / "feature"
+        / "home"
+        / "PublicProductsFragment$UI$2$1.smali"
+    )
+    if ui_effect.exists():
+        text = ui_effect.read_text(encoding="utf-8")
+        old = (
+            "    invoke-virtual {p1}, Lcom/santander/one/publicproducts/ui/feature/home/PublicProductsViewModel$a;->d()Z\n\n"
+            "    move-result p1\n\n"
+            "    if-eqz p1, :cond_0\n\n"
+            "    iget-object p1, p0, Lcom/santander/one/publicproducts/ui/feature/home/PublicProductsFragment$UI$2$1;->this$0:Lcom/santander/one/publicproducts/ui/feature/home/PublicProductsFragment;\n\n"
+            "    invoke-static {p1}, Lcom/santander/one/publicproducts/ui/feature/home/PublicProductsFragment;->rn(Lcom/santander/one/publicproducts/ui/feature/home/PublicProductsFragment;)V\n\n"
+            "    :cond_0"
+        )
+        if old in text:
+            text = text.replace(old, "    goto :cond_0\n\n    :cond_0")
+            ui_effect.write_text(text, encoding="utf-8")
+    vm_state = (
+        PATCHED_DIR
+        / "smali_classes12"
+        / "com"
+        / "santander"
+        / "one"
+        / "publicproducts"
+        / "ui"
+        / "feature"
+        / "home"
+        / "PublicProductsViewModel$a.smali"
+    )
+    if vm_state.exists():
+        patch_smali_method(
+            vm_state,
+            "public final d()Z",
+            """.method public final d()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method""",
+        )
     print("  PublicProducts error dialog disabled")
 
 
@@ -943,6 +1699,128 @@ def patch_onboarding_language_null_safe():
     print("  Onboarding language delegate patched")
 
 
+def patch_skip_onboarding():
+    """Skip first-login onboarding and permission dialogs so login lands on dashboard."""
+    print("Patching onboarding skip...")
+
+    config_globs = [
+        PATCHED_DIR / "assets" / "default" / "apps" / "newArq" / "android" / "en_app_config_v2.json",
+        PATCHED_DIR / "assets" / "default" / "apps" / "newArq" / "android" / "pt_app_config_v2.json",
+        PATCHED_DIR / "assets" / "default" / "apps" / "newArq" / "android" / "app_config_v2.json",
+        PATCHED_DIR / "assets" / "default" / "apps" / "SAN" / "en_app_config_v2.json",
+        PATCHED_DIR / "assets" / "default" / "apps" / "SAN" / "pt_app_config_v2.json",
+    ]
+    for cfg in config_globs:
+        if cfg.exists():
+            text = cfg.read_text(encoding="utf-8")
+            text = text.replace('"disableOnboarding": "false"', '"disableOnboarding": "true"')
+            text = text.replace('"disableOnboarding": false', '"disableOnboarding": true')
+            cfg.write_text(text, encoding="utf-8")
+
+    onboarding_gate = PATCHED_DIR / "smali_classes10" / "ho.1" / "b.smali"
+    if onboarding_gate.exists():
+        text = onboarding_gate.read_text(encoding="utf-8")
+        text = text.replace(
+            "    const/4 v1, 0x1\n\n"
+            "    invoke-virtual {v0, v1}, Lcom/santander/one/data/feature/userprefs/dto/FirstLoginPrefsDTO;->setShowOnboarding(Z)V",
+            "    const/4 v1, 0x0\n\n"
+            "    invoke-virtual {v0, v1}, Lcom/santander/one/data/feature/userprefs/dto/FirstLoginPrefsDTO;->setShowOnboarding(Z)V",
+        )
+        onboarding_gate.write_text(text, encoding="utf-8")
+        patch_smali_method(
+            onboarding_gate,
+            "public a()Z",
+            """.method public a()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method""",
+        )
+
+    first_login = (
+        PATCHED_DIR
+        / "smali_classes9"
+        / "com"
+        / "santander"
+        / "one"
+        / "data"
+        / "feature"
+        / "userprefs"
+        / "dto"
+        / "FirstLoginPrefsDTO.smali"
+    )
+    for method_sig, new_body in [
+        (
+            "public final getShowOnboarding()Z",
+            """.method public final getShowOnboarding()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method""",
+        ),
+        (
+            "public final getShowNotificationsDialog()Z",
+            """.method public final getShowNotificationsDialog()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method""",
+        ),
+        (
+            "public final getShowLocationDialog()Z",
+            """.method public final getShowLocationDialog()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method""",
+        ),
+    ]:
+        patch_smali_method(first_login, method_sig, new_body)
+
+    print("  Onboarding + notification/location prompts disabled")
+
+
+def patch_critical_error_dialog():
+    """Suppress blocking 'We are sorry' ErrorDialogFragment on startup failures."""
+    print("Patching critical error dialog handler...")
+    handler = PATCHED_DIR / "smali_classes9" / "com" / "santander" / "one" / "error" / "ui" / "handler" / "d.smali"
+    if not handler.exists():
+        return
+    text = handler.read_text(encoding="utf-8")
+    # Method h(): when no custom message is provided, show ErrorDialogFragment (:cond_0).
+    old = (
+        "    :cond_0\n"
+        "    new-instance p2, Lcom/santander/one/error/ui/feature/dialog/view/ErrorDialogFragment;\n\n"
+        "    invoke-direct {p2}, Lcom/santander/one/error/ui/feature/dialog/view/ErrorDialogFragment;-><init>()V\n\n"
+        "    invoke-virtual {p2, p3}, Lcom/santander/one/error/ui/feature/dialog/view/ErrorDialogFragment;->An(LkT/a;)V\n\n"
+        "    sget-object p3, LXS/p;->a:LXS/p;\n\n"
+        "    invoke-virtual {p0, p1, p2}, Lcom/santander/one/error/ui/handler/d;->t(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/DialogFragment;)V\n\n"
+        "    return-void\n"
+        ".end method\n\n"
+        ".method public final n(LVc/u;)V"
+    )
+    new = (
+        "    :cond_0\n"
+        "    return-void\n"
+        ".end method\n\n"
+        ".method public final n(LVc/u;)V"
+    )
+    if old in text:
+        text = text.replace(old, new)
+        handler.write_text(text, encoding="utf-8")
+        print("  Critical ErrorDialogFragment suppressed (handler.h)")
+    else:
+        print("  Warning: critical error dialog patch pattern not found")
+
+
 def patch_legacy_generic_error_dialog():
     """Suppress legacy UseCaseCallback generic error modal at startup."""
     print("Patching legacy generic error handler...")
@@ -1006,15 +1884,59 @@ def patch_context_wrapper():
     context_wrapper = PATCHED_DIR / "smali_classes2" / "l" / "d.smali"
     if not context_wrapper.exists():
         return
-    text = context_wrapper.read_text(encoding="utf-8")
-    text = text.replace(
-        "    sget-object v0, Lorg/apache/poi/ss/formula/eval/EY/lFMU;->BmDeOqmsYkWrJp:Ljava/lang/String;\n\n"
-        "    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
-        '    const-string v0, "layout_inflater"\n\n'
-        "    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z",
+    patched = patch_smali_method(
+        context_wrapper,
+        "public getSystemService(Ljava/lang/String;)Ljava/lang/Object;",
+        """.method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    const-string v0, "layout_inflater"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object p1, p0, Ll/d;->c:Landroid/view/LayoutInflater;
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p0}, Landroid/view/LayoutInflater;->cloneInContext(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ll/d;->c:Landroid/view/LayoutInflater;
+
+    :cond_0
+    iget-object p1, p0, Ll/d;->c:Landroid/view/LayoutInflater;
+
+    return-object p1
+
+    :cond_1
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method""",
     )
-    context_wrapper.write_text(text, encoding="utf-8")
-    print("  Patched AppCompat context wrapper (layout_inflater)")
+    if patched:
+        print("  Patched AppCompat context wrapper (layout_inflater)")
+    else:
+        print("  WARNING: AppCompat context wrapper patch failed")
 
 
 def patch_ssl_pinning():
@@ -1151,6 +2073,9 @@ def main():
     patch_kotlin_builtin_strings()
     patch_pairip_string_defaults()
     patch_missing_drawables()
+    patch_gp_seed_fallback()
+    patch_san_asset_aliases()
+    patch_pg_shortcuts_trigger()
     patch_gms_preconditions()
     patch_gms_connection_tracker()
     patch_disable_tealium_appset()
@@ -1162,6 +2087,8 @@ def main():
     patch_startup_error_dialog()
     patch_public_products_error()
     patch_onboarding_language_null_safe()
+    patch_skip_onboarding()
+    patch_critical_error_dialog()
     patch_legacy_generic_error_dialog()
     patch_public_products_assets()
     patch_context_wrapper()

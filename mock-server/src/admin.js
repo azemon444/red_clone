@@ -51,6 +51,32 @@ export function registerAdmin(app, dataStore, { adminPassword = "" } = {}) {
     }
   });
 
+  router.post("/api/reset/:key", requireAuth, async (req, res) => {
+    try {
+      if (!dataStore.resetFromSeed) {
+        return res.status(501).json({ error: "Reset not supported for this data backend" });
+      }
+      const data = await dataStore.resetFromSeed(req.params.key);
+      console.log(`[admin] reset ${req.params.key} from bundled defaults`);
+      res.json({ ok: true, key: req.params.key, data });
+    } catch (e) {
+      res.status(400).json({ error: e.message });
+    }
+  });
+
+  router.post("/api/reset-all", requireAuth, async (req, res) => {
+    try {
+      if (!dataStore.resetAllFromSeed) {
+        return res.status(501).json({ error: "Reset not supported for this data backend" });
+      }
+      const data = await dataStore.resetAllFromSeed();
+      console.log("[admin] reset all datasets from bundled defaults");
+      res.json({ ok: true, keys: Object.keys(data), data });
+    } catch (e) {
+      res.status(400).json({ error: e.message });
+    }
+  });
+
   router.use(express.static(adminStatic));
   router.get("/", (_req, res) => {
     res.sendFile(join(adminStatic, "index.html"));

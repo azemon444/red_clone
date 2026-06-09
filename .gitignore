@@ -32,3 +32,4 @@ patched-app/META-INF/
 
 # Local screenshots
 emulator-*.png
+.vercel

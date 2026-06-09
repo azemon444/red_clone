@@ -1,0 +1,16 @@
+# Keep deploy upload under Vercel CLI 10MB limit
+*.apk
+apktool/
+apktool-output/
+jadx-out/
+patched-app/smali/
+patched-app/smali_*/
+patched-app/res/
+patched-app/original/
+patched-app/lib/
+patched-app/unknown/
+patched-app/kotlin/
+patched-app/META-INF/
+screenshots/
+reference/video/
+.git/

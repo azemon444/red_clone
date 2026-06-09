@@ -3,10 +3,13 @@
   "installCommand": "npm install",
   "functions": {
     "api/index.js": {
-      "maxDuration": 30,
+      "maxDuration": 60,
       "includeFiles": "patched-app/assets/**,mock-server/public/**,mock-server/data/**"
     }
   },
+  "crons": [
+    { "path": "/health", "schedule": "0 12 * * *" }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/api" }
   ]

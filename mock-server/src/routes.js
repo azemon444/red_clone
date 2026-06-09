@@ -1,5 +1,6 @@
 import {
   challengeResponse,
+  changePinResponse,
   consents,
   deviceList,
   emptyList,
@@ -12,6 +13,7 @@ import {
   notificationsSummary,
   precarioCondicoes,
   proxyLookupAssociation,
+  registerPinResponse,
   resolveHelpList,
   resolveServiceCatalog,
   safInformations,
@@ -19,22 +21,51 @@ import {
   simulationResult,
   smartStub,
   standingOrders,
+  validatePinResponse,
 } from "./responses.js";
 import { registerMicrositeRoutes } from "./microsite.js";
 import { publicBase, rewriteLocalUrls } from "./url-utils.js";
+import {
+  dashboardStats,
+  isValidGlobalPosition,
+  loadSeed,
+  normalizeAccountTransactions,
+} from "./seed-utils.js";
 
 export function registerRoutes(app, { dataStore, getCredentials }) {
   const log = (tag, req) => console.log(`[${tag}] ${req.method} ${req.path}`);
 
+  function getGlobalPosition() {
+    const stored = dataStore.get("global-position");
+    if (isValidGlobalPosition(stored)) return stored;
+    const fallback = loadSeed("global-position");
+    if (isValidGlobalPosition(fallback)) {
+      console.warn("[global-position] stored data empty/invalid — serving bundled defaults");
+      return fallback;
+    }
+    return stored;
+  }
+
+  function getAccountTransactions() {
+    return normalizeAccountTransactions(dataStore.get("account-transactions"));
+  }
+
   // ── Health ──────────────────────────────────────────────────────────────────
   app.get("/health", (_req, res) => {
     const { demoUsername, demoPassword } = getCredentials();
+    const gp = getGlobalPosition();
+    const stored = dataStore.get("global-position");
     res.json({
       status: "ok",
       message: "Santander clone mock API — live data via Admin UI",
       publicUrl: publicBase(),
       admin: `${publicBase()}/admin`,
+      backend: dataStore.backend || "files",
       login: { username: demoUsername, password: demoPassword },
+      dashboard: {
+        ...dashboardStats(gp),
+        usingFallback: !isValidGlobalPosition(stored) && isValidGlobalPosition(gp),
+      },
       endpoints: {
         eeic: "/santander/eeic/*",
         microsite: "/microsite/filesFF/*",
@@ -87,7 +118,18 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
   // ── RTO CRM ─────────────────────────────────────────────────────────────────
   app.use("/santander/eeic/rto_crm", (req, res) => {
     log("rto", req);
-    res.json(emptySuccess());
+    res.set("Cache-Control", "no-store");
+    const slot = Math.floor(Date.now() / 60000) % 3;
+    const variants = [
+      { campaignId: "DEMO-A", title: "Insurance offer", imageUrl: `${publicBase()}/microsite/filesFF/apps/SAN/offers/demo_offer_a.png` },
+      { campaignId: "DEMO-B", title: "Savings tip", imageUrl: `${publicBase()}/microsite/filesFF/apps/SAN/offers/demo_offer_b.png` },
+      { campaignId: "DEMO-C", title: "Card benefits", imageUrl: `${publicBase()}/microsite/filesFF/apps/SAN/offers/demo_offer_c.png` },
+    ];
+    res.json({
+      status: "OK",
+      offers: [variants[slot]],
+      refreshedAt: new Date().toISOString(),
+    });
   });
 
   // ── Auth / Login ────────────────────────────────────────────────────────────
@@ -116,6 +158,7 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
 
   app.post("/santander/eeic/idp-channel/oauth/challenge", (req, res) => {
     log("challenge", req);
+    // PIN / biometric quick-access: form body includes userDeviceId + grant_type=pin
     res.json(challengeResponse());
   });
 
@@ -148,7 +191,8 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
   // ── Global Position (dashboard) ─────────────────────────────────────────────
   app.get("/santander/eeic/global_position_app", (req, res) => {
     log("global-position", req);
-    res.json(dataStore.get("global-position"));
+    res.set("Cache-Control", "no-store");
+    res.json(getGlobalPosition());
   });
 
   app.get("/santander/eeic/global_position_app/monthly_balance", (_req, res) => {
@@ -200,7 +244,7 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
 
   // ── Accounts ────────────────────────────────────────────────────────────────
   app.get("/santander/eeic/retail_accounts", (_req, res) => {
-    const globalPosition = dataStore.get("global-position");
+    const globalPosition = getGlobalPosition();
     res.json({
       accounts: globalPosition.contractsBalances.accounts.accountsList.map(
         (a) => a.accountDataDetail
@@ -209,36 +253,54 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
   });
 
   app.get("/santander/eeic/retail_accounts/:id", (req, res) => {
-    const globalPosition = dataStore.get("global-position");
-    const retailCustomer = dataStore.get("retail-customer");
+    const globalPosition = getGlobalPosition();
     const acct = globalPosition.contractsBalances.accounts.accountsList.find(
       (a) => a.accountDataDetail.accountId === req.params.id
     );
-    res.json(acct?.accountDataDetail || retailCustomer);
+    if (acct?.accountDataDetail) {
+      return res.json(acct.accountDataDetail);
+    }
+    res.json(dataStore.get("retail-customer"));
   });
 
   app.get("/santander/eeic/retail_accounts/:id/transactions", (req, res) => {
     log("account-transactions", req);
-    res.json(dataStore.get("account-transactions"));
+    res.set("Cache-Control", "no-store");
+    res.json(getAccountTransactions());
   });
 
   app.get("/santander/eeic/retail_accounts/:id/transactions/:txId", (req, res) => {
-    const txs = dataStore.get("account-transactions")._transactionsDataList || [];
-    const tx = txs.find((t) => t.transactionId === req.params.txId);
-    res.json(
-      tx || {
-        id: req.params.txId,
-        date: "2026-06-05",
-        description: "Demo transaction",
-        amount: -45.32,
-        currency: "EUR",
-      }
+    const txs = getAccountTransactions().transactionsDataList || [];
+    const item = txs.find(
+      (t) => t.transactionDetails?.transactionId === req.params.txId
     );
+    if (item) {
+      return res.json({
+        transactionDetails: item.transactionDetails,
+        transactionDetailsLink: item.transactionDetailsLink,
+      });
+    }
+    res.json({
+      transactionDetails: {
+        transactionId: req.params.txId,
+        description: "Demo transaction",
+        description2: "",
+        amount: { amount: -0.08, currencyCode: "EUR" },
+        balanceResult: { amount: -65.72, currencyCode: "EUR" },
+        accountingDate: "20260529T000000000",
+        creationDate: "20260529T000000000",
+        processedDate: "20260529T000000000",
+        transactionCategory: "TAX",
+        transactionType: "CHG",
+        status: "Emitida",
+      },
+      transactionDetailsLink: `/santander/eeic/retail_accounts/${req.params.id}/transactions/${req.params.txId}`,
+    });
   });
 
   // ── Cards ───────────────────────────────────────────────────────────────────
   app.get("/santander/eeic/retail_cards_info", (_req, res) => {
-    const globalPosition = dataStore.get("global-position");
+    const globalPosition = getGlobalPosition();
     res.json({
       cards: globalPosition.contractsBalances.cards.cardList.map(
         (c) => c.cardDataDetail
@@ -247,7 +309,7 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
   });
 
   app.get("/santander/eeic/retail_cards_info/:id", (req, res) => {
-    const globalPosition = dataStore.get("global-position");
+    const globalPosition = getGlobalPosition();
     const card = globalPosition.contractsBalances.cards.cardList.find(
       (c) => c.cardDataDetail.cardId === req.params.id
     );
@@ -442,7 +504,38 @@ export function registerRoutes(app, { dataStore, getCredentials }) {
     res.json({ status: "OK", activated: true });
   });
 
-  // ── Pin / identity ──────────────────────────────────────────────────────────
+  // ── Pin / identity (must match RegisterPinResponseDTO / ValidatePinResponseDTO) ─
+  app.post("/santander/eeic/user_identity_mgmt/pin/validation", (req, res) => {
+    log("pin-validate", req);
+    res.json(validatePinResponse());
+  });
+
+  app.post("/santander/eeic/user_identity_mgmt/pin", (req, res) => {
+    log("pin-register", req);
+    // Clone demo: skip SAF OTP — return userDeviceId immediately (saf_enabled=false in login).
+    res.json(registerPinResponse());
+  });
+
+  app.put("/santander/eeic/user_identity_mgmt/pin", (req, res) => {
+    log("pin-change", req);
+    res.json(changePinResponse());
+  });
+
+  app.delete("/santander/eeic/user_identity_mgmt/pin/:userDeviceId", (req, res) => {
+    log("pin-cancel", req);
+    res.status(200).json(null);
+  });
+
+  app.post("/santander/eeic/user_identity_mgmt/password", (req, res) => {
+    log("identity-password", req);
+    res.json({ status: "OK" });
+  });
+
+  app.post("/santander/eeic/user_identity_mgmt/new_credentials", (req, res) => {
+    log("identity-new-credentials", req);
+    res.json({ status: "OK", verified: true });
+  });
+
   app.use("/santander/eeic/user_identity_mgmt", (req, res) => {
     log("identity", req);
     res.json(smartStub(req.path, req.method));

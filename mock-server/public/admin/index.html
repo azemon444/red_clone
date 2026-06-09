@@ -85,6 +85,9 @@
         <p class="hint" id="authHint">Set in Vercel → Settings → Environment Variables → ADMIN_PASSWORD</p>
       </div>
       <nav id="nav"></nav>
+      <div style="padding: .75rem 1.25rem; border-top: 1px solid var(--border)">
+        <button type="button" class="btn btn-danger" style="width:100%" id="resetAllBtn">Reset all demo data</button>
+      </div>
     </aside>
     <main>
       <div id="panels"></div>
@@ -132,6 +135,21 @@
       await api(`/data/${key}`, { method: "PUT", body: JSON.stringify(data) });
       cache[key] = data;
       toast(`Saved ${key}`, true);
+    }
+
+    async function resetKey(key) {
+      const { data } = await api(`/reset/${key}`, { method: "POST" });
+      cache[key] = data;
+      toast(`Reset ${key} to defaults`, true);
+      render();
+    }
+
+    async function resetAll() {
+      if (!confirm("Reset ALL demo data to defaults? This fixes blank dashboards.")) return;
+      const { data } = await api("/reset-all", { method: "POST" });
+      Object.assign(cache, data);
+      toast("All demo data reset", true);
+      render();
     }
 
     function toast(msg, ok = true) {
@@ -275,7 +293,9 @@
           <div class="actions">
             <button class="btn btn-primary" onclick="saveDashboard()">Save dashboard</button>
             <button class="btn btn-secondary" onclick="syncTotalsFromAccount()">Sync totals from account balance</button>
+            <button class="btn btn-danger" onclick="resetKey('global-position')">Reset dashboard to defaults</button>
           </div>
+          <p class="hint">If the app shows a blank home screen after login, click <strong>Reset dashboard to defaults</strong>, then clear app data and log in again.</p>
         </div>
         <div class="card">
           <h3>Monthly balance chart</h3>
@@ -465,8 +485,17 @@
       await save("retail-customer", rc);
     };
 
+    window.resetKey = (key) => {
+      if (needsUnlock()) return toast("Unlock admin first", false);
+      resetKey(key).catch((e) => toast(e.message, false));
+    };
+
     window.saveDashboard = async () => {
       const gp = cache["global-position"];
+      if (!gp?.contractsBalances?.accounts?.accountsList?.length) {
+        toast("Dashboard data is empty — use Reset dashboard to defaults first", false);
+        return;
+      }
       const cb = gp.contractsBalances;
       cb.customerSegment = val("t_seg");
       const t = cb.accounts.totalBalancesAccounts;
@@ -674,6 +703,11 @@
     function needsUnlock() {
       return authRequired && !document.getElementById("adminToken")?.value?.trim();
     }
+
+    document.getElementById("resetAllBtn")?.addEventListener("click", () => {
+      if (needsUnlock()) return toast("Unlock admin first", false);
+      resetAll().catch((e) => toast(e.message, false));
+    });
 
     buildNav();
     initAuth().then(() => {

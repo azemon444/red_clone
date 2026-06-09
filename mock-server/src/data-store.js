@@ -1,5 +1,6 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { loadSeed } from "./seed-utils.js";
 
 /** @type {Record<string, { file: string, label: string, description: string }>} */
 export const DATASETS = {
@@ -103,6 +104,19 @@ export function createDataStore(dataDir) {
     return data;
   }
 
+  async function resetFromSeed(key) {
+    const data = loadSeed(key);
+    return set(key, data);
+  }
+
+  async function resetAllFromSeed() {
+    const restored = {};
+    for (const key of Object.keys(DATASETS)) {
+      restored[key] = await resetFromSeed(key);
+    }
+    return restored;
+  }
+
   function list() {
     return Object.entries(DATASETS).map(([key, meta]) => ({
       key,
@@ -120,5 +134,5 @@ export function createDataStore(dataDir) {
     }
   }
 
-  return { get, set, reload, list, dataDir, backend: "files" };
+  return { get, set, reload, resetFromSeed, resetAllFromSeed, list, dataDir, backend: "files" };
 }
